@@ -15,7 +15,7 @@ mongo = PyMongo(app)
 
 # Route for index
 @app.route('/')
-@app.route('index')
+@app.route('/index')
 def index():
     return render_template('index.html')
 
