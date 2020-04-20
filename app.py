@@ -11,7 +11,7 @@ app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
-@app.route(/)
+@app.route('/')
 def hello():
     return 'Hello World'
 
