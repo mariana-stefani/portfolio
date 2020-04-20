@@ -13,12 +13,14 @@ app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
+# Route for index
 @app.route('/')
-def hello():
-    return 'Hello World'
+@app.route('index')
+def index():
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
-    port=int(os.environ.get('PORT')),
-    debug=True)
+            port=(os.environ.get('PORT')),
+            debug=True)
