@@ -1,13 +1,13 @@
 /*-- Font Family --*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .callout-container {
+  padding-top: 85px;
   height: 100vh;
-  background: rgb(252, 47, 94);
   background: linear-gradient(
     20deg,
     rgba(252, 47, 94, 0.88) 0%,
@@ -37,11 +37,11 @@ body{
 .h1-small {
   font-size: 17px;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .h2-big {
-  font-size: 60px;
+  font-size: 65px;
   color: #fec5d2;
   font-weight: bolder;
 }
@@ -49,7 +49,7 @@ body{
 .h3-big {
   font-size: 60px;
   color: #cbb7ff;
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .p-main {
@@ -57,55 +57,55 @@ body{
   margin-top: 35px;
 }
 
-.btn{
-    margin-top: 20px;
+.btn {
+  margin-top: 20px;
 }
 
 /*-- Footer --*/
 footer {
-    text-align: center;
-    background-color: white;
-    padding: 5px 0px 5px 0px;
+  text-align: center;
+  background-color: white;
+  padding: 5px 0px 5px 0px;
 }
 
 #footer-details {
-    margin: 10px;
+  margin: 10px;
 }
 
 .social-links {
-    padding: 15px 0;
-    margin-bottom: 0px !important;
+  padding: 15px 0;
+  margin-bottom: 0px !important;
 }
 
 .social-links i {
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 20px;
-    line-height: 7px;
-    background: #fec5d2;
-    color: #FC2F5E;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    box-shadow: 2px 2px 2px #000000;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 7px;
+  background: #fec5d2;
+  color: #fc2f5e;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  box-shadow: 2px 2px 2px #000000;
 }
 
 .social-links i:hover {
-    background: #D5E4B6;
+  background: #d5e4b6;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .slice text {
-    font-size: 16pt;
-    font-family: Arial;
+  font-size: 16pt;
+  font-family: Arial;
 }
