@@ -25,17 +25,19 @@
   align-items: flex-start;
   margin: 0px auto;
   padding: 150px 50px;
-  color: white;
 }
 
 .h1-small {
     font-size: 16px;
+    color: white;
 }
 
 .h2-big {
     font-size: 60px;
+    color: #FEC5D2;
 }
 
 .h3-big {
     font-size: 60px;
+    color: #CBB7FF;
 }
