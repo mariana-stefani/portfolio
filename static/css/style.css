@@ -28,16 +28,22 @@
 }
 
 .h1-small {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
 .h2-big {
-    font-size: 60px;
-    color: #FEC5D2;
+  font-size: 60px;
+  color: #fec5d2;
 }
 
 .h3-big {
-    font-size: 60px;
-    color: #CBB7FF;
+  font-size: 60px;
+  color: #cbb7ff;
+  margin-top: 20px;
+}
+
+.p-main {
+  color: #cbb7ff;
+  margin-top: 15px;
 }
