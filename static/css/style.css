@@ -51,7 +51,7 @@
 /*-- Footer --*/
 footer {
     text-align: center;
-    background-color: #A790D6;
+    background-color: white;
     padding: 5px 0px 5px 0px;
 }
 
@@ -60,7 +60,8 @@ footer {
 }
 
 .social-links {
-    padding: 10px 0;
+    padding: 15px 0;
+    margin-bottom: 0px !important;
 }
 
 .social-links i {
@@ -74,8 +75,8 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     line-height: 7px;
-    background: #cbb7ff;
-    color: #6E47BA;
+    background: #fec5d2;
+    color: #FC2F5E;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
