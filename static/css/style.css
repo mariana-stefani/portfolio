@@ -1,8 +1,8 @@
 /*-- Font Family --*/
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body{
-    font-family: 'Muli', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .callout-container {
@@ -35,24 +35,30 @@ body{
 }
 
 .h1-small {
-  font-size: 16px;
+  font-size: 17px;
   color: white;
+  margin-bottom: 15px;
 }
 
 .h2-big {
   font-size: 60px;
   color: #fec5d2;
+  font-weight: bolder;
 }
 
 .h3-big {
   font-size: 60px;
   color: #cbb7ff;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .p-main {
   color: #cbb7ff;
-  margin-top: 15px;
+  margin-top: 35px;
+}
+
+.btn{
+    margin-top: 20px;
 }
 
 /*-- Footer --*/
