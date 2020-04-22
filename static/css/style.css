@@ -30,6 +30,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/*-- Callout Container --*/
 .callout-container {
   padding-top: 85px;
   height: 100vh;
@@ -79,11 +80,26 @@ body {
 
 .p-main {
   color: #cbb7ff;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .btn {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 411px) {
+    .main{
+        padding: 0px 50px;
+    }
+
+    .h2-big {
+        font-size: 60px;
+    }
+
+    .h3-big {
+        font-size: 36px;
+    }
+
 }
 
 /*-- Footer --*/
