@@ -137,6 +137,10 @@ button.navbar-toggler {
   text-align: left;
 }
 
+.ci {
+  color: #e54725;
+  font-weight: bolder;
+}
 /*-- Footer --*/
 footer {
   text-align: center;
