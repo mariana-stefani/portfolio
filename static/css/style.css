@@ -116,10 +116,11 @@ button.navbar-toggler {
 }
 
 .portrait {
-  max-height: 260px;
+  max-height: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 130px !important;
 }
 
 .about-container {
@@ -140,6 +141,12 @@ button.navbar-toggler {
 .ci {
   color: #e54725;
   font-weight: bolder;
+}
+
+/*-- Skillset --*/
+
+.skillset {
+  margin-top: 30px;
 }
 /*-- Footer --*/
 footer {
