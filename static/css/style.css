@@ -146,11 +146,15 @@ button.navbar-toggler {
 /*-- Skillset --*/
 
 .skillset {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 /*-- Progress bar --*/
 /*-- Tutorial from https://jsfiddle.net/rzo7ja0g/1/ --*/
+
+.progress-container{
+margin-top: 35px;
+}
 
 .progress {
   width: 150px;
