@@ -3,23 +3,26 @@
   <div class="main">
     <h1 class="h1-small">Hello, my name is</h1>
     <h2 class="h2-big">Mariana Stefani.</h2>
-    <h3 class="h3-big"> I'm a full-stack web developer</h3>
+    <h3 class="h3-big">I'm a full-stack web developer</h3>
     <p class="p-main">I code pretty things always with the user in mind.</p>
     <button type="button" class="btn btn-light">Let's Talk!</button>
   </div>
 </section>
-{% endblock %} 
-{% block content %} 
+{% endblock %} {% block content %}
 <section class="container about-me">
   <div>
     <h1>About Me</h1>
   </div>
-  <div class="row justify-content-around">
-    <div class="col-md-12 col-lg-6">
-      <img class="portrait" src="static/images/Mariana.jpg">
+  <div class="row">
+    <div class="pic col-md-12 col-lg-6">
+      <img class="portrait" src="static/images/Mariana.jpg" />
     </div>
     <div class="about-desc col-md-12 col-lg-6">
-      <h3>I'm a full-stack web developer based in London. I love writing code, solve problems and explore new languages.  </h3>
+      <p class="about-p">
+        I'm a full-stack web developer based in London.<br/> I love writing code,
+        solve problems and explore new languages.<br/> I believe anything can be
+        achieved through commitment and hardwork.
+      </p>
     </div>
   </div>
 </section>
