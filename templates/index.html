@@ -32,11 +32,12 @@
   </div>
   <!-- Progress circle - tutorial from https://bootstrapious.com/p/circular-progress-bar -->
   <div class="row progress-container">
+    {% for skill in skills %}
     <div class="col-xl-3 col-lg-6 mb-4">
-      <p class="text-center mb-4">Overall progress</p>
+      <p class="text-center mb-4">{{skill.skill_name}}</p>
 
       <!-- Progress bar 1 -->
-      <div class="progress mx-auto" data-value="80">
+      <div class="progress mx-auto" data-value="{{skill.percent}}">
         <span class="progress-left">
           <span class="progress-bar border-primary"></span>
         </span>
@@ -44,12 +45,13 @@
           <span class="progress-bar border-primary"></span>
         </span>
         <div
-          class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center"
+          class="progress-value w-100 h-100 d-flex align-items-center justify-content-center"
         >
-          <div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+          <div class="h2 font-weight-bold">{{skill.percent}}<sup class="small">%</sup></div>
         </div>
       </div>
     </div>
+    {% endfor %}
   </div>
 </section>
 
