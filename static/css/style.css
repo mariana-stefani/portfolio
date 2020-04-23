@@ -108,6 +108,11 @@ body {
   text-align: center;
 }
 
+.portrait {
+  max-height: 260px;
+  display: block;
+}
+
 /*-- Footer --*/
 footer {
   text-align: center;
