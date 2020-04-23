@@ -1,6 +1,22 @@
 /*-- Font Family --*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    20deg,
+    rgba(252, 47, 94, 0.88) 0%,
+    rgba(223, 2, 80, 0.88) 12%,
+    rgba(191, 0, 92, 0.88) 25%,
+    rgba(164, 0, 99, 0.88) 37%,
+    rgba(133, 1, 107, 0.88) 50%,
+    rgba(105, 1, 114, 0.88) 62%,
+    rgba(81, 0, 120, 0.88) 75%,
+    rgba(59, 3, 126, 0.88) 88%,
+    rgba(37, 0, 130, 0.88) 100%
+  );
+}
+
 /*-- Navbar --*/
 nav {
   position: fixed !important;
@@ -26,26 +42,10 @@ button.navbar-toggler {
   width: 100px;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 /*-- Callout Container --*/
 .callout-container {
   padding-top: 85px;
   height: 100vh;
-  background: linear-gradient(
-    20deg,
-    rgba(252, 47, 94, 0.88) 0%,
-    rgba(223, 2, 80, 0.88) 12%,
-    rgba(191, 0, 92, 0.88) 25%,
-    rgba(164, 0, 99, 0.88) 37%,
-    rgba(133, 1, 107, 0.88) 50%,
-    rgba(105, 1, 114, 0.88) 62%,
-    rgba(81, 0, 120, 0.88) 75%,
-    rgba(59, 3, 126, 0.88) 88%,
-    rgba(37, 0, 130, 0.88) 100%
-  );
 }
 
 .main {
@@ -57,7 +57,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 0px auto;
-  padding: 150px 50px;
+  padding: 125px 50px;
 }
 
 .h1-small {
@@ -115,9 +115,14 @@ body {
   margin-right: auto;
 }
 
-.about-desc {
+.about-container {
   align-items: center;
   display: flex;
+  margin-top: 45px;
+}
+
+.portrait-container {
+  margin-top: 45px;
 }
 
 .about-p {
