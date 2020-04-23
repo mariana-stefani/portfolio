@@ -152,6 +152,21 @@ button.navbar-toggler {
 /*-- Progress bar --*/
 /*-- Tutorial from https://bootstrapious.com/p/circular-progress-bar --*/
 
+.progress-right .progress-bar{
+  animation: progress-animation linear forwards 1.5s;
+}
+
+@keyframes progress-animation {
+  0%{
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100%{
+      -webkit-transform: rotate(data-value);
+      transform: rotate(data-value);
+  }
+}
+
 .progress-container{
 margin-top: 35px;
 }
