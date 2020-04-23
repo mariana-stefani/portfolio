@@ -7,6 +7,7 @@ $(function() {
       var value = $(this).attr('data-value');
       var left = $(this).find('.progress-left .progress-bar');
       var right = $(this).find('.progress-right .progress-bar');
+      var bar = $(this).find('.progress')
   
       if (value > 0) {
         if (value <= 50) {
@@ -19,10 +20,10 @@ $(function() {
   
     })
   
-    // function percentageToDegrees(percentage) {
+    function percentageToDegrees(percentage) {
   
-    //   return percentage / 100 * 360
+      return percentage / 100 * 360
   
-    // }   
+    }   
   
   });
