@@ -111,14 +111,18 @@ body {
 .portrait {
   max-height: 260px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-desc {
-  background-color: pink;
+  align-items: center;
+  display: flex;
 }
 
-.pic {
-  background-color: orange;
+.about-p {
+  font-size: 18px;
+  text-align: right;
 }
 
 /*-- Footer --*/
