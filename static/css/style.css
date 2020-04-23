@@ -113,6 +113,14 @@ body {
   display: block;
 }
 
+.about-desc {
+  background-color: pink;
+}
+
+.pic {
+  background-color: orange;
+}
+
 /*-- Footer --*/
 footer {
   text-align: center;
