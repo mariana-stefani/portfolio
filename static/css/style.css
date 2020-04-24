@@ -151,6 +151,10 @@ button.navbar-toggler {
 
 /*-- Progress bar --*/
 
+.progress-icon {
+  font-size: 45px;
+}
+
 .js-colour {
   color: #fc2f5e;
 }
@@ -255,8 +259,7 @@ color: #85016b;
 
 .progress-value {
   position: center;
-  margin-left: 25px;
-  margin-top: 10px;
+  margin: auto;
 }
 
 /*-- Footer --*/
