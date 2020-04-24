@@ -34,7 +34,7 @@
   <div class="row progress-container">
     {% for skill in skills %}
     <div class="col mb-4">
-      <p class="text-center mb-4">{{skill.skill_name}}</p>
+      <p class="text-center mb-4">{{skill.percent}}<sup class="small">%</sup></p>
 
       <!-- Progress bar 1 -->
       <div class="progress mx-auto" data-value="{{skill.percent}}">
@@ -47,7 +47,7 @@
         <div
           class="progress-value d-flex align-items-center justify-content-center"
         >
-          <div class="h2 font-weight-bold">{{skill.percent}}<sup class="small">%</sup></div>
+          <div class="h2 font-weight-bold"><i class="{{skill.icon}}"></i></div>
         </div>
       </div>
     </div>
