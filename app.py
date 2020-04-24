@@ -24,7 +24,8 @@ def index():
 
 @app.route('/login')
 def login():
-    return render_template('pages/login.html')
+    form = LoginForm()
+    return render_template('pages/login.html', form=form)
 
 
 if __name__ == '__main__':
