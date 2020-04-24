@@ -3,6 +3,7 @@ from os import path
 from flask_pymongo import PyMongo
 from flask import Flask, render_template, redirect, request, url_for, session, flash
 from forms import LoginForm
+import bcrypt
 
 if path.exists('env.py'):
     import env
