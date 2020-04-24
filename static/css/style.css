@@ -242,7 +242,7 @@ button.navbar-toggler {
   transform-origin: center right;
 }
 
-.progress .progress-value {
+.progress-value {
   position: center;
   margin-left: 25px;
   margin-top: 10px;
