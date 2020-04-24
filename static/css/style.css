@@ -159,6 +159,10 @@ button.navbar-toggler {
 color: #85016b;
 }
 
+.css-colour{
+  color: #3b037e;
+}
+
 .progress-right .progress-bar {
   animation: progress-animation linear forwards 1.5s;
   visibility: hidden;
