@@ -23,9 +23,23 @@ def index():
     return render_template('pages/index.html', skills=skills)
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+    if form.validate_on_submit():
+        users = mongo.db.users
+        existing_user = users.find_one({'username': request.form['username']})
+        if existing_user:
+            if request.form['password'] == existing_user['password']:
+                session['username'] = request.form['username']
+                return redirect(url_for('index'))
+            else:
+                flash('Login Unsuccessful. Please check username and password',
+                      'success')
+        else:
+            flash('Login Unsuccessful. Please check username and password',
+                  'success')
+
     return render_template('pages/login.html', form=form)
 
 
