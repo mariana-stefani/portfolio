@@ -1,8 +1,17 @@
-{% extends 'layout/base.html' %} 
+{% extends 'layout/base.html' %} {% block content %}
+{% with messages = get_flashed_messaged(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{category }}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {%  endif %}
+    {% endwith %}
 
-{% block content %}
 <div class="container login-container">
     <form  method="POST" action="">
+        {{ form.hidden_tag() }}
         <div class="form-group">
             <div class="col s10 validate">
                 {{ form.username.label }}
