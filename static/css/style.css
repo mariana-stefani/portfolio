@@ -242,11 +242,13 @@ button.navbar-toggler {
   transform-origin: center right;
 }
 
-/* .progress .progress-value {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
+.progress .progress-value {
+  position: center;
+  margin-left: 25px;
+  margin-top: 10px;
+
+
+}
 
 /*-- Footer --*/
 footer {
