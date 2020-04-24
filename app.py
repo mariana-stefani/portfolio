@@ -1,7 +1,8 @@
 import os
 from os import path
 from flask_pymongo import PyMongo
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, request, url_for, session, flash
+from forms import LoginForm
 
 if path.exists('env.py'):
     import env
@@ -18,7 +19,12 @@ mongo = PyMongo(app)
 @app.route('/index')
 def index():
     skills = mongo.db.skills.find()
-    return render_template('index.html', skills=skills)
+    return render_template('pages/index.html', skills=skills)
+
+
+@app.route('/login')
+def login():
+    return render_template('pages/login.html')
 
 
 if __name__ == '__main__':
