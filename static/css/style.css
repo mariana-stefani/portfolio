@@ -151,6 +151,11 @@ button.navbar-toggler {
 
 /*-- Progress bar --*/
 
+.progress-p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 .progress-icon {
   font-size: 45px;
 }
