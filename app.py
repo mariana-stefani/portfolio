@@ -51,8 +51,8 @@ def add_skillset():
 
 
 # Route to insert new review to MongoDB database
-@app.route('/insert_skill', methods=['POST'])
-def insert_skill():
+@app.route('/insert_skillset', methods=['POST'])
+def insert_skillset():
     skills = mongo.db.skills
     skills.insert_one(request.form.to_dict())
     return redirect(url_for('index'))
