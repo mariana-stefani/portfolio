@@ -44,11 +44,18 @@ def login():
 
 
 # Route to add new skillset
-
 @app.route('/add_skillset')
 def add_skillset():
     skills = mongo.db.skills.find()
     return render_template('pages/add_skillset.html', skills=skills)
+
+
+# Route to insert new review to MongoDB database
+@app.route('/insert_skill', methods=['POST'])
+def insert_skill():
+    skills = mongo.db.skills
+    skills.insert_one(request.form.to_dict())
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
