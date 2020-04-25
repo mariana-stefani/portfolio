@@ -35,10 +35,10 @@ def login():
                 return redirect(url_for('index'))
             else:
                 flash('Login Unsuccessful. Please check username and password',
-                      'success')
+                      'danger')
         else:
             flash('Login Unsuccessful. Please check username and password',
-                  'success')
+                  'danger')
 
     return render_template('pages/login.html', form=form)
 
