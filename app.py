@@ -32,7 +32,7 @@ def login():
         if existing_user:
             if request.form['password'] == existing_user['password']:
                 session['username'] = request.form['username']
-                return redirect(url_for('index'))
+                return redirect(url_for('add_skillset'))
             else:
                 flash('Login Unsuccessful. Please check username and password',
                       'danger')
