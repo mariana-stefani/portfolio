@@ -1,3 +1,26 @@
 {% extends 'layout/base.html' %} {% block content %}
 
+<section class="container addskill-container">
+  <h3>Add new skillset</h3>
+  <form class="col s12" action="" method="POST">
+    <div class="form-group">
+      <label for="skill_name">Skillset</label>
+      <input type="text" class="form-control" id="skill_name" />
+    </div>
+    <div class="form-group">
+      <label for="percent">Percentage learned</label>
+      <input type="percent" class="form-control" id="percent" />
+    </div>
+    <div class="form-group">
+      <label for="colour">Skill colour class</label>
+      <input type="text" class="form-control" id="colour" />
+    </div>
+    <div class="form-group">
+      <label for="icon">Icon ID</label>
+      <input type="text" class="form-control" id="icon" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
 {% endblock %}
