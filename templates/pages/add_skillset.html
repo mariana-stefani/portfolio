@@ -5,19 +5,19 @@
   <form class="col s12" action="{{url_for('insert_skillset')}}" method="POST">
     <div class="form-group">
       <label for="skill_name">Skillset</label>
-      <input type="text" class="form-control" id="skill_name" />
+      <input type="text" class="form-control" name="skill_name" id="skill_name" />
     </div>
     <div class="form-group">
       <label for="percent">Percentage learned</label>
-      <input type="percent" class="form-control" id="percent" />
+      <input type="percent" class="form-control" name="percent" id="percent" />
     </div>
     <div class="form-group">
       <label for="colour">Skill colour class</label>
-      <input type="text" class="form-control" id="colour" />
+      <input type="text" class="form-control" name="colour" id="colour" />
     </div>
     <div class="form-group">
       <label for="icon">Icon ID</label>
-      <input type="text" class="form-control" id="icon" />
+      <input type="text" class="form-control" name="icon" id="icon" />
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
