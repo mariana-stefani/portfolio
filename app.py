@@ -22,7 +22,7 @@ def index():
     skills = mongo.db.skills.find()
     return render_template('pages/index.html', skills=skills)
 
-
+# Route for Login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
@@ -41,6 +41,14 @@ def login():
                   'danger')
 
     return render_template('pages/login.html', form=form)
+
+
+# Route to add new skillset
+
+@app.route('/add_skillset')
+def add_skillset():
+    skills = mongo.db.skills.find()
+    return render_template('pages/add_skillset.html', skills=skills)
 
 
 if __name__ == '__main__':
