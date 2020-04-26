@@ -93,17 +93,41 @@ button.navbar-toggler {
   margin-top: 20px;
 }
 /* Media Queries */
-@media screen and (max-width: 411px) {
+
+@media screen and (max-width: 414px) and (min-width: 321px) {
   .main {
     padding: 0px 50px;
   }
 
   .h2-big {
-    font-size: 60px;
+    font-size: 55px;
   }
 
   .h3-big {
-    font-size: 36px;
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    padding: 0px 50px;
+  }
+
+  .h2-big {
+    font-size: 50px;
+  }
+
+  .h3-big {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .p-main {
+    margin-top: 15px;
+  }
+
+  .btn{
+    margin-top: 5px;
   }
 }
 
