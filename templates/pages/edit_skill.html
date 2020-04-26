@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %} {% block content %}
+
+<section class="container addskill-container">
+    <h3>Edit skill</h3>
+    <form class="col s12" action="{{url_for('update_skill', skill_id=skill._id)}}" method="POST">
+      <div class="form-group">
+        <label for="skill_name">Skill</label>
+        <input type="text" class="form-control" name="skill_name" id="skill_name" />
+      </div>
+      <div class="form-group">
+        <label for="percent">Percentage learned</label>
+        <input type="percent" class="form-control" name="percent" id="percent" />
+      </div>
+      <div class="form-group">
+        <label for="colour">Skill colour class</label>
+        <input type="text" class="form-control" name="colour" id="colour" />
+      </div>
+      <div class="form-group">
+        <label for="icon">Icon ID</label>
+        <input type="text" class="form-control" name="icon" id="icon" />
+      </div>
+      <button type="submit" class="btn btn-primary">Edit Skill</button>
+    </form>
+  </section>
+
+{% endblock %}
