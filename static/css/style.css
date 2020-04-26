@@ -129,6 +129,10 @@ button.navbar-toggler {
   .btn {
     margin-top: 5px;
   }
+
+  .scroll-down {
+    bottom: 15px !important;
+  }
 }
 
 /*-- Mouse --*/
