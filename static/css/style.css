@@ -153,12 +153,6 @@ button.navbar-toggler {
   bottom: 50px;
 }
 
-/* @media screen and (max-width: 320px) {
-  .scroll-down {
-      bottom: -2.813rem;
-  }
-} */
-
 .scroll-down:before {
   content: "";
   width: 10px;
