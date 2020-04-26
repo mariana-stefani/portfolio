@@ -167,6 +167,11 @@ button.navbar-toggler {
   font-size: 18px;
   text-align: left;
   line-height: 2;
+  color: #581D00;
+}
+
+.about-header {
+  color: #a43500;
 }
 
 .ci {
