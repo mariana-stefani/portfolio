@@ -32,7 +32,7 @@ def login():
         if existing_user:
             if request.form['password'] == existing_user['password']:
                 session['username'] = request.form['username']
-                return redirect(url_for('add_skillset'))
+                return redirect(url_for('add_skill'))
             else:
                 flash('Login Unsuccessful. Please check username and password',
                       'danger')
@@ -43,16 +43,16 @@ def login():
     return render_template('pages/login.html', form=form)
 
 
-# Route to add new skillset
-@app.route('/add_skillset')
-def add_skillset():
+# Route to add new skill
+@app.route('/add_skill')
+def add_skill():
     skills = mongo.db.skills.find()
-    return render_template('pages/add_skillset.html', skills=skills)
+    return render_template('pages/add_skill.html', skills=skills)
 
 
 # Route to insert new review to MongoDB database
-@app.route('/insert_skillset', methods=['POST'])
-def insert_skillset():
+@app.route('/insert_skill', methods=['POST'])
+def insert_skill():
     skills = mongo.db.skills
     skills.insert_one(request.form.to_dict())
     return redirect(url_for('index'))
