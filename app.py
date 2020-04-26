@@ -45,6 +45,13 @@ def login():
     return render_template('pages/login.html', form=form)
 
 
+# Logout Route
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('index'))
+
+
 # Route to add new skill
 @app.route('/add_skill')
 def add_skill():
