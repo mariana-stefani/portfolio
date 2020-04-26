@@ -5,19 +5,19 @@
     <form class="col s12" action="{{url_for('update_skill', skill_id=skill._id)}}" method="POST">
       <div class="form-group">
         <label for="skill_name">Skill</label>
-        <input type="text" class="form-control" name="skill_name" id="skill_name" />
+        <input type="text" class="form-control" name="skill_name" id="skill_name" value="{{skill.skill_name}}" />
       </div>
       <div class="form-group">
         <label for="percent">Percentage learned</label>
-        <input type="percent" class="form-control" name="percent" id="percent" />
+        <input type="percent" class="form-control" name="percent" id="percent" value="{{skill.percent}}"/>
       </div>
       <div class="form-group">
         <label for="colour">Skill colour class</label>
-        <input type="text" class="form-control" name="colour" id="colour" />
+        <input type="text" class="form-control" name="colour" id="colour" value="{{skill.colour}}" />
       </div>
       <div class="form-group">
         <label for="icon">Icon ID</label>
-        <input type="text" class="form-control" name="icon" id="icon" />
+        <input type="text" class="form-control" name="icon" id="icon" value="{{skill.icon}}" />
       </div>
       <button type="submit" class="btn btn-primary">Edit Skill</button>
     </form>
