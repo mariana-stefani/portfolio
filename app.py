@@ -64,7 +64,7 @@ def insert_skill():
 def edit_skill(skill_id):
     skill = mongo.db.skills.find_one({'_id': ObjectId(skill_id)})
     skills = mongo.db.skills.find()
-    return render_template('edit_skill.html', skill=skill, skills=skills)
+    return render_template('pages/edit_skill.html', skill=skill, skills=skills)
 
 
 # Route to send updated skill to MongoDB database
