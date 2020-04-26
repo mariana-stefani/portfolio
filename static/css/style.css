@@ -456,30 +456,3 @@ a:link {
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 415px) {
-  .callout-container {
-    height: 65vh;
-  }
-
-  .main {
-    padding: 20px 50px;
-  }
-
-  .scroll-down {
-    top: 570px !important;
-  }
-}
-
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-  .callout-container {
-    height: 45vh;
-  }
-
-  .main {
-    padding: 20px 50px;
-  }
-
-  .scroll-down {
-    top: 510px !important;
-  }
-}
