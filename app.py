@@ -80,6 +80,13 @@ def update_skill(skill_id):
     return redirect(url_for('index'))
 
 
+# Route to delete skill from MongoDB database
+@app.route('/delete_skill/<skill_id>')
+def delete_skill(skill_id):
+    mongo.db.skills.remove({'_id': ObjectId(skill_id)})
+    return redirect(url_for('login'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=(os.environ.get('PORT')),
