@@ -43,6 +43,11 @@ button.navbar-toggler {
   width: 100px;
 }
 
+.hi-user {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
 /*-- Callout Container --*/
 .callout-container {
   padding-top: 85px;
