@@ -126,14 +126,15 @@ button.navbar-toggler {
     margin-top: 15px;
   }
 
-  .btn{
+  .btn {
     margin-top: 5px;
   }
 }
 
 /*-- Mouse --*/
 /*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
-.scroll-down, .scroll-down:before {
+.scroll-down,
+.scroll-down:before {
   position: absolute;
   left: 50%;
 }
@@ -148,14 +149,14 @@ button.navbar-toggler {
   bottom: 50px;
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   .scroll-down {
       bottom: -2.813rem;
   }
-}
+} */
 
 .scroll-down:before {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   background: black;
@@ -169,11 +170,11 @@ button.navbar-toggler {
 
 @keyframes scroll {
   0% {
-      opacity: 1;
+    opacity: 1;
   }
   100% {
-      opacity: 0;
-      transform: translateY(2.875rem);
+    opacity: 0;
+    transform: translateY(2.875rem);
   }
 }
 
