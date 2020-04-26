@@ -93,9 +93,9 @@ button.navbar-toggler {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 576px) {
   .main {
-    padding: 0px 50px;
+    padding: 30px 50px;
   }
 
   .h2-big {
@@ -104,6 +104,25 @@ button.navbar-toggler {
 
   .h3-big {
     font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    padding: 20px 30px;
+  }
+
+  .h2-big {
+    font-size: 50px;
+  }
+
+  .h3-big {
+    font-size: 30px;
+  }
+
+  .scroll-down {
+    margin-left: 85px !important;
+    bottom: 32px !important;
   }
 }
 
@@ -124,11 +143,7 @@ button.navbar-toggler {
   bottom: 50px;
 }
 
-@media screen and (max-width: 320px) {
-  .scroll-down {
-      bottom: -2.813rem;
-  }
-}
+
 
 .scroll-down:before {
   content: '';
