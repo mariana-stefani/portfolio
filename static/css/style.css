@@ -3,7 +3,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(90deg, rgba(251,132,56,.9) 0%, rgba(251,99,28,.9) 100%)
+  background: linear-gradient(
+      90deg,
+      rgba(251, 132, 56, 0.9) 0%,
+      rgba(251, 99, 28, 0.9) 100%
+    )
     fixed;
 }
 
@@ -56,30 +60,34 @@ button.navbar-toggler {
 }
 
 .h1-small {
-  font-size: 17px;
+  font-size: 18px;
   color: white;
   margin-bottom: 10px;
 }
 
 .h2-big {
   font-size: 65px;
-  color: #fec5d2;
+  color: #581D00;
   font-weight: bolder;
 }
 
 .h3-big {
   font-size: 60px;
-  color: #cbb7ff;
+  color: #a43500;
   margin-top: 25px;
 }
 
 .p-main {
-  color: #cbb7ff;
+  color: #a43500;
   margin-top: 30px;
 }
 
 .btn {
   margin-top: 20px;
+  background-color: #FDCAB2;
+  color: #581D00;
+  border: solid 1px #F95204;
+
 }
 
 /*-- Mouse --*/
@@ -128,7 +136,7 @@ button.navbar-toggler {
 .about-me {
   margin-bottom: 30px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
   border-radius: 20px;
   padding: 20px 30px 20px 20px;
   align-items: center;
