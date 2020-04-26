@@ -50,6 +50,13 @@
         {{skill.percent}}<sup class="small">%</sup>
       </p>
     </div>
+ 
+         <div>
+            <a href="{{url_for('edit_skill', skill_id=skill._id)}}" class="btn right">Edit <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span></a>
+           
+            
+         </div>
+   
     {% endfor %}
   </div>
 </section>
