@@ -43,27 +43,24 @@
           <span class="progress-bar {{skill.colour}}"></span>
         </span>
         <div class="progress-value">
-          <div><i class="{{skill.icon}} {{skill.colour}} progress-icon"></i></div>
+          <div>
+            <i class="{{skill.icon}} {{skill.colour}} progress-icon"></i>
+          </div>
         </div>
       </div>
-      <p class="progress-p">
-        {{skill.percent}}<sup class="small">%</sup>
-      </p>
+      <p class="progress-p">{{skill.percent}}<sup class="small">%</sup></p>
+      {% if 'username' in session %}
+      <a href="{{url_for('edit_skill', skill_id=skill._id)}}" class="btn btn-primary"
+        >Edit
+        <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
+      ></a>
+    {% endif %}
     </div>
- 
-         <div>
-            <a href="{{url_for('edit_skill', skill_id=skill._id)}}" class="btn right">Edit <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span></a>
-           
-            
-         </div>
-   
-    {% endfor %}
+     {% endfor %}
   </div>
 </section>
 
-{% endblock %}
-
-{% block footer %}
+{% endblock %} {% block footer %}
 <footer class="container-fluid">
   <div id="footer-details" class="row">
     <div class="col-12">
