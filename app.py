@@ -21,7 +21,8 @@ mongo = PyMongo(app)
 @app.route('/index')
 def index():
     skills = mongo.db.skills.find()
-    return render_template('pages/index.html', skills=skills)
+    skill = mongo.db.skills.find_one()
+    return render_template('pages/index.html', skills=skills, skill=skill)
 
 # Route for Login
 @app.route('/login', methods=['GET', 'POST'])
@@ -33,7 +34,7 @@ def login():
         if existing_user:
             if request.form['password'] == existing_user['password']:
                 session['username'] = request.form['username']
-                return redirect(url_for('add_skill'))
+                return redirect(url_for('index'))
             else:
                 flash('Login Unsuccessful. Please check username and password',
                       'danger')
@@ -84,7 +85,7 @@ def update_skill(skill_id):
 @app.route('/delete_skill/<skill_id>')
 def delete_skill(skill_id):
     mongo.db.skills.remove({'_id': ObjectId(skill_id)})
-    return redirect(url_for('login'))
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
