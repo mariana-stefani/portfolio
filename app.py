@@ -58,6 +58,14 @@ def insert_skillset():
     return redirect(url_for('index'))
 
 
+# Route to display skill to be edited
+@app.route('/edit_skill/<skill_id>')
+def edit_skill(skill_id):
+    skill = mongo.db.skills.find_one({'_id': ObjectId(skill_id)})
+    skills = mongo.db.skills.find()
+    return render_template('edit_skill.html', skill=skill, skills=skills)
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=(os.environ.get('PORT')),
