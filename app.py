@@ -51,7 +51,7 @@ def add_skill():
     return render_template('pages/add_skill.html', skills=skills)
 
 
-# Route to insert new review to MongoDB database
+# Route to insert new skill to MongoDB database
 @app.route('/insert_skill', methods=['POST'])
 def insert_skill():
     skills = mongo.db.skills
@@ -65,6 +65,19 @@ def edit_skill(skill_id):
     skill = mongo.db.skills.find_one({'_id': ObjectId(skill_id)})
     skills = mongo.db.skills.find()
     return render_template('edit_skill.html', skill=skill, skills=skills)
+
+
+# Route to send updated skill to MongoDB database
+@app.route('/update_skill/<skill_id>', methods=['POST'])
+def update_skill(skill_id):
+    skills = mongo.db.skills
+    skills.update({'_id': ObjectId(skill_id)},
+                  {'skill_name': request.form.get('skill_name'),
+                   'percent': request.form.get('percent'),
+                   'colour': request.form.get('colour'),
+                   'icon': request.form.get('icon')
+                   })
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
