@@ -9,6 +9,8 @@
     </div>          
     {% endfor %}
   {%  endif %}{% endwith %}
+  {% if 'username' in session %}
+  {% else %}
 <section class="callout-container">
   <div class="main">
     <h1 class="h1-small">Hello, my name is</h1>
@@ -19,6 +21,7 @@
     <div class="scroll-down"> </div>
   </div>
 </section>
+{% endif %}
 {% endblock %} {% block content %}
 <section class="container-fluid about-me">
   <div>
