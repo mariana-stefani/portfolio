@@ -28,24 +28,30 @@ $(function () {
 
 //Email JS
 
-$(function () {
-  emailjs.init("user_ihMVh8GieFlqswQcnywX0");
-})();
-
 function sendMail(contactForm) {
-  email
-    .send("gmail", "mariana", {
-      "from _name": contactForm.name.value,
-      from_email: contactForm.emailaddress.value,
-      contact_request: contactForm.contactsummary.value,
-    })
-    .then(
-      function (response) {
-        console.log("success", response);
+  emailjs.send("gmail", "mariana", {
+      "from_name": contactForm.name.value,
+      "from_email": contactForm.emailaddress.value,
+      "contact_request": contactForm.contactsummary.value
+  })
+  .then(
+      function(response) {
+          console.log("SUCCESS", response);
       },
-      function (error) {
-        console.log("failed", error);
+      function(error) {
+          console.log("FAILED", error);
       }
-    );
-  return false;
+  );
+  // Show alert
+  document.querySelector('.email-alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.email-alert').style.display = 'none';
+  },5000);
+
+  // Clear form
+  document.getElementById('contact-form').reset();
+
+  return false; 
 }
