@@ -309,6 +309,7 @@ button.navbar-toggler {
 /*-- Projects --*/
 .projects-container {
   margin-bottom: 30px;
+  margin-top: 80px;
   text-align: center;
   align-items: center;
   width: 85%;
@@ -320,9 +321,10 @@ button.navbar-toggler {
   margin-top: 20px;
 }
 
-.project-align {
+.each-project {
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .aroma {
@@ -331,12 +333,13 @@ button.navbar-toggler {
   display: block;
   margin-top: 30px;
   border-radius: 10px;
+  box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
 }
 
 .aroma-p {
   text-align: left;
-  border-radius: 10px;
   padding: 25px;
+  line-height: 2;
 }
 
 /*-- Login --*/
@@ -389,17 +392,18 @@ footer {
   border-radius: 50%;
   font-size: 20px;
   line-height: 7px;
-  background: #fec5d2;
-  color: #fc2f5e;
+  background-color: #fdcab2;
+  color: #581d00;
+  border: solid 1px #f95204;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  box-shadow: 2px 2px 2px #000000;
+  box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
 }
 
 .social-links i:hover {
-  background: #d5e4b6;
+  background: #f95204;
 }
 
 a:link {
