@@ -306,6 +306,17 @@ button.navbar-toggler {
   margin: auto;
 }
 
+/*-- Projects --*/
+.projects-container {
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px 30px 20px 20px;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+}
+
 /*-- Login --*/
 
 .login-container {
