@@ -1,18 +1,14 @@
 {% extends 'layout/base.html' %} {% block callout %}
 <!-- Flash message -->
-{% with messages = get_flashed_messages(with_categories=true) %}
-  {% if messages %}
-    {% for category, message in messages %}
-    <div class="container">
-        <div class="flash alert alert-{{category }}">
-            {{ message }}
-          </div>
-    </div>          
-    {% endfor %}
-  {%  endif %}{% endwith %}
-  {% if 'username' in session %}
-  {% else %}
-  <!-- Callout Container -->
+{% with messages = get_flashed_messages(with_categories=true) %} {% if messages
+%} {% for category, message in messages %}
+<div class="container">
+  <div class="flash alert alert-{{category }}">
+    {{ message }}
+  </div>
+</div>
+{% endfor %} {% endif %}{% endwith %} {% if 'username' in session %} {% else %}
+<!-- Callout Container -->
 <section class="callout-container">
   <div class="main">
     <h1 class="h1-small">Hello, my name is</h1>
@@ -20,11 +16,10 @@
     <h3 class="h3-big">I'm a full-stack web developer</h3>
     <p class="p-main">I code pretty things always with the user in mind.</p>
     <button type="button" class="btn btn-light">Let's Talk!</button>
-    <div class="scroll-down"> </div>
+    <div class="scroll-down"></div>
   </div>
 </section>
-{% endif %}
-{% endblock %} {% block content %}
+{% endif %} {% endblock %} {% block content %}
 <!-- About Me Container -->
 <section class="container-fluid about-container">
   <div>
@@ -47,10 +42,12 @@
   <div class="skillset">
     <h3>Skillset</h3>
     {% if 'username' in session %}
-      <a href="{{url_for('add_skill', skill_id=skill._id)}}" class="btn btn-primary"
-        >Add Skill
-        <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
-      ></a>
+    <a
+      href="{{url_for('add_skill', skill_id=skill._id)}}"
+      class="btn btn-primary"
+      >Add Skill
+      <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
+    ></a>
     {% endif %}
   </div>
   <!-- Progress Circle - tutorial from https://bootstrapious.com/p/circular-progress-bar -->
@@ -73,29 +70,39 @@
       </div>
       <p class="progress-p">{{skill.percent}}<sup class="small">%</sup></p>
       {% if 'username' in session %}
-      <a href="{{url_for('edit_skill', skill_id=skill._id)}}" class="btn btn-primary"
+      <a
+        href="{{url_for('edit_skill', skill_id=skill._id)}}"
+        class="btn btn-primary"
         >Edit
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
-      <a href="{{url_for('delete_skill', skill_id=skill._id)}}" class="btn btn-primary"
+      <a
+        href="{{url_for('delete_skill', skill_id=skill._id)}}"
+        class="btn btn-primary"
         >Delete
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
-    {% endif %}
+      {% endif %}
     </div>
-     {% endfor %}
+    {% endfor %}
   </div>
 </section>
 
 <!-- Projects -->
 <section class="container-fluid projects-container">
-<h1 class="">Projects</h1>
-<p class="projects-p">Here are a few projects that I've worked on recently.</p>
-<div class="row">
-  <div class="col-lg-6 col-12">
-    <img class="aroma" src="static/images/aroma.png" />
+  <h1 class="">Projects</h1>
+  <p class="projects-p">
+    Here are a few projects that I've worked on recently.
+  </p>
+  <div class="row project-align">
+    <p class="aroma-p col-lg-4 col-10">
+      Aroma Healing website was designed for people who are looking for an
+      aromatherapy course around the world. The website has a bonus to provide
+      some useful recipes to heal the most common affliction with the use of
+      essential oils.
+    </p>
+    <a href="https://mariana-stefani.github.io/aroma-healing/" target="_blank"><img class="aroma" src="static/images/aroma.png" /></a>
   </div>
-</div>
 </section>
 
 <!-- Footer -->
