@@ -5,8 +5,8 @@ body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(
       90deg,
-      rgba(251, 132, 56, 0.9) 0%,
-      rgba(251, 99, 28, 0.9) 100%
+      rgba(249, 82, 4, 0.9) 0%,
+      rgba(251, 132, 56, 0.9) 100%
     )
     fixed;
 }
@@ -67,7 +67,7 @@ button.navbar-toggler {
 
 .h2-big {
   font-size: 65px;
-  color: #581D00;
+  color: #581d00;
   font-weight: bolder;
 }
 
@@ -84,10 +84,9 @@ button.navbar-toggler {
 
 .btn {
   margin-top: 20px;
-  background-color: #FDCAB2;
-  color: #581D00;
-  border: solid 1px #F95204;
-
+  background-color: #fdcab2;
+  color: #581d00;
+  border: solid 1px #f95204;
 }
 
 /*-- Mouse --*/
@@ -167,7 +166,7 @@ button.navbar-toggler {
   font-size: 18px;
   text-align: left;
   line-height: 2;
-  color: #581D00;
+  color: #581d00;
 }
 
 .about-header {
