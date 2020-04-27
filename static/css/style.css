@@ -371,6 +371,9 @@ button[type="submit"] {
   border: solid 1px #f95204;
 }
 
+.contact-container {
+  margin-top: 50px;
+}
 
 /*-- Login --*/
 
