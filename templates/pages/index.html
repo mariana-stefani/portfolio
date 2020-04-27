@@ -1,4 +1,5 @@
 {% extends 'layout/base.html' %} {% block callout %}
+<!-- Flash message -->
 {% with messages = get_flashed_messages(with_categories=true) %}
   {% if messages %}
     {% for category, message in messages %}
@@ -11,6 +12,7 @@
   {%  endif %}{% endwith %}
   {% if 'username' in session %}
   {% else %}
+  <!-- Callout Container -->
 <section class="callout-container">
   <div class="main">
     <h1 class="h1-small">Hello, my name is</h1>
@@ -23,7 +25,8 @@
 </section>
 {% endif %}
 {% endblock %} {% block content %}
-<section class="container-fluid about-me">
+<!-- About Me Container -->
+<section class="container-fluid about-container">
   <div>
     <h1 class="about-header">About Me</h1>
   </div>
@@ -50,11 +53,11 @@
       ></a>
     {% endif %}
   </div>
-  <!-- Progress circle - tutorial from https://bootstrapious.com/p/circular-progress-bar -->
+  <!-- Progress Circle - tutorial from https://bootstrapious.com/p/circular-progress-bar -->
   <div class="row progress-container">
     {% for skill in skills %}
     <div class="col mb-4">
-      <!-- Progress bar 1 -->
+      <!-- Skills Progress -->
       <div class="progress mx-auto" data-value="{{skill.percent}}">
         <span class="progress-left">
           <span class="progress-bar {{skill.colour}}"></span>
@@ -84,6 +87,9 @@
   </div>
 </section>
 
+
+
+<!-- Footer -->
 {% endblock %} {% block footer %}
 <footer class="container-fluid">
   <div id="footer-details" class="row">
