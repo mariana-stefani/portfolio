@@ -335,6 +335,8 @@ button.navbar-toggler {
 
 .aroma-p {
   text-align: left;
+  border-radius: 10px;
+  padding: 25px;
 }
 
 /*-- Login --*/
