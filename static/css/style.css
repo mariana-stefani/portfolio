@@ -349,6 +349,29 @@ hr {
   margin-top: 50px;
 }
 
+/*-- Contact Form --*/
+.contact-heading {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.center-form {
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+button[type="submit"] {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #fdcab2;
+  color: #581d00;
+  border: solid 1px #f95204;
+}
+
+
 /*-- Login --*/
 
 .login-container {
