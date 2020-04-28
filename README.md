@@ -34,5 +34,14 @@ The website is fully responsive, has a consistent flow and an intuitive navigati
 * Be able to attract attention to my projects.
 * Sell myself in a profession but still personal way.
 
+## User Requirements and Expectations:
+
+**Requirements:**
+
+* Navigate through the sections of the portfolio in one single page.
+* Content displayed in a visual appealing manor.
+* Be provided with a contact form, to easily contact the developer.
+* Be able to see a live version of the developer projects.
+
 
 
