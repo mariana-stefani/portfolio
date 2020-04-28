@@ -1,6 +1,6 @@
-//Progress Circle
-// Tutorial from https://bootstrapious.com/p/circular-progress-bar
-
+/**
+ * Creates Progress Circle - Tutorial from https://bootstrapious.com/p/circular-progress-bar
+ */
 $(function () {
   $(".progress").each(function () {
     let value = $(this).attr("data-value");
@@ -21,13 +21,19 @@ $(function () {
     }
   });
 
+/**
+ * Transform the percentage to degrees
+ * @param {number} percentage 
+ */
   function percentageToDegrees(percentage) {
     return (percentage / 100) * 360;
   }
 });
 
-//Email JS
-
+/**
+ * Sends email through the contact form
+ * @param {object} contactForm 
+ */
 function sendMail(contactForm) {
   emailjs.send("gmail", "mariana", {
       "from_name": contactForm.name.value,
@@ -55,3 +61,16 @@ function sendMail(contactForm) {
 
   return false; 
 }
+
+/**
+ * When user scroll an ID is added to the nav to add background-color
+ */
+let navbar = $(".navbar");
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 0) {
+      navbar.addClass('nav-show');
+  } else {
+      navbar.removeClass('nav-show');
+  }
+});
