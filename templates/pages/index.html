@@ -130,7 +130,7 @@
       ><img class="project-img" src="static/images/aroma.png"
     /></a>
   </div>
-  <hr>
+  <hr />
   <!-- Marmita Project -->
   <div class="row each-project">
     <a href="https://mariana-stefani.github.io/marmita/" target="_blank"
@@ -172,23 +172,49 @@
 <!-- Contact Form -->
 <section id="contact-link" class="container-fluid contact-container">
   <div class="row">
-      <div class="col">
-          <h3 class="contact-heading text-center">Got a project in mind?</h3>
-          <h5 class="uppercase text-center">Let's work together!</h5>
-          <div class="email-alert">Your message has been sent!</div>
-          <div class="center-form">
-              <form id="contact-form" onsubmit="return sendMail(this);">
-                  <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                  <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-                  <textarea rows="5" name="contactsummary" id="contactsummary" class="form-control" placeholder="Project description" required></textarea>
-                  <div class="form-row text-center">
-                      <div class="col">
-                          <button type="submit" class="btn btn-secondary">Send Project Request</button>
-                      </div>
-                  </div>
-              </form>
+    <div class="col">
+      <h3 class="contact-heading text-center">Get In Touch</h3>
+      <h5 class="uppercase text-center">
+        I'm currently looking for new opportunities. If you’d like to reach out
+        about a project or a job opportunity, just drop me a message below.
+      </h5>
+      <div class="email-alert">Your message has been sent!</div>
+      <div class="center-form">
+        <form id="contact-form" onsubmit="return sendMail(this);">
+          <input
+            type="text"
+            name="name"
+            id="fullname"
+            class="form-control"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="emailaddress"
+            class="form-control"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            rows="5"
+            name="contactsummary"
+            id="contactsummary"
+            class="form-control"
+            placeholder="Project description"
+            required
+          ></textarea>
+          <div class="form-row text-center">
+            <div class="col">
+              <button type="submit" class="btn btn-secondary">
+                Send Project Request
+              </button>
+            </div>
           </div>
+        </form>
       </div>
+    </div>
   </div>
 </section>
 
