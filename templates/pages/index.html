@@ -23,14 +23,14 @@
 <!-- About Me Container -->
 <section id="about-link" class="container-fluid about-container">
   <div>
-    <h1 class="about-header">About Me</h1>
+    <h1 class="header-colour">About Me</h1>
   </div>
   <div class="row">
     <div class="portrait-container col-md-12 col-lg-6">
       <img class="portrait" src="static/images/Mariana.png" />
     </div>
     <div class="about-p-container col-md-12 col-lg-6">
-      <p class="about-p">
+      <p class="about-p p-colour">
         I'm based in London and I started my code journey in 2018 when I became
         a full-stack student at
         <span class="ci">Code Institute</span>.<br />
@@ -40,11 +40,11 @@
     </div>
   </div>
   <div class="skillset">
-    <h3>Skillset</h3>
+    <h3 class="header-colour">Skillset</h3>
     {% if 'username' in session %}
     <a
       href="{{url_for('add_skill', skill_id=skill._id)}}"
-      class="btn btn-primary"
+      class="btn"
       >Add Skill
       <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
     ></a>
@@ -68,17 +68,17 @@
           </div>
         </div>
       </div>
-      <p class="progress-p">{{skill.percent}}<sup class="small">%</sup></p>
+      <p class="progress-p p-colour">{{skill.percent}}<sup class="small">%</sup></p>
       {% if 'username' in session %}
       <a
         href="{{url_for('edit_skill', skill_id=skill._id)}}"
-        class="btn btn-primary"
+        class="btn"
         >Edit
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
       <a
         href="{{url_for('delete_skill', skill_id=skill._id)}}"
-        class="btn btn-primary"
+        class="btn"
         >Delete
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
@@ -89,9 +89,10 @@
 </section>
 
 <!-- Projects -->
+{% if 'username' in session %} {% else %}
 <section id="projects-link" class="container-fluid projects-container">
-  <h1 class="">Projects</h1>
-  <p class="projects-p">
+  <h1 class="header-colour">Projects</h1>
+  <p class="projects-p p-colour">
     Here are a few projects that I've worked on recently.
   </p>
   <!-- Aroma Healing Project -->
@@ -101,7 +102,7 @@
       <p class="projects-p">
         Aroma Healing
       </p>
-      <p>
+      <p class="p-colour">
         This website was designed for people who are looking for an aromatherapy
         course around the world. The website has a bonus to provide some useful
         recipes to heal the most common affliction with the use of essential
@@ -141,7 +142,7 @@
       <p class="projects-p">
         Marmita
       </p>
-      <p>
+      <p class="p-colour">
         This website was designed for a small start-up that sells frozen
         homemade food. In this website the user can see the food options and
         prices, check some videos, send their order and find the contact details
@@ -173,9 +174,9 @@
 <section id="contact-link" class="container-fluid contact-container">
   <div class="row">
     <div class="col">
-      <h3 class="contact-heading text-center">Get In Touch</h3>
-      <h5 class="uppercase text-center">
-        I'm currently looking for new opportunities. If you’d like to reach out
+      <h3 class="contact-heading text-center header-colour">Get In Touch</h3>
+      <h5 class="contact-p p-colour">
+        I'm currently looking for new opportunities.<br/> If you’d like to reach out
         about a project or a job opportunity, just drop me a message below.
       </h5>
       <div class="email-alert">Your message has been sent!</div>
@@ -217,7 +218,7 @@
     </div>
   </div>
 </section>
-
+{% endif %}
 <!-- Footer -->
 {% endblock %} {% block footer %}
 <footer class="container-fluid">
