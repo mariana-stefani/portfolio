@@ -27,3 +27,12 @@ The website is fully responsive, has a consistent flow and an intuitive navigati
 **Mr. Bridgeman**
 
 *“When I’m looking for a new employee it’s important to be able to see the developers code and what skills he or she have already learned. When looking through a portfolio I expect the skills section to be easily readable and to clearly show how much of each skill the developer knows approximately. I also expect a link to the developer’s GitHub repository, so I can go read the developer’s code.”*
+
+#### **Site Owner Goals:**
+
+* Receive interview offers through use of contact form.
+* Be able to attract attention to my projects.
+* Sell myself in a profession but still personal way.
+
+
+
