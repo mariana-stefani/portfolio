@@ -48,6 +48,15 @@ button.navbar-toggler {
 .hi-user {
   display: block;
   padding: 0.5rem 1rem;
+  color: #581d00;
+}
+
+.header-colour {
+  color: #a43500;
+}
+
+.p-colour {
+  color: #581d00
 }
 
 /*-- Callout Container --*/
@@ -96,6 +105,10 @@ button.navbar-toggler {
   background-color: #fdcab2;
   color: #581d00;
   border: solid 1px #f95204;
+}
+
+.btn:hover {
+  background: #f95204;
 }
 
 /*-- Mouse --*/
@@ -176,11 +189,6 @@ button.navbar-toggler {
   font-size: 18px;
   text-align: left;
   line-height: 2;
-  color: #581d00;
-}
-
-.about-header {
-  color: #a43500;
 }
 
 .ci {
@@ -327,7 +335,6 @@ button.navbar-toggler {
 
 .projects-p {
   font-size: 20px;
-  color: #581d00;
   margin-top: 20px;
 }
 
@@ -365,6 +372,11 @@ hr {
   font-weight: 300;
   margin-top: 25px;
   margin-bottom: 20px;
+}
+
+.contact-p {
+  text-align: center;
+  line-height: 2;
 }
 
 .center-form {
