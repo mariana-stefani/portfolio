@@ -3,10 +3,10 @@
 
 $(function () {
   $(".progress").each(function () {
-    var value = $(this).attr("data-value");
-    var left = $(this).find(".progress-left .progress-bar");
-    var right = $(this).find(".progress-right .progress-bar");
-    var bar = $(this).find(".progress");
+    let value = $(this).attr("data-value");
+    let left = $(this).find(".progress-left .progress-bar");
+    let right = $(this).find(".progress-right .progress-bar");
+    let bar = $(this).find(".progress");
 
     if (value > 0) {
       if (value <= 50) {
