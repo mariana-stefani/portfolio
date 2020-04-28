@@ -50,6 +50,15 @@ The website is fully responsive, has a consistent flow and an intuitive navigati
 * Form sends message correctly.
 * Content is well presented and visually satisfying.
 
+#### **Design Choices:**
 
+The design choice of this website was based on the personal branding I want to build to myself. 
+
+**Fonts**
+
+
+**Icons:**
+
+All the icons used are self-explanatory, in order to easily show to the user what is representing.
 
 
