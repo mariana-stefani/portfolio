@@ -61,4 +61,7 @@ The design choice of this website was based on the personal branding I want to b
 
 All the icons used are self-explanatory, in order to easily show to the user what is representing.
 
+### **Wireframes**
 
+The wireframes for this project were created at [Moqups](https://moqups.com/).
+Viw my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/master/wireframes)
