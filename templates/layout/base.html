@@ -38,6 +38,7 @@
                 <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
               </li>
             {% endif %}
+            {% if 'username' in session %}{% else%}
             <li class="active nav-item mr-2">
               <a class="nav-link" href="{{url_for('index')}}">Home</a>
             </li>
@@ -50,6 +51,7 @@
             <li class="nav-item mr-2">
               <a class="nav-link" href="#contact-link">Contact</a>
             </li>
+            {% endif %}
           </ul>
         </div>
       </nav>
