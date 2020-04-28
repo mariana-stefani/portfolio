@@ -19,8 +19,13 @@ nav {
   width: 100%;
 }
 
-.nav-show{
-  background-color: rgba(255, 255, 255, 0.15);
+.nav-show {
+  background: linear-gradient(
+      90deg,
+      rgba(249, 82, 4, 1) 0%,
+      rgba(251, 132, 56, 1) 100%
+    )
+    fixed;
 }
 
 .navbar-brand {
