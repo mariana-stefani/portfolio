@@ -43,5 +43,13 @@ The website is fully responsive, has a consistent flow and an intuitive navigati
 * Be provided with a contact form, to easily contact the developer.
 * Be able to see a live version of the developer projects.
 
+**Expectations:**
+
+* Navigation takes user directly to desired section of the portfolio.
+* CV opens in a new tab when clicked.
+* Form sends message correctly.
+* Content is well presented and visually satisfying.
+
+
 
 
