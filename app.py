@@ -66,32 +66,22 @@ def skills():
 
 
 # Route to insert new skill to MongoDB database
-@app.route('/update_skill/<skill_id>', methods=['GET','POST'])
-def update_skill():
-    skills = mongo.db.skills
-    skills.insert_one(request.form.to_dict())
-    return redirect(url_for('index'))
-
-
-# Route to display skill to be edited
-@app.route('/edit_skill/<skill_id>')
-def edit_skill(skill_id):
-    skill = mongo.db.skills.find_one({'_id': ObjectId(skill_id)})
-    skills = mongo.db.skills.find()
-    return render_template('pages/edit_skill.html', skill=skill, skills=skills)
-
-
-# Route to send updated skill to MongoDB database
-@app.route('/update_skill/<skill_id>', methods=['POST'])
+@app.route('/update_skill/<skill_id>', methods=['GET', 'POST'])
 def update_skill(skill_id):
-    skills = mongo.db.skills
-    skills.update({'_id': ObjectId(skill_id)},
-                  {'skill_name': request.form.get('skill_name'),
-                   'percent': request.form.get('percent'),
-                   'colour': request.form.get('colour'),
-                   'icon': request.form.get('icon')
-                   })
-    return redirect(url_for('index'))
+    if request.method == 'GET':
+        skill = mongo.db.skills.find_one({'_id': ObjectId(skill_id)})
+        skills = mongo.db.skills.find()
+        return render_template('pages/edit_skill.html', skill=skill, skills=skills)
+    elif request.method == 'POST':
+        skills = mongo.db.skills
+        skills.update({'_id': ObjectId(skill_id)},
+                      {'skill_name': request.form.get('skill_name'),
+                       'percent': request.form.get('percent'),
+                       'colour': request.form.get('colour'),
+                       'icon': request.form.get('icon')
+                       })
+        return redirect(url_for('index'))
+
 
 
 # Route to delete skill from MongoDB database
