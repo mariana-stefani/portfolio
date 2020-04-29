@@ -54,8 +54,8 @@ def logout():
 
 
 # Route to add new skill
-@app.route('/add_skill')
-def add_skill():
+@app.route('/skills')
+def skills():
     skills = mongo.db.skills.find()
     return render_template('pages/add_skill.html', skills=skills)
 
