@@ -18,7 +18,6 @@ mongo = PyMongo(app)
 
 # Route for index
 @app.route('/')
-@app.route('/index')
 def index():
     skills = mongo.db.skills.find()
     skill = mongo.db.skills.find_one()
