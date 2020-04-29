@@ -43,7 +43,7 @@
     <h3 class="header-colour">Skillset</h3>
     {% if 'username' in session %}
     <a
-      href="{{url_for('add_skill', skill_id=skill._id)}}"
+      href="{{url_for('skills', skill_id=skill._id)}}"
       class="btn"
       >Add Skill
       <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
