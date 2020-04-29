@@ -83,11 +83,12 @@ def update_skill(skill_id):
         return redirect(url_for('index'))
 
 
-
 # Route to delete skill from MongoDB database
 @app.route('/delete_skill/<skill_id>')
 def delete_skill(skill_id):
     mongo.db.skills.remove({'_id': ObjectId(skill_id)})
+    flash('Your skill has bee deleted.',
+          'success text-center')
     return redirect(url_for('index'))
 
 
