@@ -54,7 +54,7 @@ def logout():
 
 
 # Route to add new skill
-@app.route('/skills')
+@app.route('/skills', methods=['GET', 'POST'])
 def skills():
     if request.method == 'GET':
         skills = mongo.db.skills.find()
