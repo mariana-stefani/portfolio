@@ -56,8 +56,13 @@ def logout():
 # Route to add new skill
 @app.route('/skills')
 def skills():
-    skills = mongo.db.skills.find()
-    return render_template('pages/add_skill.html', skills=skills)
+    if request.method == 'GET':
+        skills = mongo.db.skills.find()
+        return render_template('pages/add_skill.html', skills=skills)
+    else:
+        skills = mongo.db.skills
+        skills.insert_one(request.form.to_dict())
+        return redirect(url_for('index'))
 
 
 # Route to insert new skill to MongoDB database
