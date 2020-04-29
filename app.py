@@ -66,8 +66,8 @@ def skills():
 
 
 # Route to insert new skill to MongoDB database
-@app.route('/insert_skill', methods=['POST'])
-def insert_skill():
+@app.route('/update_skill/<skill_id>', methods=['GET','POST'])
+def update_skill():
     skills = mongo.db.skills
     skills.insert_one(request.form.to_dict())
     return redirect(url_for('index'))
