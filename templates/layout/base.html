@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Head -->
+    {% include 'layout/head.html' %}
     {% block head %}{% endblock %}
   </head>
   
   <body>
     <header>
       <!-- Navbar -->
+      {% include 'layout/navbar.html' %}
       {% block navbar %}{% endblock %}
     </header>
 
@@ -18,9 +19,12 @@
     {% block content %}{% endblock %}
 
     <!-- Footer -->
+    {% include 'layout/footer.html' %}
     {% block footer %}{% endblock %}
 
-    <!-- Scripts -->
+    <!-- Scripts  -->
+    {% include 'layout/scripts.html' %}
     {% block scripts %}{% endblock %}
+    
   </body>
 </html>
