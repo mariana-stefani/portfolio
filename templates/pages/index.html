@@ -152,54 +152,9 @@
 </section>
 
 <!-- Contact Form -->
-<section id="contact-link" class="container-fluid contact-container">
-  <div class="row">
-    <div class="col">
-      <h3 class="contact-heading text-center header-colour">Get In Touch</h3>
-      <h5 class="contact-p p-colour">
-        I'm currently looking for new opportunities.<br/> If you’d like to reach out
-        about a project or a job opportunity, just drop me a message below.
-      </h5>
-      <div class="email-alert">Your message has been sent!</div>
-      <div class="center-form">
-        <form id="contact-form" onsubmit="return sendMail(this);">
-          <input
-            type="text"
-            name="name"
-            id="fullname"
-            class="form-control"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="emailaddress"
-            class="form-control"
-            placeholder="Email"
-            required
-          />
-          <textarea
-            rows="5"
-            name="contactsummary"
-            id="contactsummary"
-            class="form-control"
-            placeholder="Get In Touch"
-            required
-          ></textarea>
-          <div class="form-row text-center">
-            <div class="col">
-              <button type="submit" class="btn">
-                Send Email
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
+{% block form %}
+{% endblock %}
+
 <!-- Footer -->
 {% endblock %} {% block footer %}
 <footer class="container-fluid">
