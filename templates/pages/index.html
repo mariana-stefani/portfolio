@@ -1,24 +1,29 @@
 {% extends 'layout/base.html' %} 
 
+<!-- Callout Container -->
+{% include 'components/callout.html' %}
+{% block callout %}
+{% endblock %} 
+
 <!-- About Me Container -->
+{% include 'components/about.html' %}
 {% block content %}
 
 <!-- Projects -->
 {% if 'username' in session %} 
 {% else %}
+{% include 'components/projects.html' %}
 {% block projects %}
 {% endblock %}
 
 <!-- Contact Form -->
+{% include 'components/form.html' %}
 {% block form %}
 {% endblock %}
 
-<!-- Endif from projects section -->
+<!-- End if for projects section -->
 {% endif %}
 
-<!-- Endblock content section -->
-{% endblock %} 
-
-<!-- Footer -->
-{% block footer %}
+<!-- End block for block content -->
 {% endblock %}
+
