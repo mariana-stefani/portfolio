@@ -1,25 +1,6 @@
-{% extends 'layout/base.html' %} {% block callout %}
-<!-- Flash message -->
-{% with messages = get_flashed_messages(with_categories=true) %} {% if messages
-%} {% for category, message in messages %}
-<div class="container">
-  <div class="flash alert alert-{{category }}">
-    {{ message }}
-  </div>
-</div>
-{% endfor %} {% endif %}{% endwith %} {% if 'username' in session %} {% else %}
-<!-- Callout Container -->
-<section class="callout-container">
-  <div class="main">
-    <h1 class="h1-small">Hello, my name is</h1>
-    <h2 class="h2-big">Mariana Stefani.</h2>
-    <h3 class="h3-big">I'm a full-stack web developer</h3>
-    <p class="p-main">I code pretty things always with the user in mind.</p>
-    <button type="button" class="btn btn-light">Let's Talk!</button>
-    <div class="scroll-down"></div>
-  </div>
-</section>
-{% endif %} {% endblock %} {% block content %}
+{% extends 'layout/base.html' %} 
+
+{% block content %}
 <!-- About Me Container -->
 <section id="about-link" class="container-fluid about-container">
   <div>
