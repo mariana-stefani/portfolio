@@ -7,38 +7,7 @@
   <body>
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-light navbar-expand-sm">
-        <a href="{{url_for('index')}}" class="navbar-brand">Mariana</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            {% if 'username' in session %}
-              <li class="nav-item mr-2">
-                <div class="hi-user">Hi {{session['username']}}!</div>
-              </li>
-              <li class="nav-item mr-2">
-                <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
-              </li>
-            {% endif %}
-            {% if 'username' in session %}{% else%}
-            <li class="active nav-item mr-2">
-              <a class="nav-link" href="{{url_for('index')}}">Home</a>
-            </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="#about-link">About me</a>
-            </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="#projects-link">Portfolio</a>
-            </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link" href="#contact-link">Contact</a>
-            </li>
-            {% endif %}
-          </ul>
-        </div>
-      </nav>
+      {% block navbar %}{% endblock %}
     </header>
 
     <!-- Callout Container -->
