@@ -80,7 +80,7 @@ def skills():
 
 
 # Route to insert new skill to MongoDB database
-@app.route('/update_skill/<skill_id>', methods=['GET', 'POST'])
+@app.route('/admin/update_skill/<skill_id>', methods=['GET', 'POST'])
 def update_skill(skill_id):
     """
     If request is GET displays edit_skill page that was previously filled by user.
