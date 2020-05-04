@@ -74,3 +74,19 @@ $(window).scroll(function() {
       navbar.removeClass('nav-show');
   }
 });
+
+/**
+ * Initializes emailjs
+ */
+(function() {
+  emailjs.init("user_ihMVh8GieFlqswQcnywX0");
+})();
+
+/**
+ * Sends email when button is clicked
+ */
+$("#contact-form").submit(function(e) {
+  e.preventDefault();
+  sendMail(this);
+});
+
