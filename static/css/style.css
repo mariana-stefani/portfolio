@@ -597,14 +597,14 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   text-align: left;
   background-color: #1e2021;
   padding: 20px;
-  width: 200px;
+  width: 180px;
   position: absolute;
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   right: -4px;
   color: #fff;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .help-tip p:before {
