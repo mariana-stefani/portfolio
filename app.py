@@ -19,6 +19,9 @@ mongo = PyMongo(app)
 # Route for index
 @app.route('/')
 def index():
+    """
+    Render index template and find skills on MongoDB
+    """
     skills = mongo.db.skills.find()
     skill = mongo.db.skills.find_one()
     return render_template('pages/index.html', skills=skills, skill=skill)
@@ -26,6 +29,10 @@ def index():
 # Route for Login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """
+    Render login page and checks if user exists. If it does log user in and display message.
+    If not display message saying login was unsuccessful.
+    """
     form = LoginForm()
     if form.validate_on_submit():
         users = mongo.db.users
@@ -49,6 +56,9 @@ def login():
 # Logout Route
 @app.route('/logout')
 def logout():
+    """
+    Clear session to log user out.
+    """
     session.clear()
     return redirect(url_for('index'))
 
@@ -56,6 +66,10 @@ def logout():
 # Route to add new skill
 @app.route('/skills', methods=['GET', 'POST'])
 def skills():
+    """
+    If request is GET displays add_skill page to be filled by user.
+    If request is POST sends filled information to MongoDB.
+    """
     if request.method == 'GET':
         skills = mongo.db.skills.find()
         return render_template('pages/add_skill.html', skills=skills)
@@ -68,6 +82,10 @@ def skills():
 # Route to insert new skill to MongoDB database
 @app.route('/update_skill/<skill_id>', methods=['GET', 'POST'])
 def update_skill(skill_id):
+    """
+    If request is GET displays edit_skill page that was previously filled by user.
+    If request is POST sends updated information to MongoDB.
+    """
     if request.method == 'GET':
         skill = mongo.db.skills.find_one({'_id': ObjectId(skill_id)})
         skills = mongo.db.skills.find()
@@ -86,6 +104,9 @@ def update_skill(skill_id):
 # Route to delete skill from MongoDB database
 @app.route('/delete_skill/<skill_id>')
 def delete_skill(skill_id):
+    """
+    Deletes selected skill, identified by skill_id and display message saying skill was deleted.
+    """
     mongo.db.skills.remove({'_id': ObjectId(skill_id)})
     flash('Your skill has bee deleted.',
           'success text-center')
