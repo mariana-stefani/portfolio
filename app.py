@@ -27,8 +27,8 @@ def index():
     return render_template('pages/index.html', skills=skills, skill=skill)
 
 # Route for Login
-@app.route('/login', methods=['GET', 'POST'])
-def login():
+@app.route('/admin', methods=['GET', 'POST'])
+def admin():
     """
     Render login page and checks if user exists. If it does log user in and display message.
     If not display message saying login was unsuccessful.
