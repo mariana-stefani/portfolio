@@ -102,7 +102,7 @@ def update_skill(skill_id):
 
 
 # Route to delete skill from MongoDB database
-@app.route('/delete_skill/<skill_id>')
+@app.route('/admin/delete_skill/<skill_id>')
 def delete_skill(skill_id):
     """
     Deletes selected skill, identified by skill_id and display message saying skill was deleted.
