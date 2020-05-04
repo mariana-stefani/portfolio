@@ -64,7 +64,7 @@ def logout():
 
 
 # Route to add new skill
-@app.route('/skills', methods=['GET', 'POST'])
+@app.route('/admin/skills', methods=['GET', 'POST'])
 def skills():
     """
     If request is GET displays add_skill page to be filled by user.
