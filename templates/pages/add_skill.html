@@ -4,16 +4,17 @@
   <h3>Add new skill</h3>
   <form class="col s12" action="{{url_for('skills')}}" method="POST">
     <div class="form-group">
-      <i class="fas fa-question-circle help-tip"><p>Name of your new skill <br> e.g. HTML 5. </p></i>
+      <i class="fas fa-question-circle help-tip"><p>Name of your new skill<br>e.g. HTML 5. </p></i>
       <label for="skill_name">Skill</label>
       <input type="text" class="form-control" name="skill_name" id="skill_name" />
     </div>
     <div class="form-group">
-      <i class="fas fa-question-circle help-tip"><p>The percentage you have learned of this skill. Write without the '%' sign. </p></i>
+      <i class="fas fa-question-circle help-tip"><p>The percentage you have learned of this skill.<br>Write without the '%' sign. </p></i>
       <label for="percent">Percentage learned</label>
       <input type="percent" class="form-control" name="percent" id="percent" />
     </div>
     <div class="form-group">
+      <i class="fas fa-question-circle help-tip"><p>The CSS class name of this skill<br>e.g. html-colour</p></i>
       <label for="colour">Skill colour class</label>
       <input type="text" class="form-control" name="colour" id="colour" />
     </div>
