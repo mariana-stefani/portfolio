@@ -20,8 +20,8 @@ nav {
 }
 
 @media screen and (max-width: 575px) {
-  nav{
-  background-color: rgba(249, 82, 4, 0.7);
+  nav {
+    background-color: rgba(249, 82, 4, 0.7);
   }
 }
 
@@ -443,6 +443,8 @@ footer {
   text-align: center;
   background-color: white;
   padding: 5px 0px 5px 0px;
+  position: fixed;
+  bottom: 0px;
 }
 
 #footer-details {
