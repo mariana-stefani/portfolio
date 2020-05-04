@@ -4,3 +4,5 @@ Pipfile.lock
 env.py
 __pycache__
 .htmlhintrc
+node_modules
+package-lock.json
