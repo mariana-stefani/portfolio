@@ -400,6 +400,7 @@ button[type="submit"] {
   border: solid 1px #f95204;
   border-radius: 1rem;
   padding: 10px;
+  font-weight: 600;
 }
 
 .contact-container {
