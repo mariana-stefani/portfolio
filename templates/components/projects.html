@@ -4,6 +4,12 @@
   <p class="projects-p p-colour">
     Here are a few projects that I've worked on recently.
   </p>
+  {% if 'username' in session %}
+    <a href="{{url_for('projects', project_id=project._id)}}" class="btn"
+      >Add Project
+      <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
+    ></a>
+    {% endif %}
   <!-- Aroma Healing Project -->
   <div class="row each-project">
     <div class="project-desc col-lg-4 col-10">
