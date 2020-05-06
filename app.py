@@ -112,7 +112,7 @@ def delete_skill(skill_id):
     return redirect(url_for('index'))
 
 
-# Route to add new skill
+# Route to add new project
 @app.route('/admin/projects', methods=['GET', 'POST'])
 def projects():
     """
@@ -128,6 +128,28 @@ def projects():
         flash('Your project has been successfully added.')
         return redirect(url_for('index'))
 
+# Route to insert new project to MongoDB database
+@app.route('/admin/update_project/<project_id>', methods=['GET', 'POST'])
+def update_project(project_id):
+    """
+    If request is GET displays edit_project page that was previously filled by user.
+    If request is POST sends updated information to MongoDB.
+    """
+    if request.method == 'GET':
+        project = mongo.db.projects.find_one({'_id': ObjectId(project_id)})
+        projects = mongo.db.projects.find()
+        return render_template('pages/edit_skill.html', project=project, projects=projects)
+    elif request.method == 'POST':
+        projects = mongo.db.projects
+        projects.update({'_id': ObjectId(project_id)},
+                      {'project_name': request.form.get('project_name'),
+                       'project_desc': request.form.get('project_desc'),
+                       'project_github': request.form.get('project_github'),
+                       'project_live': request.form.get('project_live'),
+                       'project_img': request.form.get('project_img')
+                       })
+        flash('Your project has been successfully updated.')
+        return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
