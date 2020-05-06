@@ -473,6 +473,11 @@ button[type="submit"] {
   height: auto;
 }
 
+.add-title {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 /*-- Toast --*/
 
 .toast-container {

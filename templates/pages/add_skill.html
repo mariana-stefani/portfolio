@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %} {% block content %}
 
 <section class="container add-container">
-  <h3>Add new skill</h3>
+  <h3 class="add-title">Add new skill</h3>
   <form class="col s12" action="{{url_for('skills')}}" method="POST">
     <div class="form-group">
       <i class="fas fa-question-circle help-tip"><p>Name of your new skill<br>e.g. HTML 5. </p></i>
