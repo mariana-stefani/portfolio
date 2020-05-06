@@ -89,9 +89,3 @@ $("#contact-form").submit(function(e) {
   e.preventDefault();
   sendMail(this);
 });
-
-
-/**
- * Display toast message when login fails
- */
-$(".toast").toast('show');
