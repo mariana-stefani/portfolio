@@ -705,6 +705,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   display: block;
   left: -11px;
   margin-top: 5px;
+  text-align: center;
   transform-origin: 100% 0%;
   font-size: 14px;
   font-family: "Poppins", sans-serif !important;
