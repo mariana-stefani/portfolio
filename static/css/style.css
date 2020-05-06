@@ -439,7 +439,7 @@ button[type="submit"] {
   height: 500px;
 }
 
-/*-- Login Toast --*/
+/*-- Toast --*/
 
 .toast-container {
   border-radius: 5px;
@@ -483,6 +483,10 @@ button[type="submit"] {
 .about-toast-i {
   text-align: center;
   color: #155724;
+}
+
+.hide-toast {
+  display: none !important;
 }
 
 .animated {
