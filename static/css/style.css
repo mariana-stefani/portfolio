@@ -445,7 +445,7 @@ button[type="submit"] {
   border-radius: 5px;
   font-family: sans-serif;
   line-height: 1.5;
-  max-width: 50%;
+  max-width: 90%;
   padding: 1rem 2rem;
   margin-top: 100px;
 }
