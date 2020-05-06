@@ -454,10 +454,10 @@ button[type="submit"] {
   font-size: 16px;
 }
 
-.login-toast{
+.login-toast {
   color: #721c24;
   background-color: #f8d7da;
-  border: solid 3px #F1B0B7;
+  border: solid 3px #f1b0b7;
   margin-bottom: -150px;
 }
 
@@ -468,6 +468,21 @@ button[type="submit"] {
 .login-toast-i {
   text-align: center;
   color: #721c24;
+}
+
+.about-toast {
+  color: #155724;
+  background-color: #d4edda;
+  border: solid 3px #c3e6cb;
+}
+
+.about-toast-body {
+  color: #155724;
+}
+
+.about-toast-i {
+  text-align: center;
+  color: #155724;
 }
 
 .animated {
@@ -482,30 +497,29 @@ button[type="submit"] {
 
 @-webkit-keyframes rotateIn {
   0% {
-     -webkit-transform-origin: center center;
-     -webkit-transform: rotate(-360deg);
-     opacity: 0;
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-360deg);
+    opacity: 0;
   }
   100% {
-     -webkit-transform-origin: center center;
-     -webkit-transform: rotate(0);
-     opacity: 1;
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1;
   }
 }
 
 @keyframes rotateIn {
   0% {
-     transform-origin: center center;
-     transform: rotate(-360deg);
-     opacity: 0;
+    transform-origin: center center;
+    transform: rotate(-360deg);
+    opacity: 0;
   }
   100% {
-     transform-origin: center center;
-     transform: rotate(0);
-     opacity: 1;
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1;
   }
 }
-
 
 /*-- Footer --*/
 footer {
