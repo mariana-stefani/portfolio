@@ -424,7 +424,10 @@ button[type="submit"] {
 .contact-img img {
   border-radius: 6rem;
   width: 12%;
-  margin-top: -5%;
+  margin-top: -6%;
+  border: solid 1px #E04A04;
+  box-shadow: 2px 2px rgba(109, 64, 76, 1);
+
 }
 
 @media (min-width: 1400px) {
