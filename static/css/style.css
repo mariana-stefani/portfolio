@@ -421,6 +421,13 @@ button[type="submit"] {
   padding: 10px;
 }
 
+.contact-img img {
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+
 
 .email-alert {
   display: none;
