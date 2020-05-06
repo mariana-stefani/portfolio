@@ -128,6 +128,7 @@ def projects():
         flash('Your project has been successfully added.')
         return redirect(url_for('index'))
 
+
 # Route to insert new project to MongoDB database
 @app.route('/admin/update_project/<project_id>', methods=['GET', 'POST'])
 def update_project(project_id):
@@ -138,7 +139,7 @@ def update_project(project_id):
     if request.method == 'GET':
         project = mongo.db.projects.find_one({'_id': ObjectId(project_id)})
         projects = mongo.db.projects.find()
-        return render_template('pages/edit_skill.html', project=project, projects=projects)
+        return render_template('pages/edit_project.html', project=project, projects=projects)
     elif request.method == 'POST':
         projects = mongo.db.projects
         projects.update({'_id': ObjectId(project_id)},
@@ -150,6 +151,17 @@ def update_project(project_id):
                        })
         flash('Your project has been successfully updated.')
         return redirect(url_for('index'))
+
+
+# Route to delete project from MongoDB database
+@app.route('/admin/delete_project/<project_id>')
+def delete_project(project_id):
+    """
+    Deletes selected project, identified by project_id and display message saying project was deleted.
+    """
+    mongo.db.projects.remove({'_id': ObjectId(project_id)})
+    flash('Your project has been successfully deleted.')
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
