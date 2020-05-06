@@ -90,3 +90,8 @@ $("#contact-form").submit(function(e) {
   sendMail(this);
 });
 
+
+/**
+ * Display toast message when login fails
+ */
+$(".toast").toast('show');
