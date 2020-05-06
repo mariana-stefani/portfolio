@@ -21,7 +21,7 @@ nav {
 
 @media screen and (max-width: 575px) {
   nav {
-    background-color: rgba(249, 82, 4, 0.7);
+    background-color: rgba(249, 82, 4);
   }
 }
 
