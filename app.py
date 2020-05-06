@@ -97,6 +97,7 @@ def update_skill(skill_id):
                        'colour': request.form.get('colour'),
                        'icon': request.form.get('icon')
                        })
+        flash('Your skill has been successfully updated.')
         return redirect(url_for('index'))
 
 
