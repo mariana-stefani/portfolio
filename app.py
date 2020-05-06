@@ -112,6 +112,23 @@ def delete_skill(skill_id):
     return redirect(url_for('index'))
 
 
+# Route to add new skill
+@app.route('/admin/projects', methods=['GET', 'POST'])
+def projects():
+    """
+    If request is GET displays add_project page to be filled by user.
+    If request is POST sends filled information to MongoDB.
+    """
+    if request.method == 'GET':
+        projects = mongo.db.projects.find()
+        return render_template('pages/add_project.html', projects=projects)
+    else:
+        projects = mongo.db.projects
+        projects.insert_one(request.form.to_dict())
+        flash('Your project has been successfully added.')
+        return redirect(url_for('index'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=(os.environ.get('PORT')),
