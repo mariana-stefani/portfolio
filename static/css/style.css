@@ -442,25 +442,30 @@ button[type="submit"] {
 /*-- Login Toast --*/
 
 .toast-container {
-  color: #721c24;
-  background-color: #f8d7da;
-  border: solid 3px #F1B0B7;
   border-radius: 5px;
-  color: #333;
   font-family: sans-serif;
   line-height: 1.5;
   max-width: 50%;
   padding: 1rem 2rem;
   margin-top: 100px;
-  margin-bottom: -150px;
 }
 
 .toast-body {
-  color: #721c24;
   font-size: 16px;
 }
 
-.toast-i {
+.login-toast{
+  color: #721c24;
+  background-color: #f8d7da;
+  border: solid 3px #F1B0B7;
+  margin-bottom: -150px;
+}
+
+.login-toast-body {
+  color: #721c24;
+}
+
+.login-toast-i {
   text-align: center;
   color: #721c24;
 }

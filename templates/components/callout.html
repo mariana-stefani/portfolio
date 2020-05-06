@@ -1,14 +1,22 @@
 {% block callout %}
 <!-- Flash message -->
-  {% if messages %} 
-    {% for message in messages %}
-      <div class="container">
-        <div class="flash alert alert-{{category }}">
-          {{ message }}
-        </div>
+{% with messages = get_flashed_messages() %} 
+{% if messages %} 
+{% for message in messages %}
+    <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
+      <div class="toast toast-container" role="alert" aria-live="assertive" data-delay="4000" aria-atomic="true">
+          <div class="toast-i">
+              <i class="fas fa-times-circle fa-4x animated rotateIn"></i>
+          </div>    
+          <div class="toast-body">
+              {{ message }}
+          </div>
       </div>
-    {% endfor %} 
-  {% endif %}
+    </div>    
+{% endfor %}
+{% endif %}
+{% endwith %}
+
 {% if 'username' in session %} 
 {% else %}
 <!-- Callout Container -->

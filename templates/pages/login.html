@@ -2,11 +2,11 @@
 {% with messages = get_flashed_messages() %} 
 {% if messages %} {% for message in messages %}
     <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
-        <div class="toast toast-container" role="alert" aria-live="assertive" data-delay="4000" aria-atomic="true">
-            <div class="toast-i">
+        <div class="toast toast-container login-toast" role="alert" aria-live="assertive" data-delay="4000" aria-atomic="true">
+            <div class="login-toast-i">
                 <i class="fas fa-times-circle fa-4x animated rotateIn"></i>
             </div>    
-            <div class="toast-body">
+            <div class="toast-body login-toast-body">
                 {{ message }}
             </div>
         </div>
