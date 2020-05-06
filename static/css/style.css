@@ -455,6 +455,12 @@ button[type="submit"] {
   margin-bottom: -150px;
 }
 
+.toast-body {
+  color: #721c24;
+  font-size: 16px;
+}
+
+
 /*-- Footer --*/
 footer {
   text-align: center;
