@@ -2,6 +2,34 @@
 
 <section class="container add-container">
     <h3>Add new project</h3>
+    <form class="col s12" action="{{url_for('projects')}}" method="POST">
+        <div class="form-group">
+            <i class="fas fa-question-circle help-tip"><p>Please add the name of your project.</p></i>
+            <label for="project_name">Project Name</label>
+            <input type="text" class="form-control" name="project_name" id="project_name" />
+          </div>
+          <div class="form-group">
+            <i class="fas fa-question-circle help-tip"><p>Please add a brief description of the project. </p></i>
+            <label for="project_desc">Description of Project</label>
+            <input type="text" maxlength="500" class="form-control" name="project_desc" id="project_desc" />
+          </div>
+          <div class="form-group">
+            <i class="fas fa-question-circle help-tip"><p>Please add the repository for this project.</p></i>
+            <label for="project_github">Github Repository</label>
+            <input type="text" class="form-control" name="project_github" id="project_github" />
+          </div>
+          <div class="form-group">
+            <i class="fas fa-question-circle help-tip"><p>Please add the live environment URL for this project.</p></i>
+            <label for="project_live">Project URL</label>
+            <input type="text" class="form-control" name="project_live" id="project_live" />
+          </div>
+          <div class="form-group">
+            <i class="fas fa-question-circle help-tip"><p>Please add the image to represent this project.</p></i>
+            <label for="project_img">Project Image</label>
+            <input type="text" class="form-control" name="project_img" id="project_img" />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+    </form>
 </section>
 
 {% endblock %}
