@@ -24,7 +24,9 @@ def index():
     """
     skills = mongo.db.skills.find()
     skill = mongo.db.skills.find_one()
-    return render_template('pages/index.html', skills=skills, skill=skill)
+    projects = mongo.db.projects.find()
+    project = mongo.db.projects.find_one()
+    return render_template('pages/index.html', skills=skills, skill=skill, projects=projects, project=project)
 
 # Route for Login
 @app.route('/admin', methods=['GET', 'POST'])
