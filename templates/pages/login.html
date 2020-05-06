@@ -1,15 +1,16 @@
-{% extends 'layout/base.html' %} {% block content %}
-{% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        {% for category, message in messages %}
-        <div class="container">
-            <div class="flash alert alert-{{category }}">
+{% extends 'layout/base.html' %} {% block content %} {% with messages =
+    get_flashed_messages(with_categories=true) %} {% if messages %} {% for category,
+    message in messages %}
+    <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
+        <div class="toast toast-container" role="alert" aria-live="assertive" data-delay="4000" aria-atomic="true">
+            <div class="toast-body">
                 {{ message }}
-              </div>
-        </div>          
-        {% endfor %}
-      {%  endif %}
-    {% endwith %}
+            </div>
+        </div>
+    </div>
+    
+    {% endfor %} {% endif %} {% endwith %}
+    
 
 <div class="container login-container">
     <form  method="POST" action="">
