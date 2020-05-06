@@ -1,6 +1,6 @@
-{% extends 'layout/base.html' %} {% block content %} {% with messages =
-    get_flashed_messages(with_categories=true) %} {% if messages %} {% for category,
-    message in messages %}
+{% extends 'layout/base.html' %} {% block content %} 
+{% with messages = get_flashed_messages(with_categories=true) %} 
+{% if messages %} {% for category, message in messages %}
     <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
         <div class="toast toast-container" role="alert" aria-live="assertive" data-delay="4000" aria-atomic="true">
             <div class="toast-i">
