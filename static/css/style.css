@@ -398,6 +398,8 @@ button[type="submit"] {
   background-color: #fdcab2;
   color: #581d00;
   border: solid 1px #f95204;
+  border-radius: 1rem;
+  padding: 10px;
 }
 
 .contact-container {
@@ -406,11 +408,11 @@ button[type="submit"] {
   width: 70%;
 }
 
-.contact-container .form-control{
-  border-radius:1rem;
+.contact-container .form-control {
+  border-radius: 1rem;
 }
 
-.contact-img{
+.contact-img {
   text-align: center;
 }
 
@@ -429,9 +431,7 @@ button[type="submit"] {
   height: 300px;
 }
 
-.flash {
-  margin-top: 80px;
-}
+
 
 .addskill-container {
   margin-top: 200px;
@@ -477,7 +477,7 @@ button[type="submit"] {
 .green-toast {
   color: #155724;
   background-color: #d4edda;
-  border: solid 3px #B1DFBB;
+  border: solid 3px #b1dfbb;
 }
 
 .toast-margin {
