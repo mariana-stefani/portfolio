@@ -33,6 +33,11 @@
             <label for="project_order">Project Order</label>
             <input type="text" class="form-control" name="project_order" id="project_order" value="{{project.project_order}}"/>
           </div>
+          <div class="form-group">
+            <i class="fas fa-question-circle help-tip"><p>Add 'hr/' inside angle brackets to add a break line below the project. Do not if it's the last project on the page.</p></i>
+            <label for="project_line">Project Break Line</label>
+            <input type="text" class="form-control" name="project_line" id="project_line" value="{{project.project_line}}"/>
+          </div>
           <button type="submit" class="btn">Submit</button>
     </form>
 </section>
