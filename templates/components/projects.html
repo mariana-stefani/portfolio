@@ -10,78 +10,30 @@
       <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
     ></a>
     {% endif %}
+
+    {% for project in projects %}
   <!-- Aroma Healing Project -->
   <div class="row each-project">
     <div class="project-desc col-lg-4 col-10">
       <p class="projects-p">Featured Project</p>
       <p class="projects-p">
-        Aroma Healing
+        {{project.project_name}}
       </p>
       <p class="p-colour">
-        This website was designed for people who are looking for an aromatherapy
-        course around the world. The website has a bonus to provide some useful
-        recipes to heal the most common affliction with the use of essential
-        oils.
+        {{project.project_desc}}
       </p>
       <ul class="list-inline social-links">
         <li class="list-inline-item">
-          <a
-            class="social-btn"
-            href="https://github.com/mariana-stefani/aroma-healing"
-            target="_blank"
-            ><i class="fab fa-github" aria-hidden="true"></i
-          ></a>
+          <a class="social-btn" href="{{project.github}}" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
         </li>
         <li class="list-inline-item">
-          <a
-            class="social-btn"
-            href="https://mariana-stefani.github.io/aroma-healing/"
-            target="_blank"
-            ><i class="fas fa-globe" aria-hidden="true"></i
-          ></a>
+          <a class="social-btn" href="{{project.project_live}}" target="_blank"><i class="fas fa-globe" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
-    <a href="https://mariana-stefani.github.io/aroma-healing/" target="_blank"
-      ><img class="project-img" src="static/images/aroma.png"
-    /></a>
+    <a href="{{project.project_live}}" target="_blank"><img class="project-img" src="{{project.project_img}}"/></a>
   </div>
   <hr />
-  <!-- Marmita Project -->
-  <div class="row each-project">
-    <a href="https://mariana-stefani.github.io/marmita/" target="_blank"
-      ><img class="project-img" src="static/images/marmita.png"
-    /></a>
-    <div class="project-desc col-lg-4 col-10">
-      <p class="projects-p">Featured Project</p>
-      <p class="projects-p">
-        Marmita
-      </p>
-      <p class="p-colour">
-        This website was designed for a small start-up that sells frozen
-        homemade food. In this website the user can see the food options and
-        prices, check some videos, send their order and find the contact details
-        to send food suggestions or inquires.
-      </p>
-      <ul class="list-inline social-links">
-        <li class="list-inline-item">
-          <a
-            class="social-btn"
-            href="https://github.com/mariana-stefani/marmita"
-            target="_blank"
-            ><i class="fab fa-github" aria-hidden="true"></i
-          ></a>
-        </li>
-        <li class="list-inline-item">
-          <a
-            class="social-btn"
-            href="https://mariana-stefani.github.io/marmita/"
-            target="_blank"
-            ><i class="fas fa-globe" aria-hidden="true"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  {% endfor %}
 </section>
 {% endblock %}
