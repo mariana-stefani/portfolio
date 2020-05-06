@@ -448,18 +448,18 @@ button[type="submit"] {
   font-size: 16px;
 }
 
-.login-toast {
+.red-toast {
   color: #721c24;
   background-color: #f8d7da;
   border: solid 3px #f1b0b7;
   margin-bottom: -150px;
 }
 
-.login-toast-body {
+.red-toast-body {
   color: #721c24;
 }
 
-.login-toast-i {
+.red-toast-i {
   text-align: center;
   color: #721c24;
 }
