@@ -436,6 +436,7 @@ button[type="submit"] {
 /*-- Toast --*/
 
 .toast-container {
+  text-align: center;
   border-radius: 5px;
   font-family: sans-serif;
   line-height: 1.5;
@@ -468,6 +469,11 @@ button[type="submit"] {
   color: #155724;
   background-color: #d4edda;
   border: solid 3px #c3e6cb;
+}
+
+.toast-margin {
+  margin-top: 15px !important;
+  margin-bottom: 15px;
 }
 
 .green-toast-body {
