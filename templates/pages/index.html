@@ -10,13 +10,13 @@
 {% block content %}
 
 <!-- Projects -->
-{% if 'username' in session %} 
-{% else %}
 {% include 'components/projects.html' %}
 {% block projects %}
 {% endblock %}
 
 <!-- Contact Form -->
+{% if 'username' in session %} 
+{% else %}
 {% include 'components/form.html' %}
 {% block form %}
 {% endblock %}
