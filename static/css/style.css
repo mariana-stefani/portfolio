@@ -460,6 +460,10 @@ button[type="submit"] {
   font-size: 16px;
 }
 
+.toast-i {
+  text-align: center;
+  color: #721c24;
+}
 
 /*-- Footer --*/
 footer {
