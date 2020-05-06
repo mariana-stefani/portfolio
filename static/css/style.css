@@ -417,6 +417,11 @@ button[type="submit"] {
   text-align: center;
 }
 
+.contact-container form{
+  padding: 10px;
+}
+
+
 .email-alert {
   display: none;
 }
