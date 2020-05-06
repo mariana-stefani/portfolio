@@ -404,7 +404,7 @@ button[type="submit"] {
 }
 
 .contact-container {
-  margin-top: 50px;
+  margin-top: 100px;
   background-color: rgba(249, 82, 4, 0.6);
 }
 
@@ -414,6 +414,7 @@ button[type="submit"] {
 
 .contact-img {
   text-align: center;
+  margin-top: 20px;
 }
 
 .contact-container form{
@@ -422,9 +423,20 @@ button[type="submit"] {
 
 .contact-img img {
   border-radius: 6rem;
-  width: 11%;
-  margin-top: -3%;
-  transform: rotate(29deg);
+  width: 12%;
+  margin-top: -5%;
+}
+
+@media (min-width: 1400px) {
+  .contact-img img {
+    border-radius: 6rem;
+    width: 7%;
+    margin-top: -4%;
+  }
+
+  .contact-container {
+    margin-top: 130px;
+  }
 }
 
 
