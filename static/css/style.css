@@ -438,6 +438,23 @@ button[type="submit"] {
   background-color: rgba(255, 255, 255, 0.5);
   height: 500px;
 }
+
+/*-- Login Toast --*/
+
+.toast-container {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: solid 3px #F1B0B7;
+  border-radius: 5px;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+  max-width: 50%;
+  padding: 1rem 2rem;
+  margin-top: 100px;
+  margin-bottom: -150px;
+}
+
 /*-- Footer --*/
 footer {
   text-align: center;
