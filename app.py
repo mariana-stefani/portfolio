@@ -74,6 +74,7 @@ def skills():
     else:
         skills = mongo.db.skills
         skills.insert_one(request.form.to_dict())
+        flash('Your skill has been successfully added.')
         return redirect(url_for('index'))
 
 
