@@ -106,7 +106,7 @@ def delete_skill(skill_id):
     Deletes selected skill, identified by skill_id and display message saying skill was deleted.
     """
     mongo.db.skills.remove({'_id': ObjectId(skill_id)})
-    flash('Your skill has bee deleted.',
+    flash('Your skill has been deleted.',
           'success text-center')
     return redirect(url_for('index'))
 
