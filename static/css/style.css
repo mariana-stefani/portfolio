@@ -61,10 +61,14 @@ button.navbar-toggler {
   color: #581d00;
 }
 
-/* Header and p colours */
-.header-colour {
-  color: #a43500;
+/*-- Colours --*/
+
+.pansy-colour {
+  color: #772953;
 }
+
+/* Header and p colours */
+
 
 .p-colour {
   color: #581d00;
@@ -96,7 +100,6 @@ button.navbar-toggler {
 
 .h2-big {
   font-size: 65px;
-  color: #581d00;
   font-weight: bolder;
 }
 

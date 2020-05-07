@@ -1,7 +1,7 @@
 {% block content %}
 <section id="about-link" class="container-fluid about-container">
   <div>
-    <h1 class="header-colour">About Me</h1>
+    <h1 class="pansy-colour">About Me</h1>
   </div>
   <div class="row">
     <div class="portrait-container col-md-12 col-lg-6">
@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="skillset">
-    <h3 class="header-colour">Skillset</h3>
+    <h3 class="pansy-colour">Skillset</h3>
     {% if 'username' in session %}
     <a href="{{url_for('skills', skill_id=skill._id)}}" class="btn"
       >Add Skill
