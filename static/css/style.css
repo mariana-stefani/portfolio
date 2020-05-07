@@ -714,6 +714,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 .help-tip {
   font-size: 20px;
   margin-left: -20px;
+  color: #3B060A;
 }
 
 .help-tip:hover {
