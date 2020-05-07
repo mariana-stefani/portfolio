@@ -28,6 +28,7 @@ def index():
     project = mongo.db.projects.find_one()
     return render_template('pages/index.html', skills=skills, skill=skill, projects=projects, project=project)
 
+
 # Route for Login
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
@@ -42,7 +43,8 @@ def admin():
         if existing_user:
             if request.form['password'] == existing_user['password']:
                 session['username'] = request.form['username']
-                flash(f'Hi {form.username.data}! You have been logged in. Please scroll down to add, edit or delete a skill.')
+                flash(
+                    f'Hi {form.username.data}! You have been logged in. Please scroll down to add, edit or delete a skill.')
                 return redirect(url_for('index'))
             else:
                 flash('Login Unsuccessful. Please check username and password.')
@@ -144,14 +146,14 @@ def update_project(project_id):
     elif request.method == 'POST':
         projects = mongo.db.projects
         projects.update({'_id': ObjectId(project_id)},
-                      {'project_name': request.form.get('project_name'),
-                       'project_desc': request.form.get('project_desc'),
-                       'project_github': request.form.get('project_github'),
-                       'project_live': request.form.get('project_live'),
-                       'project_img': request.form.get('project_img'),
-                       'project_order': request.form.get('project_order'),
-                       'project_line': request.form.get('project_line')
-                       })
+                        {'project_name': request.form.get('project_name'),
+                         'project_desc': request.form.get('project_desc'),
+                         'project_github': request.form.get('project_github'),
+                         'project_live': request.form.get('project_live'),
+                         'project_img': request.form.get('project_img'),
+                         'project_order': request.form.get('project_order'),
+                         'project_line': request.form.get('project_line')
+                         })
         flash('Your project has been successfully updated.')
         return redirect(url_for('index'))
 
@@ -165,6 +167,7 @@ def delete_project(project_id):
     mongo.db.projects.remove({'_id': ObjectId(project_id)})
     flash('Your project has been successfully deleted.')
     return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
