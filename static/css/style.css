@@ -361,6 +361,10 @@ button.navbar-toggler {
   margin-top: 20px;
 }
 
+.project-name {
+  font-weight: bold;
+}
+
 .each-project {
   align-items: center;
   justify-content: center;
