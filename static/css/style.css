@@ -483,7 +483,6 @@ button[type="submit"] {
 .toast-container {
   text-align: center;
   border-radius: 5px;
-  font-family: sans-serif;
   line-height: 1.5;
   max-width: 90%;
   padding: 1rem 2rem;
