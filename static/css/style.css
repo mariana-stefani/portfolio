@@ -130,11 +130,13 @@ button.navbar-toggler {
 .btn-colour {
   background-color: #fdcab2;
   color: #460C14;
-  border: solid 1px #460C14;
+  border: solid 1.5px #460C14;
 }
 
 .btn-colour:hover {
-  background: #460C14;
+  background-color: #621a2d;
+  color: #fdcab2;
+  border: solid 1.5px #fdcab2;
 }
 
 /*-- Mouse --*/
@@ -610,7 +612,7 @@ footer {
   font-size: 20px;
   line-height: 7px;
   background-color: #fdcab2;
-  color: #460C14;
+  color: #621a2d;
   border: solid 1px #460C14;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -620,7 +622,9 @@ footer {
 }
 
 .social-links i:hover {
-  background: #460C14;
+  background: #621a2d;
+  color: #fdcab2;
+  border: solid 1px #fdcab2;
 }
 
 a:link {
