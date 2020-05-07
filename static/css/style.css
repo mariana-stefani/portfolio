@@ -64,9 +64,12 @@ button.navbar-toggler {
 /*-- Colours --*/
 
 .wine-colour {
-  color: #681d32;
+  color: #621a2d;
 }
 
+.claret-colour {
+  color: #864559;
+}
 
 
 /* Header and p colours */
