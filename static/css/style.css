@@ -64,8 +64,10 @@ button.navbar-toggler {
 /*-- Colours --*/
 
 .pansy-colour {
-  color: #772953;
+  color: #681d32;
 }
+
+
 
 /* Header and p colours */
 
@@ -105,7 +107,6 @@ button.navbar-toggler {
 
 .h3-big {
   font-size: 60px;
-  color: #a43500;
   margin-top: 25px;
 }
 
