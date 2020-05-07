@@ -1,41 +1,41 @@
 {% extends 'layout/base.html' %} {% block content %}
 
 <section class="container add-container">
-    <h3 class="add-title">Add new project</h3>
+    <h3 class="add-title magenta-colour">Add new project</h3>
     <form class="col s12" action="{{url_for('projects')}}" method="POST">
         <div class="form-group">
             <i class="fas fa-question-circle help-tip"><p>Please add the name of your project.</p></i>
-            <label for="project_name">Project Name</label>
+            <label class="wine-colour" for="project_name">Project Name</label>
             <input type="text" class="form-control" name="project_name" id="project_name" />
           </div>
           <div class="form-group">
             <i class="fas fa-question-circle help-tip"><p>Please add a brief description of the project. </p></i>
-            <label for="project_desc">Description of Project</label>
+            <label class="wine-colour" for="project_desc">Description of Project</label>
             <input type="text" maxlength="60" class="form-control" name="project_desc" id="project_desc" />
           </div>
           <div class="form-group">
             <i class="fas fa-question-circle help-tip"><p>Please add the repository for this project.</p></i>
-            <label for="project_github">Github Repository</label>
+            <label class="wine-colour" for="project_github">Github Repository</label>
             <input type="text" class="form-control" name="project_github" id="project_github" />
           </div>
           <div class="form-group">
             <i class="fas fa-question-circle help-tip"><p>Please add the live environment URL for this project.</p></i>
-            <label for="project_live">Project URL</label>
+            <label class="wine-colour" for="project_live">Project URL</label>
             <input type="text" class="form-control" name="project_live" id="project_live" />
           </div>
           <div class="form-group">
             <i class="fas fa-question-circle help-tip"><p>Please add the image to represent this project.</p></i>
-            <label for="project_img">Project Image</label>
+            <label class="wine-colour" for="project_img">Project Image</label>
             <input type="text" class="form-control" name="project_img" id="project_img" />
           </div>
           <div class="form-group">
             <i class="fas fa-question-circle help-tip"><p>Add "order-first" to display project image on the left side or "order-last" to display it on the right side.</p></i>
-            <label for="project_order">Project Order</label>
+            <label class="wine-colour" for="project_order">Project Order</label>
             <input type="text" class="form-control" name="project_order" id="project_order" />
           </div>
           <div class="form-group">
             <i class="fas fa-question-circle help-tip"><p>Add 'hr/' inside angle brackets to add a break line below the project. Do not if it's the last project on the page.</p></i>
-            <label for="project_line">Project Break Line</label>
+            <label class="wine-colour" for="project_line">Project Break Line</label>
             <input type="text" class="form-control" name="project_line" id="project_line" />
           </div>
           <button type="submit" class="btn btn-colour">Submit</button>
