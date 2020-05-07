@@ -20,10 +20,10 @@ $(function () {
     }
   });
 
-/**
- * Transform the percentage to degrees
- * @param {number} percentage 
- */
+  /**
+   * Transform the percentage to degrees
+   * @param {number} percentage
+   */
   function percentageToDegrees(percentage) {
     return (percentage / 100) * 360;
   }
@@ -31,34 +31,35 @@ $(function () {
 
 /**
  * Sends email through the contact form
- * @param {object} contactForm 
+ * @param {object} contactForm
  */
 function sendMail(contactForm) {
-  emailjs.send("gmail", "mariana", {
-      "from_name": contactForm.name.value,
-      "from_email": contactForm.emailaddress.value,
-      "contact_request": contactForm.contactsummary.value
-  })
-  .then(
-      function(response) {
-          console.log("SUCCESS", response);
+  emailjs
+    .send("gmail", "mariana", {
+      from_name: contactForm.name.value,
+      from_email: contactForm.emailaddress.value,
+      contact_request: contactForm.contactsummary.value,
+    })
+    .then(
+      function (response) {
+        console.log("SUCCESS", response);
       },
-      function(error) {
-          console.log("FAILED", error);
+      function (error) {
+        console.log("FAILED", error);
       }
-  );
+    );
   // Show alert
-  document.querySelector('.email-alert').style.display = 'block';
+  document.querySelector(".email-alert").style.display = "block";
 
   // Hide alert after 4 seconds
-  setTimeout(function(){
-    document.querySelector('.email-alert').style.display = 'none';
-  },4000);
+  setTimeout(function () {
+    document.querySelector(".email-alert").style.display = "none";
+  }, 4000);
 
   // Clear form
-  document.getElementById('contact-form').reset();
+  document.getElementById("contact-form").reset();
 
-  return false; 
+  return false;
 }
 
 /**
@@ -66,31 +67,30 @@ function sendMail(contactForm) {
  */
 let navbar = $(".navbar");
 
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 0) {
-      navbar.addClass('nav-show');
+    navbar.addClass("nav-show");
   } else {
-      navbar.removeClass('nav-show');
+    navbar.removeClass("nav-show");
   }
 });
 
 /**
  * Initializes emailjs
  */
-(function() {
+(function () {
   emailjs.init("user_ihMVh8GieFlqswQcnywX0");
 })();
 
 /**
  * Sends email when button is clicked
  */
-$("#contact-form").submit(function(e) {
+$("#contact-form").submit(function (e) {
   e.preventDefault();
   sendMail(this);
 });
 
-
 /**
  * Display toast message when login fails
  */
-$(".toast").toast('show');
+$(".toast").toast("show");
