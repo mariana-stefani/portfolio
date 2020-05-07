@@ -50,10 +50,10 @@ function sendMail(contactForm) {
   // Show alert
   document.querySelector('.email-alert').style.display = 'block';
 
-  // Hide alert after 3 seconds
+  // Hide alert after 4 seconds
   setTimeout(function(){
     document.querySelector('.email-alert').style.display = 'none';
-  },5000);
+  },4000);
 
   // Clear form
   document.getElementById('contact-form').reset();
