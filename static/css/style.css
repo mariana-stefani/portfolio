@@ -60,7 +60,7 @@ button.navbar-toggler {
 .hi-user {
   display: block;
   padding: 0.5rem 1rem;
-  color: #581d00;
+  color: #460C14;
 }
 
 /*-- Colours --*/
@@ -125,12 +125,15 @@ button.navbar-toggler {
 
 .btn {
   margin-top: 20px;
+}
+
+.btn-colour {
   background-color: #fdcab2;
-  color: #581d00;
+  color: #460C14;
   border: solid 1px #f95204;
 }
 
-.btn:hover {
+.btn-colour:hover {
   background: #f95204;
 }
 
@@ -147,7 +150,7 @@ button.navbar-toggler {
   height: 70px;
   margin-left: -1.25rem;
   margin-top: -2.188rem;
-  box-shadow: inset 0 0 0 0.125rem #581d00;
+  box-shadow: inset 0 0 0 0.125rem #460C14;
   border-radius: 1.563rem;
   bottom: 50px;
 }
@@ -156,7 +159,7 @@ button.navbar-toggler {
   content: "";
   width: 10px;
   height: 10px;
-  background: #581d00;
+  background: #460C14;
   margin-left: -0.313rem;
   top: 0.625rem;
   border-radius: 0.313rem;
@@ -414,7 +417,7 @@ button[type="submit"] {
   margin-bottom: 20px;
   margin-top: 20px;
   background-color: #fdcab2;
-  color: #581d00;
+  color: #460C14;
   border: solid 1px #f95204;
   border-radius: 1rem;
   padding: 10px;
@@ -607,7 +610,7 @@ footer {
   font-size: 20px;
   line-height: 7px;
   background-color: #fdcab2;
-  color: #581d00;
+  color: #460C14;
   border: solid 1px #f95204;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -697,10 +700,6 @@ a:link {
 
   .p-main {
     margin-top: 15px;
-  }
-
-  .btn {
-    margin-top: 5px;
   }
 
   .scroll-down {
