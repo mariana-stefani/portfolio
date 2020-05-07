@@ -91,6 +91,6 @@ $("#contact-form").submit(function (e) {
 });
 
 /**
- * Display toast message when login fails
+ * Display toast message
  */
 $(".toast").toast("show");
