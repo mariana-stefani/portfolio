@@ -418,9 +418,6 @@ hr {
 button[type="submit"] {
   margin-bottom: 20px;
   margin-top: 20px;
-  background-color: #fdcab2;
-  color: #460C14;
-  border: solid 1px #460C14;
   border-radius: 1rem;
   padding: 10px;
   font-weight: 600;
