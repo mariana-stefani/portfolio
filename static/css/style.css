@@ -81,6 +81,10 @@ button.navbar-toggler {
   color: #681D32;
 }
 
+.magenta-colour {
+  color: #864559;
+}
+
 /*-- Callout Container --*/
 .callout-container {
   padding-top: 85px;
