@@ -39,7 +39,9 @@ nav {
 }
 
 .navbar-brand {
-  color: #581d00 !important;
+  color: #621a2d !important;
+  font-weight: bold;
+  
 }
 
 a.nav-link {
