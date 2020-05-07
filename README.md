@@ -34,6 +34,10 @@ The website is fully responsive, has a consistent flow and an intuitive navigati
 * Receive interview offers through use of contact form.
 * Be able to attract attention to my projects.
 * Sell myself in a profession but still personal way.
+* Be able to login on a hidden page when use “/admin” at the end of the index URL.
+* Be able to create and update a skillset and/or a project through a form to MongoDB.
+* Be able to delete a skillset and/or a project from MongoDB.
+
 
 ## User Requirements and Expectations:
 
