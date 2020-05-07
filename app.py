@@ -42,8 +42,7 @@ def admin():
         if existing_user:
             if request.form['password'] == existing_user['password']:
                 session['username'] = request.form['username']
-                flash(f'Hi {form.username.data}! You have been logged in. Please scroll down to add, edit or delete a skill.',
-                      'success text-center')
+                flash(f'Hi {form.username.data}! You have been logged in. Please scroll down to add, edit or delete a skill.')
                 return redirect(url_for('index'))
             else:
                 flash('Login Unsuccessful. Please check username and password.')
