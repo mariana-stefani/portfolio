@@ -130,7 +130,7 @@ button.navbar-toggler {
 .btn-colour {
   background-color: #fdcab2;
   color: #460C14;
-  border: solid 1.5px #460C14;
+  border: solid 1px #460C14;
 }
 
 .btn-colour:hover {
