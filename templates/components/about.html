@@ -48,11 +48,11 @@
        {{skill.skill_name}} {{skill.percent}}<sup class="small">%</sup>
       </p>
       {% if 'username' in session %}
-      <a href="{{url_for('update_skill', skill_id=skill._id)}}" class="btn"
+      <a href="{{url_for('update_skill', skill_id=skill._id)}}" class="btn btn-colour"
         >Edit
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
-      <a href="{{url_for('delete_skill', skill_id=skill._id)}}" class="btn" id="delete-btn"
+      <a href="{{url_for('delete_skill', skill_id=skill._id)}}" class="btn btn-colour" id="delete-btn"
         >Delete
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
