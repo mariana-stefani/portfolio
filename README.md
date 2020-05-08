@@ -131,3 +131,72 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 
 *	Add more projects.
 *	Add more skills.
+
+
+## Technologies Used
+The technologies used were:
+
+[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+
+* Is the markup language used for rendering the website. 
+
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
+
+* Is the language used to style the HTML website.
+
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+* Is used for the responsive and interactive elements of this project.
+
+[Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+
+* Is the front-end framework used to assist in page layout, navigation and modal.
+
+[EmailJS](https://www.emailjs.com/)
+
+* Is used as a third-party email service on this project.
+
+
+[Flask](https://flask.palletsprojects.com/en/1.1.x/#)
+
+* Is used as a Python microframework to construct and render pages.
+
+
+[Flat Icon](https://www.flaticon.com/)
+
+* Its icons were used on the Contact Me container.
+
+[Font Awesome](https://fontawesome.com/icons)
+
+* Its icons were used on the About Me buttons, Project buttons, Footer, Add and Edit New Skill and Add and Edit New Project pages.
+
+[Git](https://github.com/)
+
+* Local git repository was pushed to a remote repository on GitHub and site was published using GitHub pages.
+
+[Google Fonts](https://fonts.google.com/)
+
+* Its fonts were used on the website. Main theme font was *"Poppins"* and sub-theme font was *"Sans-Serif"*.
+
+[Heroku](http://www.heroku.com)
+* Is used to deploy the application.
+
+[JQuery](https://jquery.com)
+
+* Is used to simplify DOM manipulation when creating the markers on the map and to zoom on the map when a country is selected on the drop-down menu.
+
+[MongoBD Atlas](https://www.mongodb.com/cloud/atlas)
+
+* Is used as the non-relational database for this project.
+
+[Python](https://www.python.org/)
+
+*	Is used as the back-end programming language for this project
+
+[Pymongo](https://pymongo.readthedocs.io/en/stable/)
+*	Is used as Python’s API for MongoDB integration.
+
+[Visual Studio Code](https://code.visualstudio.com/)
+*	Was used as the IDE for this project.
+
+For Additional technologies used please see requirements.txt
