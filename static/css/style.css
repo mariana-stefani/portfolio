@@ -1,4 +1,5 @@
 /*-- Font Family --*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 html {
@@ -16,6 +17,7 @@ body {
 }
 
 /*-- Navbar --*/
+
 nav {
   position: fixed !important;
   top: 0;
@@ -145,6 +147,7 @@ button.navbar-toggler {
 
 /*-- Mouse --*/
 /*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
+
 .scroll-down,
 .scroll-down:before {
   position: absolute;
@@ -357,6 +360,7 @@ button.navbar-toggler {
 }
 
 /*-- Projects --*/
+
 .projects-container {
   margin-bottom: 30px;
   margin-top: 80px;
@@ -404,6 +408,7 @@ button.navbar-toggler {
 }
 
 /*-- Contact Form --*/
+
 .contact-heading {
   margin-top: 25px;
   margin-bottom: 20px;
@@ -583,6 +588,7 @@ button[type="submit"] {
 }
 
 /*-- Footer --*/
+
 footer {
   text-align: center;
   background-color: white;
@@ -711,6 +717,7 @@ a:link {
 
 /* Create inline help tips on add and edit skill 
 tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
+
 .help-tip {
   font-size: 20px;
   margin-left: -20px;
