@@ -61,4 +61,67 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 The wireframes for this project were created at [Moqups](https://moqups.com/).
 View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/master/wireframes)
 
+## Features
+### Existing Features
 
+**Navbar**
+* Bootstrap code was used to make the navbar.
+
+**Background colour**
+* The gradient was done using CSS.
+
+#### Index Page
+
+**Callout container**
+* In this container, the user will find a brief introduction about myself.
+
+**Callout Button**
+* This button scrolls the page to the contact form.
+
+**About container**
+* In this container the user will find my profile picture, a brief description about me and my skillset with the percentages learned of each skill.
+
+**About Buttons**
+* If the user is logged in, three buttons will be shown to add, edit and/or delete a skill.
+
+**About Toast**
+* When the user logs in, creates, edit and/or update a project and/or a skillset a toast message is shown on the top of the page.
+
+**Skillset Progress Circle**
+* This progress circle will move accordingly to the percentage learned in each skill.
+
+**Projects Container**
+* In this container, the user will find the projects I have worked on recently. It contains a picture of the project in a desktop resolution along with a brief description of the project. 
+
+**Project Buttons**
+* Below the description, there are two buttons that redirect the user to the project GitHub repository and to the live website.
+* If the user is logged in, three buttons will be shown to add, edit and/or delete a project.
+
+**Contact Form Container**
+* In this container, there is a contact form where the user can enter his/her name, email address and send me a message.
+
+**Contact Toast**
+* When the user sends a message a toast message is shown above the contact form.
+
+**Footer**
+* It contains links to social media pages that the user can click if they would like to follow me on social media platforms. 
+
+#### Admin Page
+
+**Login form**
+* This page has a login form with username, password and a login button.
+
+**Login Toast**
+* When the user fails to enter the correct username and/or password a toast message is shown above the login form.
+
+#### Add New Skill Page
+* This page has a form with 4 fields that can be filled with the new skill information to be sent to MongoDB.
+
+#### Edit Skill Page
+* This page has a form with 4 fields filled with information retrieved from MongoDB, based on the skill ID. These fields can be altered to update an existing skill.
+
+#### Add New Project Page
+* This page has a form with 7 fields that can be filled with the new project information to be sent to MongoDB.
+
+#### Edit Project Page
+*	This page has a form with 7 fields filled with information retrieved from MongoDB, based on the project ID. These fields can be altered to update an existing project.
