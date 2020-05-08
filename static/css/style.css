@@ -780,7 +780,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   left: 0;
 }
 
-/* CSS animation */
+/* CSS animation for tooltip*/
 
 @-webkit-keyframes fadeIn {
   0% {
