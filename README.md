@@ -131,6 +131,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 
 *	Add more projects.
 *	Add more skills.
+*   Add more classes for the skills colours.
 
 
 ## Technologies Used
