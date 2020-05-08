@@ -41,7 +41,6 @@ nav {
 .navbar-brand {
   color: #621a2d !important;
   font-weight: bold;
-  
 }
 
 a.nav-link {
@@ -74,11 +73,11 @@ button.navbar-toggler {
 }
 
 .siena-colour {
-  color: #5D1728;
+  color: #5d1728;
 }
 
 .mauve-colour {
-  color: #681D32;
+  color: #681d32;
 }
 
 .magenta-colour {
@@ -129,8 +128,8 @@ button.navbar-toggler {
 
 .btn-colour {
   background-color: #fdcab2;
-  color: #460C14;
-  border: solid 1px #460C14;
+  color: #460c14;
+  border: solid 1px #460c14;
   box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
 }
 
@@ -153,7 +152,7 @@ button.navbar-toggler {
   height: 70px;
   margin-left: -1.25rem;
   margin-top: -2.188rem;
-  box-shadow: inset 0 0 0 0.125rem #460C14;
+  box-shadow: inset 0 0 0 0.125rem #460c14;
   border-radius: 1.563rem;
   bottom: 50px;
 }
@@ -162,7 +161,7 @@ button.navbar-toggler {
   content: "";
   width: 10px;
   height: 10px;
-  background: #460C14;
+  background: #460c14;
   margin-left: -0.313rem;
   top: 0.625rem;
   border-radius: 0.313rem;
@@ -392,13 +391,12 @@ button.navbar-toggler {
   line-height: 2;
 }
 
-.project-divider{
+.project-divider {
   margin-top: 60px;
   content: " ";
   display: inline-flex;
   border-bottom: 1.5px solid #fdcab2;
   width: 80%;
-  
 }
 
 /*-- Contact Form --*/
@@ -440,7 +438,7 @@ button[type="submit"] {
   margin-top: 20px;
 }
 
-.contact-container form{
+.contact-container form {
   padding: 10px;
 }
 
@@ -448,9 +446,8 @@ button[type="submit"] {
   border-radius: 6rem;
   width: 12%;
   margin-top: -6%;
-  border: solid 1px #E04A04;
+  border: solid 1px #e04a04;
   box-shadow: 2px 2px rgba(109, 64, 76, 1);
-
 }
 
 @media (min-width: 1400px) {
@@ -464,7 +461,6 @@ button[type="submit"] {
     margin-top: 150px;
   }
 }
-
 
 .email-alert {
   display: none;
@@ -480,8 +476,6 @@ button[type="submit"] {
   background-color: rgba(255, 255, 255, 0.5);
   height: 300px;
 }
-
-
 
 .add-container {
   margin-top: 200px;
@@ -613,7 +607,7 @@ footer {
   line-height: 7px;
   background-color: #fdcab2;
   color: #621a2d;
-  border: solid 1px #460C14;
+  border: solid 1px #460c14;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -716,7 +710,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 .help-tip {
   font-size: 20px;
   margin-left: -20px;
-  color: #3B060A;
+  color: #3b060a;
 }
 
 .help-tip:hover {
