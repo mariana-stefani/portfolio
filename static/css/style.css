@@ -696,6 +696,10 @@ a:link {
     margin-top: 60px;
     margin-bottom: -30px;
   }
+
+  .progress-p{
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 414px) and (min-width: 376px) {
