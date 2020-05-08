@@ -32,6 +32,7 @@
     </div>
     <a href="{{project.project_live}}" target="_blank"><img class="project-img" src="{{project.project_img}}"/></a>
   </div>
+  <div class="{{project.project_divider}}"></div>
   {% if 'username' in session %}
       <a href="{{url_for('update_project', project_id=project._id)}}" class="btn btn-colour"
         >Edit
