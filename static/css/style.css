@@ -392,12 +392,7 @@ button.navbar-toggler {
   line-height: 2;
 }
 
-hr {
-  display: block;
-  overflow: hidden;
-  border-width: 2px;
-  margin-top: 50px;
-}
+
 
 /*-- Contact Form --*/
 .contact-heading {
