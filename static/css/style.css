@@ -270,6 +270,10 @@ button.navbar-toggler {
   color: #e44d26;
 }
 
+.mysql-colour {
+  color: #00758f;
+}
+
 .progress-right .progress-bar {
   animation: progress-animation linear forwards 1.5s;
   visibility: hidden;
