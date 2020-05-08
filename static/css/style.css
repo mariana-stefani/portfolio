@@ -669,7 +669,7 @@ a:link {
     max-width: 90%;
   }
 }
-
+/* ESSE */
 @media screen and (max-width: 414px) {
 
   .btn-size {
@@ -678,6 +678,10 @@ a:link {
 
   .center-form {
     max-width: 90%;
+  }
+
+  .about-p {
+    font-size: 16px;
   }
 }
 
