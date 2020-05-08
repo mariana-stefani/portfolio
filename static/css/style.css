@@ -84,6 +84,25 @@ button.navbar-toggler {
   color: #864559;
 }
 
+/*-- Buttons --*/
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn-colour {
+  background-color: #fdcab2;
+  color: #460c14;
+  border: solid 1px #460c14;
+  box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
+}
+
+.btn-colour:hover {
+  background-color: #621a2d;
+  color: #fdcab2;
+  border: solid 1.5px #fdcab2;
+}
+
 /*-- Callout Container --*/
 .callout-container {
   padding-top: 85px;
@@ -122,22 +141,6 @@ button.navbar-toggler {
   margin-top: 30px;
 }
 
-.btn {
-  margin-top: 20px;
-}
-
-.btn-colour {
-  background-color: #fdcab2;
-  color: #460c14;
-  border: solid 1px #460c14;
-  box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
-}
-
-.btn-colour:hover {
-  background-color: #621a2d;
-  color: #fdcab2;
-  border: solid 1.5px #fdcab2;
-}
 
 /*-- Mouse --*/
 /*-- Code from: https://codemyui.com/scroll-icon-animation/ --*/
