@@ -234,3 +234,13 @@ Result: Both tests have passed.
 * Plan 1: A toast message is shown when the user tries to log in with a username and/or password that are different from the ones stored on the database.
 * Plan 2: User is redirected to the index page and a toast message is shown if correct username and password are entered.
 * Result: Both tests have passed.
+
+
+## Bugs
+
+* The project was failing to open when the “Open App” button was clicked on the Heroku website.
+This was fixed adding MONGO_DBNAME, MONGO_URI and SECRET_KEY to Heroku config vars.
+
+* On smaller resolutions, the navbar dropdown button was not working. I fixed the issue updating the JQuery script from version 3.5.0 to the version 3.5.1.
+
+* When importing the layout pages within jinja to base.html nothing was rendering. This was fixed when with some research I found that I had to include “{% include ‘XYZ’ %}”.
