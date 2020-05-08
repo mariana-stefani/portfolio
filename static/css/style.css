@@ -392,7 +392,12 @@ button.navbar-toggler {
   line-height: 2;
 }
 
-
+.project-divider{
+  margin-top: 60px;
+  content: " ";
+  display: block;
+  border-bottom: 1.5px solid #fdcab2;
+}
 
 /*-- Contact Form --*/
 .contact-heading {
