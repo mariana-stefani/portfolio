@@ -55,18 +55,10 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 * Form sends the message correctly.
 * Content is well presented and visually satisfying.
 
-#### **Design Choices:**
-
-The design choice of this website was based on the personal branding I want to build to myself. 
-
-**Fonts**
-
-
-**Icons:**
-
-All the icons used are self-explanatory, to easily show to the user what is representing.
 
 ### **Wireframes**
 
 The wireframes for this project were created at [Moqups](https://moqups.com/).
 View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/master/wireframes)
+
+
