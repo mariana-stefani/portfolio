@@ -395,8 +395,10 @@ button.navbar-toggler {
 .project-divider{
   margin-top: 60px;
   content: " ";
-  display: block;
+  display: inline-flex;
   border-bottom: 1.5px solid #fdcab2;
+  width: 80%;
+  
 }
 
 /*-- Contact Form --*/
