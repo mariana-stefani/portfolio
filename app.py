@@ -152,7 +152,7 @@ def update_project(project_id):
                          'project_live': request.form.get('project_live'),
                          'project_img': request.form.get('project_img'),
                          'project_order': request.form.get('project_order'),
-                         'project_line': request.form.get('project_line')
+                         'project_divider': request.form.get('project_divider')
                          })
         flash('Your project has been successfully updated.')
         return redirect(url_for('index'))
