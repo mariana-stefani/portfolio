@@ -56,7 +56,7 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 * Content is well presented and visually satisfying.
 
 
-### **Wireframes**
+## Wireframes
 
 The wireframes for this project were created at [Moqups](https://moqups.com/).
 View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/master/wireframes)
