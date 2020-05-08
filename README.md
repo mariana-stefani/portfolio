@@ -71,7 +71,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 **Background colour**
 * The gradient was done using CSS.
 
-#### Index Page
+#### **Index Page**
 
 **Callout container**
 * In this container, the user will find a brief introduction about myself.
@@ -107,7 +107,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 **Footer**
 * It contains links to social media pages that the user can click if they would like to follow me on social media platforms. 
 
-#### Admin Page
+#### **Admin Page**
 
 **Login form**
 * This page has a login form with username, password and a login button.
@@ -115,16 +115,16 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 **Login Toast**
 * When the user fails to enter the correct username and/or password a toast message is shown above the login form.
 
-#### Add New Skill Page
+#### **Add New Skill Page**
 * This page has a form with 4 fields that can be filled with the new skill information to be sent to MongoDB.
 
-#### Edit Skill Page
+#### **Edit Skill Page**
 * This page has a form with 4 fields filled with information retrieved from MongoDB, based on the skill ID. These fields can be altered to update an existing skill.
 
-#### Add New Project Page
+#### **Add New Project Page**
 * This page has a form with 7 fields that can be filled with the new project information to be sent to MongoDB.
 
-#### Edit Project Page
+#### **Edit Project Page**
 *	This page has a form with 7 fields filled with information retrieved from MongoDB, based on the project ID. These fields can be altered to update an existing project.
 
 ### Features Left to implement
