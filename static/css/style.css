@@ -772,10 +772,12 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   font-size: 20px;
   margin-left: -20px;
   color: #3b060a;
+  
 }
 
 .help-tip:hover {
-  color: #fff;
+  background-color: #fdcab2;
+  color: #3b060a;
 }
 
 .help-tip:hover p {
@@ -787,7 +789,6 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   font-size: 14px;
   font-family: "Poppins", sans-serif !important;
   font-weight: normal;
-
   -webkit-animation: fadeIn 0.3s ease-in-out;
   animation: fadeIn 0.3s ease-in-out;
 }
@@ -796,12 +797,12 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   /* The tooltip */
   display: none;
   text-align: left;
-  background-color: #1e2021;
+  background-color: #3b060a;
   padding: 20px;
   width: 180px;
   position: absolute;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px rgb(58, 34, 40);
   right: -4px;
   color: #fff;
   font-size: 14px;
@@ -815,7 +816,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-bottom-color: #1e2021;
+  border-bottom-color: #3b060a;
   left: 10px;
   top: -12px;
 }
