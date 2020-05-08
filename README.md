@@ -61,6 +61,7 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 The wireframes for this project were created at [Moqups](https://moqups.com/).
 View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/master/wireframes)
 
+
 ## Features
 ### Existing Features
 
@@ -125,3 +126,8 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 
 #### Edit Project Page
 *	This page has a form with 7 fields filled with information retrieved from MongoDB, based on the project ID. These fields can be altered to update an existing project.
+
+### Features Left to implement
+
+*	Add more projects.
+*	Add more skills.
