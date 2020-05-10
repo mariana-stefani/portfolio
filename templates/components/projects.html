@@ -1,9 +1,9 @@
 {% block projects %}
 <section id="projects-link" class="container-fluid projects-container">
   <h1 class="claret-colour">Portfolio</h1>
-  <p class="p-media projects-p wine-colour">
+  <h2 class="p-media projects-p wine-colour">
     Here are a few projects that I've worked on recently.
-  </p>
+  </h2>
   {% if 'username' in session %}
     <a href="{{url_for('projects', project_id=project._id)}}" class="btn btn-media btn-colour" aria-label="Add project"
       >Add Project
@@ -15,9 +15,9 @@
   <!-- Projects -->
   <div class="row each-project">
     <div class="project-desc col-lg-4 col-10 {{project.project_order}}">
-      <p class="projects-p magenta-colour project-name ">
+      <h3 class="projects-p magenta-colour project-name ">
         {{project.project_name}}
-      </p>
+      </h3>
       <p class="siena-colour">
         {{project.project_desc}}
       </p>
