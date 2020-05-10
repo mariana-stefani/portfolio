@@ -78,6 +78,8 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 
 * Python will evaluate if the admin user is logged in by checking ```if 'username' in session``` and passes this data to Jinja to display the correct navbar.
 
+* In smaller screens the navbar is collapsed and a burger icon is displayed.
+
 #### **Index Page**
 
 **Callout container**
