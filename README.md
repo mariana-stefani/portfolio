@@ -133,6 +133,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 *	Add more projects.
 *	Add more skills.
 *   Add more classes for the skills colours.
+*   Add a dropdown menu for the "Add New Skill" page and for the "Edit Skill" page, where the admin user can select among many skills so the skill colour and icon will be added with the selected skill.
 
 
 ## Information Architecture
