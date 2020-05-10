@@ -72,22 +72,19 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
     * Portfolio
     * Get in Touch
 
-**Background colour**
-* The gradient was done using CSS.
+* For admin user it includes the following links:
+    * Home
+    * Logout
+
+* Python will evaluate if the admin user is logged in by checking ```if 'username' in session``` and passes this data to Jinja to display the correct navbar.
 
 #### **Index Page**
 
 **Callout container**
 * In this container, the user will find a brief introduction about myself.
 
-**Callout Button**
-* This button scrolls the page to the contact form.
-
 **About container**
 * In this container the user will find my profile picture, a brief description about me and my skillset with the percentages learned of each skill.
-
-**About Buttons**
-* If the user is logged in, three buttons will be shown to add, edit and/or delete a skill.
 
 **About Toast**
 * When the user logs in, creates, edit and/or update a project and/or a skillset a toast message is shown on the top of the page.
