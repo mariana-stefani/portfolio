@@ -2,30 +2,20 @@
 
 <!-- Callout Container -->
 {% include 'components/callout.html' %}
-{% block callout %}
-{% endblock %} 
+
 
 <!-- About Me Container -->
 {% include 'components/about.html' %}
-{% block content %}
 
 <!-- Projects -->
 {% include 'components/projects.html' %}
-{% block projects %}
-{% endblock %}
+
 
 <!-- Contact Form -->
-{% if 'username' in session %} 
-{% else %}
+
 {% include 'components/form.html' %}
-{% block form %}
-{% endblock %}
-{% endif %}
+
 
 <!-- Footer -->
 {% include 'layout/footer.html' %}
-{% block footer %}{% endblock %}
-
-<!-- End block for block content -->
-{% endblock %}
 
