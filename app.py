@@ -54,16 +54,6 @@ def admin():
     return render_template('pages/login.html', form=form)
 
 
-# Logout Route
-@app.route('/logout')
-def logout():
-    """
-    Clear session to log user out.
-    """
-    session.clear()
-    return redirect(url_for('index'))
-
-
 # Route to add new skill
 @app.route('/admin/skills', methods=['GET', 'POST'])
 def skills():
@@ -166,6 +156,16 @@ def delete_project(project_id):
     """
     mongo.db.projects.remove({'_id': ObjectId(project_id)})
     flash('Your project has been successfully deleted.')
+    return redirect(url_for('index'))
+
+
+# Logout Route
+@app.route('/logout')
+def logout():
+    """
+    Clear session to log user out.
+    """
+    session.clear()
     return redirect(url_for('index'))
 
 
