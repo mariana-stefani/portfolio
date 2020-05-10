@@ -1,4 +1,6 @@
 {% block form %}
+{% if 'username' in session %} 
+{% else %}
 <section id="contact-link" class="container-fluid contact-container">
   <div class="contact-img">
     <img  src="static/images/email.svg" />
@@ -45,4 +47,5 @@
     </div>
   </div>
 </section>
+{% endif %}
 {% endblock %}
