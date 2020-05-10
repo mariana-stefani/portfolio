@@ -20,7 +20,7 @@
   <div class="skillset">
     <h3 class="wine-colour">Skillset</h3>
     {% if 'username' in session %}
-    <a href="{{url_for('skills', skill_id=skill._id)}}" class="btn btn-colour" aria-label="Add Skill"
+    <a href="{{url_for('skills', skill_id=skill._id)}}" class="btn btn-colour" aria-label="Add skill"
       >Add Skill
       <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
     ></a>
@@ -48,11 +48,11 @@
        {{skill.skill_name}} {{skill.percent}}<sup class="small">%</sup>
       </p>
       {% if 'username' in session %}
-      <a href="{{url_for('update_skill', skill_id=skill._id)}}" class="btn btn-colour" aria-label="Edit Skill"
+      <a href="{{url_for('update_skill', skill_id=skill._id)}}" class="btn btn-colour" aria-label="Edit skill"
         >Edit
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
-      <a href="{{url_for('delete_skill', skill_id=skill._id)}}" class="btn btn-colour" id="delete-btn" aria-label="Delete Skill"
+      <a href="{{url_for('delete_skill', skill_id=skill._id)}}" class="btn btn-colour" id="delete-btn" aria-label="Delete skill"
         >Delete
         <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
       ></a>
