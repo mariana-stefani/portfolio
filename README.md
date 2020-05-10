@@ -31,6 +31,7 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 
 #### **Site Owner Goals:**
 
+* As a admin user I expect to be able to do CRUD operations when I'm logged in.
 * Receive interview offers through the use of contact form.
 * Be able to attract attention to my projects.
 * Sell myself in a profession but still personal way.
