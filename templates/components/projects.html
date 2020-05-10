@@ -23,14 +23,14 @@
       </p>
       <ul class="list-inline social-links">
         <li class="list-inline-item">
-          <a class="social-btn" href="{{project.project_github}}" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a class="social-btn" href="{{project.project_github}}" rel="noopener" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
         </li>
         <li class="list-inline-item">
-          <a class="social-btn" href="{{project.project_live}}" target="_blank"><i class="fas fa-globe" aria-hidden="true"></i></a>
+          <a class="social-btn" href="{{project.project_live}}" rel="noopener" target="_blank"><i class="fas fa-globe" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
-    <a href="{{project.project_live}}" target="_blank"><img class="project-img" src="{{project.project_img}}" alt="Project image" /></a>
+    <a href="{{project.project_live}}" rel="noopener" target="_blank"><img class="project-img" src="{{project.project_img}}" alt="Project image" /></a>
   </div>
   
   {% if 'username' in session %}
