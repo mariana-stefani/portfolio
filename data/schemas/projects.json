@@ -1,0 +1,12 @@
+[{
+    "_id": {
+      "$oid": "<objectId>"
+    },
+    "project_name": "<string>",
+    "project_desc": "<string>",
+    "project_github": "<string>",
+    "project_live": "<string>",
+    "project_img": "<string>",
+    "project_order": "<string>",
+    "project_divider": "<string>"
+  }]
