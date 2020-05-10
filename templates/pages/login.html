@@ -18,7 +18,7 @@
     <form  method="POST" action="">
         {{ form.hidden_tag() }}
         <div class="form-group">
-            <div class="col s10 validate wine-colour" required>
+            <div class="col s10 validate wine-colour" type="text" required>
                 {{ form.username.label }}
 
                 {% if form.username.errors %}
