@@ -1,0 +1,9 @@
+[{
+    "_id": {
+      "$oid": "<objectId>"
+    },
+    "skill_name": "<string>",
+    "percent": "<string>",
+    "colour": "<string>",
+    "icon": "<string>"
+  }]
