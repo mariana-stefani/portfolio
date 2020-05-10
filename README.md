@@ -85,21 +85,17 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 **Callout container**
 * In this container, the user will find a brief introduction about myself.
 
+**Callout Toast**
+* When the user logs in, creates, edit, update or delete a project and/or a skillset a toast message is shown on the top of the page.
+
 **About container**
 * In this container the user will find my profile picture, a brief description about me and my skillset with the percentages learned of each skill.
-
-**About Toast**
-* When the user logs in, creates, edit and/or update a project and/or a skillset a toast message is shown on the top of the page.
 
 **Skillset Progress Circle**
 * This progress circle will move accordingly to the percentage learned in each skill.
 
 **Projects Container**
-* In this container, the user will find the projects I have worked on recently. It contains a picture of the project in a desktop resolution along with a brief description of the project. 
-
-**Project Buttons**
-* Below the description, there are two buttons that redirect the user to the project GitHub repository and to the live website.
-* If the user is logged in, three buttons will be shown to add, edit and/or delete a project.
+* In this container, the user will find the projects I have worked on recently. It contains a picture of the project in a desktop screen along with a brief description of the project and two buttons for the project's github repository and the project's live website. If the admin user is logged in, three buttons will be shown to add, edit and/or delete a project.
 
 **Contact Form Container**
 * In this container, there is a contact form where the user can enter his/her name, email address and send me a message.
@@ -120,12 +116,14 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 
 #### **Add New Skill Page**
 * This page has a form with 4 fields that can be filled with the new skill information to be sent to MongoDB.
+* Next to each field title, there's a tooltip. When the admin user hovers the pointer over the tooltip it will display information about what the admin user is expected to write on that field.
 
 #### **Edit Skill Page**
 * This page has a form with 4 fields filled with information retrieved from MongoDB, based on the skill ID. These fields can be altered to update an existing skill.
 
 #### **Add New Project Page**
 * This page has a form with 7 fields that can be filled with the new project information to be sent to MongoDB.
+* Next to each field title, there's a tooltip. When the admin user hovers the pointer over the tooltip it will display information about what the admin user is expected to write on that field.
 
 #### **Edit Project Page**
 *	This page has a form with 7 fields filled with information retrieved from MongoDB, based on the project ID. These fields can be altered to update an existing project.
