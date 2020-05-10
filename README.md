@@ -141,6 +141,7 @@ This projects utilizes the NoSQL database MongoDB.
 
 ### Data Storage Types
 For this project the following data types were stored in MongoDB:
+* Integer
 * ObjectID
 * String
 
