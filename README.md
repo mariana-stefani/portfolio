@@ -66,7 +66,11 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 ### Existing Features
 
 **Navbar**
-* Bootstrap code was used to make the navbar.
+* For users it includes the following links:
+    * Home
+    * About me
+    * Portfolio
+    * Get in Touch
 
 **Background colour**
 * The gradient was done using CSS.
