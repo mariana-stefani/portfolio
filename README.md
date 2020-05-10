@@ -256,11 +256,14 @@ The technologies used were:
 
 ## Bugs
 
+1.
 * **Bug:** The project was failing to open when the “Open App” button was clicked on the Heroku website.
 * **Solution:** This was fixed by adding MONGO_DBNAME, MONGO_URI and SECRET_KEY to Heroku config vars.
 
+2.
 * **Bug:** On small screens, the navbar dropdown button was not working. 
 * **Solution:** I fixed the issue updating the JQuery script from version 3.5.0 to the version 3.5.1.
 
+3.
 * **Bug:** When importing the layout pages within jinja to base.html nothing was rendering. 
 * **Solution:** This was fixed when with some research I found that I had to include “{% include ‘XYZ’ %}”.
