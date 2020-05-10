@@ -134,6 +134,57 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 *   Add more classes for the skills colours.
 
 
+## Information Architecture
+### Database Choice
+
+This projects utilizes the NoSQL database MongoDB.
+
+### Data Storage Types
+For this project the following data types were stored in MongoDB:
+* ObjectID
+* String
+
+### Collections Data Structure
+This uses three database collections:
+
+#### Projects Collection
+
+| Title                  | Key in db       | Form Validation type | Data type |
+|------------------------|-----------------|----------------------|-----------|
+| Account ID             | _id             | None                 | ObjectId  |
+| Project Name           | project_name    | text                 | string    |
+| Description of Project | project_desc    | text, maxlength="60" | string    |
+| Github Repository      | project_github  | text                 | string    |
+| Project URL            | project_live    | text                 | string    |
+| Project Image URL      | project_img     | text                 | string    |
+| Project Order          | project_order   | text                 | string    |
+| Project Divider Line   | project_divider | text                 | string    |
+
+[Example JSON from the projects collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/projects.json)
+
+#### Skills Collection
+
+| Title              | Key in db  | Form Validation type       | Data type |
+|--------------------|------------|----------------------------|-----------|
+| Account ID         | _id        | None                       | ObjectId  |
+| Skill              | skill_name | text                       | string    |
+| Percentage learned | percent    | number, min="1", max="100" | integer   |
+| Skill colour class | colour     | text                       | string    |
+| Icon ID            | icon       | text                       | string    |
+
+[Example JSON from the skills collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/skills.json)
+
+#### Users Collection
+
+| Title      | Key in db | Form Validation type | Data type |
+|------------|-----------|----------------------|-----------|
+| Account ID | _id       | None                 | ObjectId  |
+| Username   | username  | text, maxlength="15" | string    |
+| Password   | password  | text, maxlength="15" | string    |
+
+[Example JSON from the users collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/users.json)
+
+
 ## Technologies Used
 The technologies used were:
 
