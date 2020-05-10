@@ -223,35 +223,35 @@ The technologies used were:
 ## Testing
 
 **Navbar Links**
-* Plan: User clicks on each navbar link and is scrolled to the chosen section.
-* Result: This test passed.
+* **Plan:** User clicks on each navbar link and is scrolled to the chosen section.
+* **Result:** This test passed.
 
 **Callout Button**
-* Plan: User clicks on “Let’s Talk” button and page scrolls down to contact me form.
-* Result: This test has passed.
+* **Plan:** User clicks on “Let’s Talk” button and page scrolls down to contact me form.
+* **Result:** This test has passed.
 
 **About Buttons – When User is Logged In:**
-* Plan 1: User clicks on Add New Skill and/or Edit button is redirected to Add New Skill and/or Edit Skill page
-* Plan 2: User clicks on the Delete button and the skill is deleted from the database.
-* Result: Both tests have passed.
+* **Plan 1:** User clicks on Add New Skill and/or Edit button is redirected to Add New Skill and/or Edit Skill page
+* **Plan 2:** User clicks on the Delete button and the skill is deleted from the database.
+* **Result:** Both tests have passed.
 
 **Project Buttons**
-* Plan: User clicks on the project repository page and/or project live website and is redirected to the pages in a separate tab on the browser.
-* Result: This test has passed.
+* **Plan:** User clicks on the project repository page and/or project live website and is redirected to the pages in a separate tab on the browser.
+* **Result:** This test has passed.
 
 **Project Buttons – When User is Logged In**
-* Plan 1: User clicks on Add New Project and/or Edit button is redirected to Add New Project and/or Edit Project page.
-* Plan 2: User clicks on the Delete button and the project is deleted from the database.
-Result: Both tests have passed.
+* **Plan 1:** User clicks on Add New Project and/or Edit button is redirected to Add New Project and/or Edit Project page.
+* **Plan 2:** User clicks on the Delete button and the project is deleted from the database.
+* **Result:** Both tests have passed.
 
 **Contact Me Form**
-* Plan: After filling all necessary information email is successfully send and a toast message is shown above the form confirming the email was sent.
-* Result: This test has passed.
+* **Plan:** After filling all necessary information email is successfully send and a toast message is shown above the form confirming the email was sent.
+* **Result:** This test has passed.
 
 **Login Page**
-* Plan 1: A toast message is shown when the user tries to log in with a username and/or password that are different from the ones stored on the database.
-* Plan 2: User is redirected to the index page and a toast message is shown if correct username and password are entered.
-* Result: Both tests have passed.
+* **Plan 1:** A toast message is shown when the user tries to log in with a username and/or password that are different from the ones stored on the database.
+* **Plan 2:** User is redirected to the index page and a toast message is shown if correct username and password are entered.
+* **Result:** Both tests have passed.
 
 
 ## Bugs
