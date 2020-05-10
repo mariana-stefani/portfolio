@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light navbar-expand-sm">
-    <a href="{{url_for('index')}}" class="navbar-brand" aria-label="Mariana">Mariana</a>
+    <a href="#callout-link" class="navbar-brand" aria-label="Mariana">Mariana</a>
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -10,7 +10,7 @@
             <div class="hi-user">Hi {{session['username']}}!</div>
           </li>
           <li class="active nav-item mr-2">
-            <a class="nav-link" href="{{url_for('index')}}" aria-label="Home">Home</a>
+            <a class="nav-link" href="#callout-link" aria-label="Home">Home</a>
           </li>
           <li class="nav-item mr-2">
             <a class="nav-link" href="{{url_for('logout')}}" aria-label="Logout">Logout</a>
@@ -18,7 +18,7 @@
         {% endif %}
         {% if 'username' in session %}{% else%}
         <li class="active nav-item mr-2">
-          <a class="nav-link" href="{{url_for('index')}}" aria-label="Home">Home</a>
+          <a class="nav-link" href="#callout-link" aria-label="Home">Home</a>
         </li>
         <li class="nav-item mr-2">
           <a class="nav-link" href="#about-link" aria-label="About me">About me</a>
