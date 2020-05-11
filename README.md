@@ -268,3 +268,18 @@ The technologies used were:
 * **Bug Three** 
     * **Problem:** When importing the layout pages within jinja to base.html nothing was rendering. 
     * **Solution:** This was fixed when with some research I found that I had to include “{% include ‘XYZ’ %}”.
+
+
+## Deployment
+
+1. This project was developed using Visual Studio Code (VSCode) and cloned to a Git Repository.
+*  To clone	a Github repository:
+	* Open the repository on Github and click on "Clone or download" and copy the URL.
+	* On VSCode open the "Command Palette", select "Git: Clone" and paste the URL.
+
+* On VSCode I have used a virtual environment.
+To setup a virtual environment:
+	* On VSCode terminal type:  ```python -m venv .venv```
+	* A dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
+	* Open the "Command Palette" and select "Python: Select Interpreter".
+	* Select the virtual environment that you just created.
