@@ -75,13 +75,13 @@ def skills():
 @app.route('/admin/update_skill/<skill_id>', methods=['GET', 'POST'])
 def update_skill(skill_id):
     """
-    If request is GET displays edit_skill page that was previously filled by user.
+    If request is GET displays edit-skill page that was previously filled by user.
     If request is POST sends updated information to MongoDB.
     """
     if request.method == 'GET':
         skill = mongo.db.skills.find_one({'_id': ObjectId(skill_id)})
         skills = mongo.db.skills.find()
-        return render_template('pages/edit_skill.html', skill=skill, skills=skills)
+        return render_template('pages/edit-skill.html', skill=skill, skills=skills)
     elif request.method == 'POST':
         skills = mongo.db.skills
         skills.update({'_id': ObjectId(skill_id)},
