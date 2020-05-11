@@ -277,8 +277,8 @@ The technologies used were:
 	* Open the repository on Github and click on "Clone or download" and copy the URL.
 	* On VSCode open the "Command Palette", select "Git: Clone" and paste the URL.
 
-* On VSCode I have used a virtual environment.
-To setup a virtual environment:
+* I have used a virtual environment.
+To setup a virtual environment on VSCode:
 	* On VSCode terminal type:  ```python -m venv .venv```.
 	* A dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
 	* Open the "Command Palette" and select "Python: Select Interpreter".
@@ -286,5 +286,5 @@ To setup a virtual environment:
 
 * Create an file called "env.py" and store your variables there, but do not commit this file to Git.
     * To hide this your environment variables create a file called ".gitignore" and write "env.py" on this file.
-    
+
 * To install the necessary libraries run ```pip3 install -r requirements.txt``` from VSCode terminal.
