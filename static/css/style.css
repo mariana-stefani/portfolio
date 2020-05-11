@@ -746,7 +746,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
     padding: 0px 50px;
   }
 
-  .p-main{
+  .p-main {
     margin-bottom: 30px;
   }
 
@@ -773,16 +773,16 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
     margin-top: -11%;
   }
 
-  .scroll-down{
+  .scroll-down {
     bottom: 15px;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 411px) and (min-height: 812px){
-.callout-container {
-  padding-top: 130px;
-}
-.scroll-down {
-  bottom: 50px;
-}
+@media only screen and (min-device-width: 375px) and (max-device-width: 411px) and (min-height: 812px) {
+  .callout-container {
+    padding-top: 130px;
+  }
+  .scroll-down {
+    bottom: 50px;
+  }
 }
