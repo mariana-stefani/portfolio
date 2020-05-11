@@ -277,9 +277,8 @@ The technologies used were:
 	* Open the repository on Github and click on "Clone or download" and copy the URL.
 	* On VSCode open the "Command Palette", select "Git: Clone" and paste the URL.
 
-* I have used a virtual environment.
-To setup a virtual environment on VSCode:
-	* On VSCode terminal type:  ```python -m venv .venv```.
+* I have used a virtual environment. To setup a virtual environment on VSCode:
+	* On the terminal type:  ```python -m venv .venv```.
 	* A dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
 	* Open the "Command Palette" and select "Python: Select Interpreter".
 	* Select the virtual environment that you just created.
