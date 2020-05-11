@@ -292,7 +292,7 @@ The technologies used were:
 * Create a Virtual Environment with Pipenv:
 	* Open VSCode and from its terminal make a *Projects* directory by running ```mkdir Projects```.
 	*  Create an empty folder for this project inside the *˜/Projects* directory by running: 
-	    ``` pipenv
+	    ```
         mkdir ˜/Projects/Portfolio
         pipenv install --python 3.8
         ```	
@@ -301,6 +301,6 @@ The technologies used were:
 	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
 	* Open the "Command Palette" and select *"Python: Select Interpreter"*.
 	* Select the virtual environment that you just created.
-* Create an file called *"env.py"* and store your variables there, but do not commit this file to Git.
+* Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. Do not commit this file to Git.
 	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
 * Install the necessary libraries by running ```pip3 install -r requirements.txt``` from VSCode terminal.
