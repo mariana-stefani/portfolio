@@ -58,12 +58,12 @@ def admin():
 @app.route('/admin/skills', methods=['GET', 'POST'])
 def skills():
     """
-    If request is GET displays add_skill page to be filled by user.
+    If request is GET displays add-skill page to be filled by user.
     If request is POST sends filled information to MongoDB.
     """
     if request.method == 'GET':
         skills = mongo.db.skills.find()
-        return render_template('pages/add_skill.html', skills=skills)
+        return render_template('pages/add-skill.html', skills=skills)
     else:
         skills = mongo.db.skills
         skills.insert_one(request.form.to_dict())
