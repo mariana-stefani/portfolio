@@ -3,13 +3,14 @@
   <head>
     {% include 'layout/head.html' %}
   </head>
-
   <body>
     <header>
       <!-- Navbar -->
       {% include 'layout/navbar.html' %}
     </header>
-    
+    <!-- index  -->
+    {% block index %}
+    {% endblock %}
     <!-- Scripts  -->
     {% include 'layout/scripts.html' %}
   </body>
