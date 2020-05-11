@@ -4,8 +4,8 @@
 $(function () {
   $(".progress").each(function () {
     let value = $(this).attr("data-value");
-    let left = $(this).find(".progress-left .progress-bar");
-    let right = $(this).find(".progress-right .progress-bar");
+    let left = $(this).find(".progress-left .progress-circle");
+    let right = $(this).find(".progress-right .progress-circle");
 
     if (value > 0) {
       if (value <= 50) {
