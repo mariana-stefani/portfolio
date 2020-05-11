@@ -65,9 +65,9 @@ function sendMail(contactForm) {
 /**
  * When user scroll an ID is added to the nav to add background-color
  */
-let navbar = $(".navbar");
 
 $(window).scroll(function () {
+  let navbar = $(".navbar");
   if ($(window).scrollTop() > 0) {
     navbar.addClass("nav-show");
   } else {
