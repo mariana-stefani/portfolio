@@ -742,3 +742,40 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 
 /* Media Queries */
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main {
+    padding: 0px 50px;
+  }
+
+  .p-main{
+    margin-bottom: 30px;
+  }
+
+  .h2-big {
+    font-size: 55px;
+  }
+
+  .h3-big {
+    font-size: 34px;
+  }
+
+  .btn-size {
+    padding: 5px 0px 5px 0px;
+    width: 133px;
+    margin: 6px;
+  }
+
+  .center-form {
+    max-width: 90%;
+  }
+
+  .contact-img img {
+    width: 22%;
+    margin-top: -11%;
+  }
+
+  .scroll-down{
+    bottom: 15px;
+  }
+}
+
