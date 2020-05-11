@@ -273,7 +273,7 @@ The technologies used were:
 ## Deployment 
 ### Run the Code Locally
 
-1. This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio)
+* This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio)
 
 * To clone a Github repository:
 
@@ -284,6 +284,8 @@ The technologies used were:
 * The following **must** be installed in your machine:
 	* [Git](https://www.atlassian.com/git/tutorials/install-git)
 	* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
+    * [MongoDB Atlas Account](https://www.mongodb.com/cloud/atlas)
+        * [Documentation](https://docs.atlas.mongodb.com/) to setup a MongoDB Atlas account.
 	* [PIP](https://pip.pypa.io/en/stable/installing/)
 	* [Python 3](https://www.python.org/downloads/)
 * Install Pipenv Globally:
@@ -301,6 +303,9 @@ The technologies used were:
 	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
 	* Open the "Command Palette" and select *"Python: Select Interpreter"*.
 	* Select the virtual environment that you just created.
-* Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. Do not commit this file to Git.
-	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
 * Install the necessary libraries by running ```pip3 install -r requirements.txt``` from VSCode terminal.
+* Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ** *Portfolio* **. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+    * Do not commit this file to Git.
+	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
+* Run your application with the command ```python3 app.py```
+* The project can be viewed at ** *http://127.0.0.1:5000* **
