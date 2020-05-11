@@ -472,7 +472,6 @@ button[type="submit"] {
 
 @media (min-width: 1400px) {
   .contact-img img {
-    border-radius: 6rem;
     width: 7%;
     margin-top: -4%;
   }
