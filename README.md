@@ -213,6 +213,7 @@ The technologies used were:
 * [Am I Responsive](http://ami.responsivedesign.is/)
 * [EmailJS](https://www.emailjs.com/)
 * [Flat Icon](https://www.flaticon.com/)
+* [Free Image Host](https://freeimage.host/)
 * [Git](https://github.com/)
 * [Heroku](http://www.heroku.com)
 * [MongoBD Atlas](https://www.mongodb.com/cloud/atlas)
