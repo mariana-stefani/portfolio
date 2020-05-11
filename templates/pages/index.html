@@ -12,7 +12,9 @@
 <!-- Contact Form -->
 {% include 'components/form.html' %}
 
-{% endblock %}
-
 <!-- Footer -->
+{% if 'username' in session %}
+{% else %}
 {% include 'layout/footer.html' %}
+{% endif %}
+{% endblock %}
