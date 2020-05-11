@@ -270,20 +270,37 @@ The technologies used were:
     * **Solution:** This was fixed when with some research I found that I had to include “{% include ‘XYZ’ %}”.
 
 
-## Deployment
+## Deployment 
+### Run the Code Locally
 
-1. This project was developed using Visual Studio Code (VSCode) and cloned to a Git Repository.
-*  To clone	a Github repository:
-	* Open the repository on Github and click on "Clone or download" and copy the URL.
-	* On VSCode open the "Command Palette", select "Git: Clone" and paste the URL.
+1. This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio)
 
-* I have used a virtual environment. To setup a virtual environment on VSCode:
-	* On the terminal type:  ```python -m venv .venv```.
-	* A dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
-	* Open the "Command Palette" and select "Python: Select Interpreter".
+* To clone a Github repository:
+
+	* Open the [repository](https://github.com/mariana-stefani/portfolio) on Github and click on *"Clone or download"* and copy the URL.
+
+	* On VSCode open the *"Command Palette"*, select *"Git: Clone"* and paste the URL.
+
+* The following **must** be installed in your machine:
+	* [Git](https://www.atlassian.com/git/tutorials/install-git)
+	* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
+	* [PIP](https://pip.pypa.io/en/stable/installing/)
+	* [Python 3](https://www.python.org/downloads/)
+* Install Pipenv Globally:
+	* If needed, upgrade pip from your computer's terminal by running ``` python3.8 -m pip install pip --upgrade```.
+	*  To install Pipenv globally, run from your computer's terminal ```python3.8 -m pip install pipenv```.	
+* Create a Virtual Environment with Pipenv:
+	* Open VSCode and from its terminal make a *Projects* directory by running ```mkdir Projects```.
+	*  Create an empty folder for this project inside the *˜/Projects* directory by running: 
+	    ``` pipenv
+        mkdir ˜/Projects/Portfolio
+        pipenv install --python 3.8
+        ```	
+	* Initialize the Virtual Environment: ``` cd ~/Projects/Portolio```
+	* Activate the Virtual Environment: ```pipenv shell```
+	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
+	* Open the "Command Palette" and select *"Python: Select Interpreter"*.
 	* Select the virtual environment that you just created.
-
-* Create an file called "env.py" and store your variables there, but do not commit this file to Git.
-    * To hide this your environment variables create a file called ".gitignore" and write "env.py" on this file.
-
-* To install the necessary libraries run ```pip3 install -r requirements.txt``` from VSCode terminal.
+* Create an file called *"env.py"* and store your variables there, but do not commit this file to Git.
+	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
+* Install the necessary libraries by running ```pip3 install -r requirements.txt``` from VSCode terminal.
