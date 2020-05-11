@@ -778,3 +778,11 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 411px) and (min-height: 812px){
+.callout-container {
+  padding-top: 130px;
+}
+.scroll-down {
+  bottom: 50px;
+}
+}
