@@ -273,7 +273,7 @@ The technologies used were:
 ## Deployment 
 ### Run the Code Locally
 
-* This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio)
+* This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio).
 
 * To clone a Github repository:
 
@@ -304,8 +304,8 @@ The technologies used were:
 	* Open the "Command Palette" and select *"Python: Select Interpreter"*.
 	* Select the virtual environment that you just created.
 * Install the necessary libraries by running ```pip3 install -r requirements.txt``` from VSCode terminal.
-* Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ** *Portfolio* **. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+* Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
     * Do not commit this file to Git.
 	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
 * Run your application with the command ```python3 app.py```
-* The project can be viewed at ** *http://127.0.0.1:5000* **
+* The project can be viewed at ***http://127.0.0.1:5000***
