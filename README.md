@@ -284,4 +284,6 @@ To setup a virtual environment:
 	* Open the "Command Palette" and select "Python: Select Interpreter".
 	* Select the virtual environment that you just created.
 
-* To install the necessary libraries run ```pip install -r requirements.txt``` from VSCode terminal.
+* To install the necessary libraries run ```pip3 install -r requirements.txt``` from VSCode terminal.
+* Create an file called "env.py" and store your variables there, but do not commit this file to Git.
+    * To hide this your environment variables create a file called ".gitignore" and write "env.py" on this file.
