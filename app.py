@@ -126,13 +126,13 @@ def projects():
 @app.route('/admin/update_project/<project_id>', methods=['GET', 'POST'])
 def update_project(project_id):
     """
-    If request is GET displays edit_project page that was previously filled by user.
+    If request is GET displays edit-project page that was previously filled by user.
     If request is POST sends updated information to MongoDB.
     """
     if request.method == 'GET':
         project = mongo.db.projects.find_one({'_id': ObjectId(project_id)})
         projects = mongo.db.projects.find()
-        return render_template('pages/edit_project.html', project=project, projects=projects)
+        return render_template('pages/edit-project.html', project=project, projects=projects)
     elif request.method == 'POST':
         projects = mongo.db.projects
         projects.update({'_id': ObjectId(project_id)},
