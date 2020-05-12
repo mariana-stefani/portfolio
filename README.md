@@ -31,14 +31,14 @@ As a user I expect/want/need:
 *“When I’m looking for a new employee it’s important to be able to see the developers code and what skills he or she have already learned. When looking through a portfolio I expect the skills section to be easily readable and to clearly show how much of each skill the developer knows approximately. I also expect a link to the developer’s GitHub repository, so I can go read the developer’s code.”*
 
 #### **Site Owner Goals:**
+As a admin user I expect/want/need:
+* To be able to log in on a hidden page when using “/admin” at the end of the index URL.
+* To be able to create and update a skillset and/or a project through a form to MongoDB.
+* To be able to delete a skillset and/or a project from MongoDB.
+* To receive interview offers through the use of contact form.
+* To be able to attract attention to my projects.
+* To sell myself in a profession but still personal way.
 
-* As a admin user I expect to be able to do CRUD operations when I'm logged in.
-* Receive interview offers through the use of contact form.
-* Be able to attract attention to my projects.
-* Sell myself in a profession but still personal way.
-* Be able to log in on a hidden page when using “/admin” at the end of the index URL.
-* Be able to create and update a skillset and/or a project through a form to MongoDB.
-* Be able to delete a skillset and/or a project from MongoDB.
 
 
 ## User Requirements and Expectations:
