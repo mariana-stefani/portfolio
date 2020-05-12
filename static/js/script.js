@@ -94,3 +94,13 @@ $("#contact-form").submit(function (e) {
  * Display toast message
  */
 $(".toast").toast("show");
+
+/**
+ * Highlight nav link
+ */
+$(".menu a").each(function () {
+  $(".menu a").on("click", function () {
+    $(".menu a").removeClass("active");
+    $(this).addClass("active");
+  });
+});
