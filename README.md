@@ -11,9 +11,9 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 
 #### **User Goals:**
 As a user I expect/want/need:
-* To easily find the developer's latest projects with buttons that will redirect me to the live website and to the GitHub repository.
+* To easily find the developer's latest projects with buttons that will redirect me to the live website and the GitHub repository.
 * To easily find the information about the developer’s skills proficiency.
-* To contact the developer in a built in contact form.
+* To contact the developer in a built-in contact form.
 * To with a click of a button to be able to see the developer’s CV on a new tab instead of having to download it.
 
 #### **User Stories:**
@@ -31,7 +31,7 @@ As a user I expect/want/need:
 *“When I’m looking for a new employee it’s important to be able to see the developers code and what skills he or she have already learned. When looking through a portfolio I expect the skills section to be easily readable and to clearly show how much of each skill the developer knows approximately. I also expect a link to the developer’s GitHub repository, so I can go read the developer’s code.”*
 
 #### **Site Owner Goals:**
-As a admin user I expect/want/need:
+As an admin user I expect/want/need:
 * To be able to log in on a hidden page when using “/admin” at the end of the index URL.
 * To be able to create and update a skillset and/or a project through a form to MongoDB.
 * To be able to delete a skillset and/or a project from MongoDB.
@@ -68,13 +68,13 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 ### Existing Features
 
 **Navbar**
-* For users it includes the following links:
+* For users, it includes the following links:
     * Home
     * About me
     * Portfolio
     * Get in Touch
 
-* For admin user it includes the following links:
+* For admin user, it includes the following links:
     * Home
     * Logout
 
@@ -97,7 +97,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 * This progress circle will move accordingly to the percentage learned in each skill.
 
 **Projects Container**
-* In this container, the user will find the projects I have worked on recently. It contains a picture of the project in a desktop screen along with a brief description of the project and two buttons for the project's github repository and the project's live website. If the admin user is logged in, three buttons will be shown to add, edit and/or delete a project.
+* In this container, the user will find the projects I have worked on recently. It contains a picture of the project in a desktop screen along with a brief description of the project and two buttons for the project's GitHub repository and the project's live website. If the admin user is logged in, three buttons will be shown to add, edit and/or delete a project.
 
 **Contact Form Container**
 * In this container, there is a contact form where the user can enter his/her name, email address and send me a message.
@@ -141,7 +141,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 ## Information Architecture
 ### Database Choice
 
-This projects utilizes the NoSQL database MongoDB.
+This project utilizes the NoSQL database MongoDB.
 
 ### Data Storage Types
 For this project the following data types were stored in MongoDB:
@@ -154,7 +154,7 @@ This uses three database collections:
 
 #### Projects Collection
 
-| Title                  | Key in db       | Form Validation type | Data type |
+| Title                  | Key in DB       | Form Validation type | Data type |
 |------------------------|-----------------|----------------------|-----------|
 | Account ID             | _id             | None                 | ObjectId  |
 | Project Name           | project_name    | text                 | string    |
@@ -276,7 +276,7 @@ The technologies used were:
 
 ### Heroku Deployment 
 #### To deploy this project to Heroku follow the steps below:
-1. Install Heroku cli in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
+1. Install Heroku CLI in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
 2. On VSCode terminal run the command ```$ pip3 freeze --local > requirements.txt``` to create a ***requirements.txt*** file.
 3. Run the command ```$ echo web: python app.py > Procfile``` to create a ***Procfile***.
 4. Deploy each change to Github:
@@ -286,7 +286,7 @@ $ git commit -m 'Commit message'
 $ git push
 ````
 5. Create a free account on the [Heroku website](https://signup.heroku.com).
-6. On your Heroku dashboard click on the ***New*** button and then on ***Create new app***. Give it an unique name and select Europe as the region.
+6. On your Heroku dashboard click on the ***New*** button and then on ***Create new app***. Give it a unique name and select Europe as the region.
 7. From your dashboard click on ***Settings*** > ***Reveal Config Vars***.
 8. Add the following config vars:
 
