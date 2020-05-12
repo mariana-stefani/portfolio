@@ -1,5 +1,6 @@
 # Portfolio (Third Milestone Project | Code Institute)
 
+(static/images/portfolio.png)
 
 ## UX (User Experience)
 
