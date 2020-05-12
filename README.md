@@ -303,7 +303,8 @@ $ git push
 6. On VSCode terminal run the command ```$ heroku login``` to login to your account.
 7. Link Heroku to git with the following by running ```$ heroku git:remote -a <yourproject>```.
 8. Deploy your project to Heroku by running ```$ git push heroku master```.
-9. On your Heroku dashboard click on the button ***Open app*** on the top right side to view your deployed project.
+9. Your project is now successfully deployed to Heroku.
+10. On your Heroku dashboard click on the button ***Open app*** on the top right side to view your deployed project.
 
 ### Run the Code Locally
 
