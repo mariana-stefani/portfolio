@@ -61,7 +61,7 @@ As an admin user I expect/want/need:
 ## Wireframes
 
 The wireframes for this project were created at [Moqups](https://moqups.com/).
-View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/master/wireframes)
+View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/master/wireframes).
 
 
 ## Features
@@ -233,7 +233,7 @@ The technologies used were:
 * **Result:** This test has passed.
 
 **About Buttons – When User is Logged In:**
-* **Plan 1:** User clicks on Add New Skill and/or Edit button is redirected to Add New Skill and/or Edit Skill page
+* **Plan 1:** User clicks on Add New Skill and/or Edit button is redirected to Add New Skill and/or Edit Skill page.
 * **Plan 2:** User clicks on the Delete button and the skill is deleted from the database.
 * **Result:** Both tests have passed.
 
@@ -333,8 +333,8 @@ $ git push
         mkdir ˜/Projects/Portfolio
         pipenv install --python 3.8
         ```	
-	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portolio```
-	* Activate the Virtual Environment: ```$ pipenv shell```
+	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portolio```.
+	* Activate the Virtual Environment: ```$ pipenv shell```.
 	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
 	* Open the "Command Palette" and select *"Python: Select Interpreter"*.
 	* Select the virtual environment that you just created.
@@ -342,5 +342,14 @@ $ git push
 * Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
     * Do not commit this file to Git.
 	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
-* Run your application with the command ```$ python3 app.py```
-* The project can be viewed at ***http://127.0.0.1:5000***
+* Run your application with the command ```$ python3 app.py```.
+* The project can be viewed at ***http://127.0.0.1:5000***.
+
+## Credits
+### Media
+* Responsiveness across devices image from [Am I Responsive](http://ami.responsivedesign.is/).
+* Icons used on contact me section is made by *iconixar* from [Flat Icon](https://www.flaticon.com/).
+
+
+## Acknowledgments
+All my gratitude to my wonderful husband and family who always have supported me. A big thank you to my mentor Simen Daehlin for your ideas, advise and support! Thank you to Anna Greaves, Haley Schafer, Luca Dettorre, Tim Nelson from Code Institute for your time and assistance. Thank you to Guillermo from Slack. Thank you to everyone from Code Institute!
