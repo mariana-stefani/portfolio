@@ -94,11 +94,3 @@ $("#contact-form").submit(function (e) {
  * Display toast message
  */
 $(".toast").toast("show");
-
-/**
- * Change nav link colour when its clicked
- */
-$("a.nav-link").click(function (){
-  $("a.nav-link").css("color", "");
-  $(this).css("color", "#621a2d !important");
-});
