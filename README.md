@@ -1,6 +1,9 @@
-# Portfolio (Third Milestone Project | Code Institute)
+# Portfolio
 
 ![Responsiveness across devices](static/images/portfolio.png)
+
+## Introduction
+This project was created by me, Mariana Stefani, to be my personal portfolio with my latest projects and information about me and my skillset.
 
 ## UX (User Experience)
 
