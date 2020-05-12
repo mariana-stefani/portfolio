@@ -11,13 +11,14 @@ For myself, there is a possibility to login and then create, update and delete a
 The website is fully responsive, has a consistent flow and intuitive navigation.
 
 #### **User Goals:**
-As a user I expect/want/need:
-* To easily find the developer's latest projects with buttons that will redirect me to the live website and the GitHub repository.
-* To easily find the information about the developer’s skills proficiency.
-* To contact the developer in a built-in contact form.
-* To with a click of a button to be able to see the developer’s CV on a new tab instead of having to download it.
+
 
 #### **User Stories:**
+
+* As a user I expect to contact the developer in a built-in contact form.
+* As a user I expect to with a click of a button to be able to see the developer’s CV on a new tab instead of having to download it.
+* As a user I expect to easily find the developer's latest projects with buttons that will redirect me to the live website and the GitHub repository.
+* As a user I expect to easily find the information about the developer’s skills proficiency.
 
 **Emily S.**
 
