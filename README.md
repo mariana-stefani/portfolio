@@ -256,6 +256,12 @@ The technologies used were:
 * **Plan 2:** User is redirected to the index page and a toast message is shown if correct username and password are entered.
 * **Result:** Both tests have passed.
 
+## Note for the assessor
+In order to test the CRUDs functionalities:
+* Please enter ***/admin*** after the page URL.
+* The username is ***testuser***.
+* The password is ***test***.
+
 
 ## Bugs
 
