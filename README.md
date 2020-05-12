@@ -73,6 +73,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
     * Home
     * About me
     * Portfolio
+    * Resume
     * Get in Touch
 
 * For admin user, it includes the following links:
