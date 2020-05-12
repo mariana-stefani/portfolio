@@ -12,6 +12,9 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 
 #### **User Goals:**
 
+* Find a junior developer with well-written projects and good skills to invite for an interview.
+* Find a junior developer that still is looking for a job and invite to join a freelance project.
+* Find a developer to build a website for my shop.
 
 #### **User Stories:**
 
