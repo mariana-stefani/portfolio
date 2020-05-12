@@ -1,6 +1,6 @@
 # Portfolio (Third Milestone Project | Code Institute)
 
-(static/images/portfolio.png)
+![Responsiveness across devices](static/images/portfolio.png)
 
 ## UX (User Experience)
 
