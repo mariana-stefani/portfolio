@@ -272,6 +272,39 @@ The technologies used were:
 
 
 ## Deployment 
+* The project files were regularly pushed to my [GitHub repository](https://github.com/mariana-stefani/portfolio).
+
+### Heroku Deployment 
+#### To deploy this project to Heroku follow the steps below:
+1. Install Heroku cli in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
+2. On VSCode terminal run the command ```$ pip3 freeze --local > requirements.txt``` to create a ***requirements.txt*** file.
+3. Run the command ```$ echo web: python app.py > Procfile``` to create a ***Procfile***.
+4. Deploy each change to Github:
+````
+$ git add .
+$ git commit -m 'Commit message'
+$ git push
+````
+5. Create a free account on the [Heroku website](https://signup.heroku.com).
+6. On your Heroku dashboard click on the ***New*** button and then on ***Create new app***. Give it an unique name and select Europe as the region.
+7. From your dashboard click on ***Settings*** > ***Reveal Config Vars***.
+8. Add the following config vars:
+
+| KEY          | VALUE                                                                                                                  |
+|--------------|------------------------------------------------------------------------------------------------------------------------|
+| IP           | 0.0.0.0                                                                                                                |
+| PORT         | 5000                                                                                                                   |
+| MONGO_DBNAME | <project_name>                                                                                                         |
+| MONGO_URI    | mongodb+srv://<username>:HsP6P7T7MUJ4Eniv@<cluster_name>-o5dej.mongodb.net/<database_name>?retryWrites=true&w=majority |
+| SECRET_KEY   | <your_secret_key>                                                                                                      |
+| DEBUG        | FALSE                                                                                                                  |
+
+* To get your MONGO_URI log in to your MongoDB account > click on the cluster for this project > Click on connect > Select *Connect your application* > Copy the URI.
+6. On VSCode terminal run the command ```$ heroku login``` to login to your account.
+7. Link Heroku to git with the following by running ```$ heroku git:remote -a <yourproject>```.
+8. Deploy your project to Heroku by running ```$ git push heroku master```.
+9. On your Heroku dashboard click on the button ***Open app*** on the top right side to view your deployed project.
+
 ### Run the Code Locally
 
 * This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio).
@@ -290,23 +323,23 @@ The technologies used were:
 	* [PIP](https://pip.pypa.io/en/stable/installing/)
 	* [Python 3](https://www.python.org/downloads/)
 * Install Pipenv Globally:
-	* If needed, upgrade pip from your computer's terminal by running ``` python3.8 -m pip install pip --upgrade```.
-	*  To install Pipenv globally, run from your computer's terminal ```python3.8 -m pip install pipenv```.	
+	* If needed, upgrade pip from your computer's terminal by running ```$ python3.8 -m pip install pip --upgrade```.
+	*  To install Pipenv globally, run from your computer's terminal ```$ python3.8 -m pip install pipenv```.	
 * Create a Virtual Environment with Pipenv:
-	* Open VSCode and from its terminal make a *Projects* directory by running ```mkdir Projects```.
+	* Open VSCode and from its terminal make a *Projects* directory by running ```$ mkdir Projects```.
 	*  Create an empty folder for this project inside the *˜/Projects* directory by running: 
 	    ```
         mkdir ˜/Projects/Portfolio
         pipenv install --python 3.8
         ```	
-	* Initialize the Virtual Environment: ``` cd ~/Projects/Portolio```
-	* Activate the Virtual Environment: ```pipenv shell```
+	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portolio```
+	* Activate the Virtual Environment: ```$ pipenv shell```
 	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
 	* Open the "Command Palette" and select *"Python: Select Interpreter"*.
 	* Select the virtual environment that you just created.
-* Install the necessary libraries by running ```pip3 install -r requirements.txt``` from VSCode terminal.
+* Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
 * Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
     * Do not commit this file to Git.
 	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
-* Run your application with the command ```python3 app.py```
+* Run your application with the command ```$ python3 app.py```
 * The project can be viewed at ***http://127.0.0.1:5000***
