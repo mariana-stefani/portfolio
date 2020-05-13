@@ -3,7 +3,7 @@
 ![Responsiveness across devices](static/images/portfolio.png)
 
 ## Introduction
-This project was created by me, Mariana Stefani, to be my personal portfolio with my latest projects and information about me and my skillset.
+[This project](https://marianastefani-portfolio.herokuapp.com/) was created by me, Mariana Stefani, to be my personal portfolio with my latest projects and information about me and my skillset.
 
 ## UX (User Experience)
 
