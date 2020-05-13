@@ -36,9 +36,9 @@
         >Edit
      <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span></a>
      <a href="{{url_for('delete_project', project_id=project._id)}}" class="btn btn-colour" id="delete-btn" aria-label="Delete project">Delete
-     <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span></a>
-     {% endif %}
+     <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span></a>     
   </div>
+  {% endif %}
   <div class="{{project.project_divider}}"></div>
   {% endfor %}
 </section>
