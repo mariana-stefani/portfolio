@@ -1,51 +1,44 @@
 <section id="projects-link" class="container-fluid projects-container">
   <h1 class="claret-colour">Portfolio</h1>
   <h2 class="p-media projects-p wine-colour">
-    Here are a few projects that I've worked on recently.
+     Here are a few projects that I've worked on recently.
   </h2>
   {% if 'username' in session %}
-    <a href="{{url_for('projects', project_id=project._id)}}" class="btn btn-media btn-colour" aria-label="Add project"
-      >Add Project
-      <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
-    ></a>
-    {% endif %}
-
-    {% for project in projects %}
+  <a href="{{url_for('projects', project_id=project._id)}}" class="btn btn-media btn-colour" aria-label="Add project"
+     >Add Project
+  <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
+     ></a>
+  {% endif %}
+  {% for project in projects %}
   <!-- Projects -->
   <div class="row each-project">
-    <div class="project-desc col-lg-4 col-10 {{project.project_order}}">
-      <h3 class="projects-p grape-colour project-name ">
-        {{project.project_name}}
-      </h3>
-      <p class="siena-colour">
-        {{project.project_desc}}
-      </p>
-      <ul class="list-inline social-links">
-        <li class="list-inline-item">
-          <a class="social-btn" href="{{project.project_github}}" rel="noopener" target="_blank" aria-label="{{project.project_name}} Github repository"><i class="fab fa-github" aria-hidden="true"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-btn" href="{{project.project_live}}" rel="noopener" target="_blank" aria-label="{{project.project_name}} live website"><i class="fas fa-globe" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </div>
-    <a href="{{project.project_live}}" rel="noopener" target="_blank" aria-label="{{project.project_name}} live website"><img class="project-img" src="{{project.project_img}}" alt="{{project.project_name}} image" /></a>
+     <div class="project-desc col-lg-4 col-10 {{project.project_order}}">
+        <h3 class="projects-p grape-colour project-name ">
+           {{project.project_name}}
+        </h3>
+        <p class="siena-colour">
+           {{project.project_desc}}
+        </p>
+        <ul class="list-inline social-links">
+           <li class="list-inline-item">
+              <a class="social-btn" href="{{project.project_github}}" rel="noopener" target="_blank" aria-label="{{project.project_name}} Github repository"><i class="fab fa-github" aria-hidden="true"></i></a>
+           </li>
+           <li class="list-inline-item">
+              <a class="social-btn" href="{{project.project_live}}" rel="noopener" target="_blank" aria-label="{{project.project_name}} live website"><i class="fas fa-globe" aria-hidden="true"></i></a>
+           </li>
+        </ul>
+     </div>
+     <a href="{{project.project_live}}" rel="noopener" target="_blank" aria-label="{{project.project_name}} live website"><img class="project-img" src="{{project.project_img}}" alt="{{project.project_name}} image" /></a>
   </div>
-  
   {% if 'username' in session %}
   <div>
-    <a href="{{url_for('update_project', project_id=project._id)}}" class="btn btn-colour" aria-label="Edit project"
-    >Edit
-    <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
-  ></a>
-  <a href="{{url_for('delete_project', project_id=project._id)}}" class="btn btn-colour" id="delete-btn" aria-label="Delete project"
-    >Delete
-    <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span
-  ></a>
-  {% endif %}
+     <a href="{{url_for('update_project', project_id=project._id)}}" class="btn btn-colour" aria-label="Edit project"
+        >Edit
+     <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span></a>
+     <a href="{{url_for('delete_project', project_id=project._id)}}" class="btn btn-colour" id="delete-btn" aria-label="Delete project">Delete
+     <span><i class="fas fa-user-edit prefix" aria-hidden="true"></i></span></a>
+     {% endif %}
   </div>
-
   <div class="{{project.project_divider}}"></div>
-  
   {% endfor %}
 </section>
