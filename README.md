@@ -163,38 +163,38 @@ This uses three database collections:
 
 #### Projects Collection
 
-| Title                  | Key in DB       | Form Validation type | Data type |
-|------------------------|-----------------|----------------------|-----------|
-| Account ID             | _id             | None                 | ObjectId  |
-| Project Name           | project_name    | text                 | string    |
-| Description of Project | project_desc    | text, maxlength="60" | string    |
-| Github Repository      | project_github  | text                 | string    |
-| Project URL            | project_live    | text                 | string    |
-| Project Image URL      | project_img     | text                 | string    |
-| Project Order          | project_order   | text                 | string    |
-| Project Divider Line   | project_divider | text                 | string    |
+| *Title*                  | *Key in DB*       | *Form Validation type* | *Data type* |
+|--------------------------|-------------------|------------------------|-------------|
+| Account ID               | _id               | None                   | ObjectId    |
+| Project Name             | project_name      | text                   | string      |
+| Description of Project   | project_desc      | text, maxlength="60"   | string      |
+| Github Repository        | project_github    | text                   | string      |
+| Project URL              | project_live      | text                   | string      |
+| Project Image URL        | project_img       | text                   | string      |
+| Project Order            | project_order     | text                   | string      |
+| Project Divider Line     | project_divider   | text                   | string      |
 
 [Example JSON from the projects collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/projects.json)
 
 #### Skills Collection
 
-| Title              | Key in db  | Form Validation type       | Data type |
-|--------------------|------------|----------------------------|-----------|
-| Account ID         | _id        | None                       | ObjectId  |
-| Skill              | skill_name | text                       | string    |
-| Percentage learned | percent    | number, min="1", max="100" | integer   |
-| Skill colour class | colour     | text                       | string    |
-| Icon ID            | icon       | text                       | string    |
+| *Title*              | *Key in db*  | *Form Validation type*       | *Data type* |
+|----------------------|--------------|------------------------------|-------------|
+| Account ID           | _id          | None                         | ObjectId    |
+| Skill                | skill_name   | text                         | string      |
+| Percentage learned   | percent      | number, min="1", max="100"   | integer     |
+| Skill colour class   | colour       | text                         | string      |
+| Icon ID              | icon         | text                         | string      |
 
 [Example JSON from the skills collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/skills.json)
 
 #### Users Collection
 
-| Title      | Key in db | Form Validation type | Data type |
-|------------|-----------|----------------------|-----------|
-| Account ID | _id       | None                 | ObjectId  |
-| Username   | username  | text, maxlength="15" | string    |
-| Password   | password  | text, maxlength="15" | string    |
+| *Title*      | *Key in db* | *Form Validation type* | *Data type* |
+|--------------|-------------|------------------------|-------------|
+| Account ID   | _id         | None                   | ObjectId    |
+| Username     | username    | text, maxlength="15"   | string      |
+| Password     | password    | text, maxlength="15"   | string      |
 
 [Example JSON from the users collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/users.json)
 
@@ -267,9 +267,10 @@ The technologies used were:
 
 ## Note for the assessor
 In order to test the CRUDs functionalities:
-* Please enter ***/admin*** after the page URL.
-* The username is ***testuser***.
-* The password is ***test***.
+
+| **URL**                                              | **Username** | **Password** |
+|------------------------------------------------------|--------------|--------------|
+| https://marianastefani-portfolio.herokuapp.com/admin | testuser     | test         |
 
 
 ## Bugs
@@ -306,13 +307,13 @@ $ git push
 7. From your dashboard click on ***Settings*** > ***Reveal Config Vars***.
 8. Add the following config vars:
 
-| KEY          | VALUE                                                                                                                  |
-|--------------|------------------------------------------------------------------------------------------------------------------------|
-| IP           | 0.0.0.0                                                                                                                |
-| PORT         | 5000                                                                                                                   |
-| MONGO_DBNAME | <project_name>                                                                                                         |
-| MONGO_URI    | mongodb+srv://<username>:HsP6P7T7MUJ4Eniv@<cluster_name>-o5dej.mongodb.net/<database_name>?retryWrites=true&w=majority |
-| SECRET_KEY   | <your_secret_key>                                                                                                      |
+| *KEY*          | *VALUE*                                                                                                                  |
+|----------------|--------------------------------------------------------------------------------------------------------------------------|
+| IP             | 0.0.0.0                                                                                                                  |
+| PORT           | 5000                                                                                                                     |
+| MONGO_DBNAME   | <project_name>                                                                                                           |
+| MONGO_URI      | mongodb+srv://<username>:HsP6P7T7MUJ4Eniv@<cluster_name>-o5dej.mongodb.net/<database_name>?retryWrites=true&w=majority   |
+| SECRET_KEY     | <your_secret_key>                                                                                                        |
 
 * To get your ***MONGO_URI*** log in to your **MongoDB** account > click on the cluster for this project > Click on connect > Select *Connect your application* > Copy the URI.
 6. On VSCode terminal run the command ```$ heroku login``` to login to your account.
