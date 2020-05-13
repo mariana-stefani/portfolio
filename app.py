@@ -72,7 +72,7 @@ def skills():
 
 
 # Route to insert new skill to MongoDB database
-@app.route('/admin/update_skill/<skill_id>', methods=['GET', 'POST'])
+@app.route('/admin/update/skill/<skill_id>', methods=['GET', 'POST'])
 def update_skill(skill_id):
     """
     If request is GET displays edit-skill page that was previously filled by user.
@@ -95,7 +95,7 @@ def update_skill(skill_id):
 
 
 # Route to delete skill from MongoDB database
-@app.route('/admin/delete_skill/<skill_id>')
+@app.route('/admin/delete/skill/<skill_id>')
 def delete_skill(skill_id):
     """
     Deletes selected skill, identified by skill_id and display message saying skill was deleted.
@@ -123,7 +123,7 @@ def projects():
 
 
 # Route to insert new project to MongoDB database
-@app.route('/admin/update_project/<project_id>', methods=['GET', 'POST'])
+@app.route('/admin/update/project/<project_id>', methods=['GET', 'POST'])
 def update_project(project_id):
     """
     If request is GET displays edit-project page that was previously filled by user.
@@ -149,7 +149,7 @@ def update_project(project_id):
 
 
 # Route to delete project from MongoDB database
-@app.route('/admin/delete_project/<project_id>')
+@app.route('/admin/delete/project/<project_id>')
 def delete_project(project_id):
     """
     Deletes selected project, identified by project_id and display message saying project was deleted.
