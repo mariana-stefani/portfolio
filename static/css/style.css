@@ -8,6 +8,19 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: -webkit-gradient(
+      linear,
+      left top, right top,
+      from(rgba(249, 82, 4, 0.95)),
+      to(rgba(251, 132, 56, 0.7))
+    )
+    fixed;
+  background: -o-linear-gradient(
+      left,
+      rgba(249, 82, 4, 0.95) 0%,
+      rgba(251, 132, 56, 0.7) 100%
+    )
+    fixed;
   background: linear-gradient(
       90deg,
       rgba(249, 82, 4, 0.95) 0%,
@@ -32,6 +45,19 @@ nav {
 }
 
 .nav-show {
+  background: -webkit-gradient(
+      linear,
+      left top, right top,
+      from(rgba(249, 82, 4, 1)),
+      to(rgba(251, 132, 56, 1))
+    )
+    fixed;
+  background: -o-linear-gradient(
+      left,
+      rgba(249, 82, 4, 1) 0%,
+      rgba(251, 132, 56, 1) 100%
+    )
+    fixed;
   background: linear-gradient(
       90deg,
       rgba(249, 82, 4, 1) 0%,
@@ -105,7 +131,8 @@ button.navbar-toggler {
   background-color: #fdcab2;
   color: #460c14;
   border: solid 1px #460c14;
-  box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
+  -webkit-box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
+          box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
 }
 
 .btn-colour:hover {
@@ -151,12 +178,20 @@ button.navbar-toggler {
 
 .main {
   max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -webkit-box-align: center;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0px auto;
   padding: 125px 50px;
 }
@@ -175,7 +210,8 @@ button.navbar-toggler {
   height: 70px;
   margin-left: -1.25rem;
   margin-top: -2.188rem;
-  box-shadow: inset 0 0 0 0.125rem #460c14;
+  -webkit-box-shadow: inset 0 0 0 0.125rem #460c14;
+          box-shadow: inset 0 0 0 0.125rem #460c14;
   border-radius: 1.563rem;
   bottom: 50px;
 }
@@ -188,9 +224,23 @@ button.navbar-toggler {
   margin-left: -0.313rem;
   top: 0.625rem;
   border-radius: 0.313rem;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: scroll;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2.875rem);
+            transform: translateY(2.875rem);
+  }
 }
 
 @keyframes scroll {
@@ -199,7 +249,8 @@ button.navbar-toggler {
   }
   100% {
     opacity: 0;
-    transform: translateY(2.875rem);
+    -webkit-transform: translateY(2.875rem);
+            transform: translateY(2.875rem);
   }
 }
 
@@ -212,10 +263,15 @@ button.navbar-toggler {
   background-color: white;
   border-radius: 20px;
   padding: 20px 30px 20px 20px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 85%;
-  box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
+  -webkit-box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
+          box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
 }
 
 .portrait {
@@ -227,7 +283,11 @@ button.navbar-toggler {
 }
 
 .about-p-container {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 45px;
 }
@@ -285,13 +345,28 @@ button.navbar-toggler {
 }
 
 .progress-right .progress-circle {
-  animation: progress-animation linear forwards 1.5s;
+  -webkit-animation: progress-animation linear forwards 1.5s;
+          animation: progress-animation linear forwards 1.5s;
   visibility: hidden;
 }
 
 .progress-left .progress-circle {
-  animation: progress-animation 1.5s linear forwards 1.5s;
+  -webkit-animation: progress-animation 1.5s linear forwards 1.5s;
+          animation: progress-animation 1.5s linear forwards 1.5s;
   visibility: hidden;
+}
+
+@-webkit-keyframes progress-animation {
+  0% {
+    visibility: hidden;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    visibility: visible;
+    -webkit-transform: rotate(data-value);
+    transform: rotate(data-value);
+  }
 }
 
 @keyframes progress-animation {
@@ -358,7 +433,8 @@ button.navbar-toggler {
   border-bottom-right-radius: 80px;
   border-left: 0;
   -webkit-transform-origin: center left;
-  transform-origin: center left;
+  -ms-transform-origin: center left;
+      transform-origin: center left;
 }
 
 .progress .progress-right {
@@ -371,7 +447,8 @@ button.navbar-toggler {
   border-bottom-left-radius: 80px;
   border-right: 0;
   -webkit-transform-origin: center right;
-  transform-origin: center right;
+  -ms-transform-origin: center right;
+      transform-origin: center right;
 }
 
 .progress-value {
@@ -384,7 +461,9 @@ button.navbar-toggler {
   margin-bottom: 30px;
   margin-top: 80px;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 85%;
 }
 
@@ -398,8 +477,12 @@ button.navbar-toggler {
 }
 
 .each-project {
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 30px;
 }
 
@@ -409,7 +492,8 @@ button.navbar-toggler {
   display: block;
   margin-top: 30px;
   border-radius: 10px;
-  box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
+  -webkit-box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
+          box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
 }
 
 .project-desc {
@@ -421,6 +505,8 @@ button.navbar-toggler {
 .project-divider {
   margin-top: 60px;
   content: " ";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   border-bottom: 1.5px solid #fdcab2;
   width: 80%;
@@ -475,7 +561,8 @@ button[type="submit"] {
   width: 12%;
   margin-top: -6%;
   border: solid 1px #e04a04;
-  box-shadow: 2px 2px rgba(109, 64, 76, 1);
+  -webkit-box-shadow: 2px 2px rgba(109, 64, 76, 1);
+          box-shadow: 2px 2px rgba(109, 64, 76, 1);
 }
 
 @media (min-width: 1400px) {
@@ -595,13 +682,17 @@ button[type="submit"] {
 
 @keyframes rotateIn {
   0% {
-    transform-origin: center center;
-    transform: rotate(-360deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
     opacity: 0;
   }
   100% {
-    transform-origin: center center;
-    transform: rotate(0);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
     opacity: 1;
   }
 }
@@ -624,10 +715,16 @@ footer {
 }
 
 .social-links i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 45px;
   height: 45px;
   padding: 12px 0;
@@ -641,7 +738,8 @@ footer {
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
+  -webkit-box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
+          box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
 }
 
 .social-links i:hover {
@@ -678,7 +776,9 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   left: -11px;
   margin-top: 5px;
   text-align: center;
-  transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+      -ms-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
   font-size: 14px;
   font-family: "Poppins", sans-serif !important;
   font-weight: normal;
@@ -695,7 +795,8 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   width: 180px;
   position: absolute;
   border-radius: 3px;
-  box-shadow: 3px 3px 3px rgb(58, 34, 40);
+  -webkit-box-shadow: 3px 3px 3px rgb(58, 34, 40);
+          box-shadow: 3px 3px 3px rgb(58, 34, 40);
   right: -4px;
   color: #fff;
   font-size: 14px;
@@ -729,12 +830,14 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
   }
 
   100% {
     opacity: 100%;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
