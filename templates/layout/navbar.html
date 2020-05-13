@@ -1,38 +1,38 @@
 <nav class="navbar navbar-light navbar-expand-sm">
-    <a href="#callout-link" class="navbar-brand" aria-label="Mariana">Mariana</a>
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="menu collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+  <a href="#callout-link" class="navbar-brand" aria-label="Mariana">Mariana</a>
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="menu collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+     <ul class="navbar-nav">
         {% if 'username' in session %}
-          <li class="nav-item mr-2">
-            <div class="hi-user">Hi {{session['username']}}!</div>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="{{url_for('index')}}" aria-label="Home">Home</a>
-          </li>
-          <li class="nav-item mr-2">
-            <a class="nav-link" href="{{url_for('logout')}}" aria-label="Logout">Logout</a>
-          </li>
+        <li class="nav-item mr-2">
+           <div class="hi-user">Hi {{session['username']}}!</div>
+        </li>
+        <li class="nav-item mr-2">
+           <a class="nav-link" href="{{url_for('index')}}" aria-label="Home">Home</a>
+        </li>
+        <li class="nav-item mr-2">
+           <a class="nav-link" href="{{url_for('logout')}}" aria-label="Logout">Logout</a>
+        </li>
         {% endif %}
         {% if 'username' in session %}{% else%}
         <li class="nav-item mr-2">
-          <a class="nav-link" href="#callout-link" aria-label="Home">Home</a>
+           <a class="nav-link" href="#callout-link" aria-label="Home">Home</a>
         </li>
         <li class="nav-item mr-2">
-          <a class="nav-link" href="#about-link" aria-label="About me">About me</a>
+           <a class="nav-link" href="#about-link" aria-label="About me">About me</a>
         </li>
         <li class="nav-item mr-2">
-          <a class="nav-link" href="#projects-link" aria-label="Portfolio">Portfolio</a>
+           <a class="nav-link" href="#projects-link" aria-label="Portfolio">Portfolio</a>
         </li>
         <li class="nav-item mr-2">
-          <a class="nav-link" href="https://docdro.id/oCEbdqm" rel="noopener" target="_blank" aria-label="Resume">Resume</a>
+           <a class="nav-link" href="https://docdro.id/oCEbdqm" rel="noopener" target="_blank" aria-label="Resume">Resume</a>
         </li>
         <li class="nav-item mr-2">
-          <a class="nav-link" href="#contact-link" aria-label="Get in Touch">Get in Touch</a>
+           <a class="nav-link" href="#contact-link" aria-label="Get in Touch">Get in Touch</a>
         </li>
         {% endif %}
-      </ul>
-    </div>
+     </ul>
+  </div>
 </nav>
