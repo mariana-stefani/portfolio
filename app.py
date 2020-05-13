@@ -29,7 +29,7 @@ def index():
     return render_template('pages/index.html', skills=skills, skill=skill, projects=projects, project=project)
 
 
-# Route for Login
+# Note for the assessor. To test this please use, username: testuser, password: test.
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
     """
