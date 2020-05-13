@@ -313,7 +313,6 @@ $ git push
 | MONGO_DBNAME | <project_name>                                                                                                         |
 | MONGO_URI    | mongodb+srv://<username>:HsP6P7T7MUJ4Eniv@<cluster_name>-o5dej.mongodb.net/<database_name>?retryWrites=true&w=majority |
 | SECRET_KEY   | <your_secret_key>                                                                                                      |
-| DEBUG        | FALSE                                                                                                                  |
 
 * To get your ***MONGO_URI*** log in to your **MongoDB** account > click on the cluster for this project > Click on connect > Select *Connect your application* > Copy the URI.
 6. On VSCode terminal run the command ```$ heroku login``` to login to your account.
