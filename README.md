@@ -163,16 +163,16 @@ This uses three database collections:
 
 #### Projects Collection
 
-| *Title*                  | *Key in DB*       | *Form Validation type* | *Data type* |
-|--------------------------|-------------------|------------------------|-------------|
-| Account ID               | _id               | None                   | ObjectId    |
-| Project Name             | project_name      | text                   | string      |
-| Description of Project   | project_desc      | text, maxlength="60"   | string      |
-| Github Repository        | project_github    | text                   | string      |
-| Project URL              | project_live      | text                   | string      |
-| Project Image URL        | project_img       | text                   | string      |
-| Project Order            | project_order     | text                   | string      |
-| Project Divider Line     | project_divider   | text                   | string      |
+| *Title*                  | *Key in DB*       | *Form Validation type*  | *Data type* |
+|--------------------------|-------------------|-------------------------|-------------|
+| Account ID               | _id               | None                    | ObjectId    |
+| Project Name             | project_name      | text                    | string      |
+| Description of Project   | project_desc      | text, maxlength="245"   | string      |
+| Github Repository        | project_github    | text                    | string      |
+| Project URL              | project_live      | text                    | string      |
+| Project Image URL        | project_img       | text                    | string      |
+| Project Order            | project_order     | text                    | string      |
+| Project Divider Line     | project_divider   | text                    | string      |
 
 [Example JSON from the projects collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/projects.json)
 
