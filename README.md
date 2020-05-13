@@ -144,7 +144,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 *	Add more projects.
 *	Add more skills.
 *   Add more classes for the skills colours.
-*   Add a dropdown menu for the "Add New Skill" page and for the "Edit Skill" page, where the admin user can select among many skills so the skill colour and icon will be added with the selected skill.
+*   Add a dropdown menu for the **"Add New Skill"** page and for the **"Edit Skill"** page, where the admin user can select among many skills so the skill colour and icon will be added with the selected skill.
 
 
 ## Information Architecture
@@ -328,9 +328,9 @@ $ git push
 
 * To clone a Github repository:
 
-	* Open the [repository](https://github.com/mariana-stefani/portfolio) on Github and click on *"Clone or download"* and copy the URL.
+	* Open the [repository](https://github.com/mariana-stefani/portfolio) on Github and click on ***"Clone or download"*** and copy the URL.
 
-	* On VSCode open the *"Command Palette"*, select *"Git: Clone"* and paste the URL.
+	* On VSCode open the ***"Command Palette"***, select ***"Git: Clone"*** and paste the URL.
 
 * The following **must** be installed in your machine:
 	* [Git](https://www.atlassian.com/git/tutorials/install-git)
@@ -352,12 +352,12 @@ $ git push
 	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portolio```.
 	* Activate the Virtual Environment: ```$ pipenv shell```.
 	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
-	* Open the "Command Palette" and select *"Python: Select Interpreter"*.
+	* Open the **"Command Palette"** and select ***"Python: Select Interpreter"***.
 	* Select the virtual environment that you just created.
 * Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
-* Create an file called *"env.py"* and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+* Create an file called ***"env.py"*** and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
     * Do not commit this file to Git.
-	* To hide your environment variables, create a file called *".gitignore"* and write *"env.py"* on this file.
+	* To hide your environment variables, create a file called ***".gitignore"*** and write ***"env.py"*** on this file.
 * Run your application with the command ```$ python3 app.py```.
 * The project can be viewed at ***http://127.0.0.1:5000***.
 
