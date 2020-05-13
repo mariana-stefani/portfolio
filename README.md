@@ -289,7 +289,7 @@ In order to test the CRUDs functionalities:
 
 
 ## Deployment 
-* The deployment instructions were written for a *macOS* specifically. If you are in a different operating system, please follow the guides for the same according to their specs.
+* The deployment instructions were written for a *macOS* specifically. If you are in a different Operating System, please follow the guides for the same according to their specs.
 
 ### Run the Code Locally
 
@@ -373,4 +373,4 @@ $ git push
 
 
 ## Acknowledgments
-All my gratitude to my wonderful husband and family who always have supported me. A big thank you to my mentor **Simen Daehlin** for your ideas, advise and support! Thank you to **Anna Greaves**, **Haley Schafer**, **Luca Dettorre**, **Tim Nelson** from Code Institute for your time and assistance. Thank you to **Guillermo** from Slack. Thank you to everyone from Code Institute!
+All my gratitude to my wonderful husband and family who always have supported me. A big thank you to my mentor [**Simen Daehlin**](https://github.com/Eventyret) for your ideas, advise and support! Thank you to [**Anna Greaves**](https://github.com/AJGreaves), [**Haley Schafer**](https://github.com/hschafer2017), [**Luca Dettorre**](https://github.com/ldettorre), [**Tim Nelson**](https://github.com/TravelTimN) from Code Institute for your time and assistance. Thank you to [**Guillermo**](https://github.com/GBrachetta) from Slack. Thank you to everyone from Code Institute!
