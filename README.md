@@ -3,7 +3,7 @@
 ![Responsiveness across devices](static/images/portfolio.png)
 
 ## Introduction
-[This project](https://marianastefani-portfolio.herokuapp.com/) was created by me, Mariana Stefani, to be my personal portfolio with my latest projects and information about me and my skillset.
+[This project](https://marianastefani-portfolio.herokuapp.com/) was created by me, Mariana Stefani, to be my portfolio with my latest projects and information about me and my skillset.
 
 ## UX (User Experience)
 
@@ -21,10 +21,10 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 
 #### **User Stories:**
 
-* As a user I expect to contact the developer in a built-in contact form.
-* As a user I expect to with a click of a button to be able to see the developer’s CV on a new tab instead of having to download it.
-* As a user I expect to easily find the developer's latest projects with buttons that will redirect me to the live website and the **GitHub** repository.
-* As a user I expect to easily find the information about the developer’s skills proficiency.
+* As a user, I expect to contact the developer in a built-in contact form.
+* As a user, I expect to with a click of a button to be able to see the developer’s CV on a new tab instead of having to download it.
+* As a user, I expect to easily find the developer's latest projects with buttons that will redirect me to the live website and the **GitHub** repository.
+* As a user, I expect to easily find the information about the developer’s skills proficiency.
 
 **Emily S.**
 
@@ -266,7 +266,7 @@ The technologies used were:
 * **Result:** Both tests have passed.
 
 ## Note for the assessor
-In order to test the CRUDs functionalities:
+To to test the CRUDs functionalities:
 
 | **URL**                                              | **Username** | **Password** |
 |------------------------------------------------------|--------------|--------------|
@@ -321,17 +321,17 @@ In order to test the CRUDs functionalities:
         mkdir ˜/Projects/Portfolio
         pipenv install --python 3.8
         ```	
-	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portolio```.
+	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portfolio```.
 	* Activate the Virtual Environment: ```$ pipenv shell```.
-	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
+	* On VSCode dialogue will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
 	* Open the **"Command Palette"** and select ***"Python: Select Interpreter"***.
 	* Select the virtual environment that you just created.
 * Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
-* Create an file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your on database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+* Create an file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your own database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the JSON structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
     * Do not commit this file to **Git**.
 	* To hide your environment variables, create a file called ***".gitignore"*** and write ***"env.py"*** on this file.
 * Run your application with the command ```$ python3 app.py```.
-* The project can be viewed at ***http://127.0.0.1:5000***.
+* The project can be viewed at ***Http://127.0.0.1:5000***.
 
 ### Heroku Deployment 
 #### To deploy this project to Heroku follow the steps below:
