@@ -284,13 +284,11 @@ In order to test the CRUDs functionalities:
     * **Solution:** I fixed the issue updating the JQuery script from version 3.5.0 to the version 3.5.
 
 * **Bug Three** 
-    * **Problem:** When importing the layout pages within jinja to base.html nothing was rendering. 
-    * **Solution:** This was fixed when with some research I found that I had to include “{% include ‘XYZ’ %}”.
+    * **Problem:** When importing the layout pages within jinja to *base.html* nothing was rendering. 
+    * **Solution:** This was fixed when with some research I found that I had to include *“{% include ‘XYZ’ %}”*.
 
 
 ## Deployment 
-* The project files were regularly pushed to my [GitHub repository](https://github.com/mariana-stefani/portfolio).
-
 ### Heroku Deployment 
 #### To deploy this project to Heroku follow the steps below:
 1. Install **Heroku CLI** in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
