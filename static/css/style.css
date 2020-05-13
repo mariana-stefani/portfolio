@@ -98,54 +98,54 @@ button.navbar-toggler {
 /*-- Buttons --*/
 
 .btn {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .btn-colour {
   background-color: #fdcab2;
   color: #460c14;
-  border: solid 1px #460c14;
-  box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
+  border: solid 0.0625rem #460c14;
+  box-shadow: 0.125rem 0.125rem 0.125rem rgba(109, 64, 76, 1);
 }
 
 .btn-colour:hover {
   background-color: #621a2d;
   color: #fdcab2;
-  border: solid 1.5px #fdcab2;
+  border: solid 0.09375rem #fdcab2;
 }
 
 .btn-size {
   width: 150px;
-  padding: 12px 0px 12px 0px;
+  padding: 0.75rem 0 0.75rem 0;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
 /*-- Text sizes --*/
 
 .h1-small {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .h2-big {
-  font-size: 65px;
+  font-size: 4.0625rem;
   font-weight: bolder;
 }
 
 .h3-big {
-  font-size: 60px;
-  margin-top: 25px;
+  font-size: 3.75rem;
+  margin-top: 1.5625rem;
 }
 
 .p-main {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 /*-- Callout Container --*/
 .callout-container {
-  padding-top: 85px;
+  padding-top: 5.3125rem;
   height: 92vh;
 }
 
@@ -157,8 +157,8 @@ button.navbar-toggler {
   -webkit-box-align: center;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0px auto;
-  padding: 125px 50px;
+  margin: 0 auto;
+  padding: 7.8125rem 3.125rem;
 }
 
 /*-- Mouse --*/
@@ -177,7 +177,7 @@ button.navbar-toggler {
   margin-top: -2.188rem;
   box-shadow: inset 0 0 0 0.125rem #460c14;
   border-radius: 1.563rem;
-  bottom: 50px;
+  bottom: 3.125rem;
 }
 
 .scroll-down:before {
@@ -206,16 +206,16 @@ button.navbar-toggler {
 /*-- About Me --*/
 
 .about-container {
-  margin-bottom: 30px;
-  margin-top: 100px;
+  margin-bottom: 1.875rem;
+  margin-top: 6.25rem;
   text-align: center;
   background-color: white;
-  border-radius: 20px;
-  padding: 20px 30px 20px 20px;
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.875rem 1.25rem 1.25rem;
   align-items: center;
   justify-content: center;
   width: 85%;
-  box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
+  box-shadow: 0px 0.625rem 1.25rem 0.125rem rgba(109, 64, 76, 1);
 }
 
 .portrait {
@@ -223,21 +223,21 @@ button.navbar-toggler {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 130px !important;
+  border-radius: 8.125rem !important;
 }
 
 .about-p-container {
   align-items: center;
   display: flex;
-  margin-top: 45px;
+  margin-top: 2.8125rem;
 }
 
 .portrait-container {
-  margin-top: 45px;
+  margin-top: 2.8125rem;
 }
 
 .about-p {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: left;
   line-height: 2;
 }
@@ -250,18 +250,18 @@ button.navbar-toggler {
 /*-- Skillset --*/
 
 .skillset {
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 
 /*-- Progress circle --*/
 
 .progress-p {
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 0.9375rem;
+  margin-top: 0.625rem;
 }
 
 .progress-icon {
-  font-size: 45px;
+  font-size: 2.8125rem;
 }
 
 .js-colour {
@@ -308,7 +308,7 @@ button.navbar-toggler {
 }
 
 .progress-container {
-  margin-top: 35px;
+  margin-top: 2.1875rem;
 }
 
 .progress {
@@ -354,8 +354,8 @@ button.navbar-toggler {
 
 .progress-left .progress-circle {
   left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
   border-left: 0;
   -webkit-transform-origin: center left;
   transform-origin: center left;
@@ -367,8 +367,8 @@ button.navbar-toggler {
 
 .progress .progress-right .progress-circle {
   left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
   border-right: 0;
   -webkit-transform-origin: center right;
   transform-origin: center right;
@@ -381,16 +381,16 @@ button.navbar-toggler {
 /*-- Projects --*/
 
 .projects-container {
-  margin-bottom: 30px;
-  margin-top: 80px;
+  margin-bottom: 1.875rem;
+  margin-top: 5rem;
   text-align: center;
   align-items: center;
   width: 85%;
 }
 
 .projects-p {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
 }
 
 .project-name {
@@ -400,37 +400,37 @@ button.navbar-toggler {
 .each-project {
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .project-img {
   max-width: 100%;
   max-height: 380px;
   display: block;
-  margin-top: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 10px 20px 2px rgba(109, 64, 76, 1);
+  margin-top: 1.875rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.625rem 1.25rem 0.125rem rgba(109, 64, 76, 1);
 }
 
 .project-desc {
   text-align: left;
-  padding: 25px;
+  padding: 1.5625rem;
   line-height: 2;
 }
 
 .project-divider {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   content: " ";
   display: inline-flex;
-  border-bottom: 1.5px solid #fdcab2;
+  border-bottom: 0.09375rem solid #fdcab2;
   width: 80%;
 }
 
 /*-- Contact Form --*/
 
 .contact-heading {
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-top: 1.5625rem;
+  margin-bottom: 1.25rem;
 }
 
 .contact-p {
@@ -439,21 +439,21 @@ button.navbar-toggler {
 }
 
 .center-form {
-  padding-top: 10px;
+  padding-top: 0.625rem;
   margin: 0 auto;
   max-width: 50%;
 }
 
 button[type="submit"] {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
   border-radius: 1rem;
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: 600;
 }
 
 .contact-container {
-  margin-top: 100px;
+  margin-top: 6.25rem;
   background-color: rgba(249, 82, 4, 0.6);
 }
 
@@ -463,19 +463,19 @@ button[type="submit"] {
 
 .contact-img {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .contact-container form {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .contact-img img {
   border-radius: 6rem;
   width: 12%;
   margin-top: -6%;
-  border: solid 1px #e04a04;
-  box-shadow: 2px 2px rgba(109, 64, 76, 1);
+  border: solid 0.0625rem #e04a04;
+  box-shadow: 0.125rem 0.125rem rgba(109, 64, 76, 1);
 }
 
 @media (min-width: 1400px) {
@@ -485,7 +485,7 @@ button[type="submit"] {
   }
 
   .contact-container {
-    margin-top: 150px;
+    margin-top: 9.375rem;
   }
 }
 
@@ -496,26 +496,26 @@ button[type="submit"] {
 /*-- Login --*/
 
 .login-container {
-  margin-top: 200px;
-  padding-top: 30px;
-  padding-left: 45px;
+  margin-top: 12.5rem;
+  padding-top: 1.875rem;
+  padding-left: 2.8125rem;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.5);
   height: 300px;
 }
 
 .add-container {
-  margin-top: 200px;
-  padding-top: 30px;
-  padding-left: 25px;
-  margin-bottom: 100px;
+  margin-top: 12.5rem;
+  padding-top: 1.875rem;
+  padding-left: 1.5625rem;
+  margin-bottom: 6.25rem;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.5);
   height: auto;
 }
 
 .add-title {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
   text-align: center;
 }
 
@@ -523,22 +523,22 @@ button[type="submit"] {
 
 .toast-container {
   text-align: center;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   line-height: 1.5;
   max-width: 90%;
   padding: 1rem 2rem;
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .toast-body {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .red-toast {
   color: #721c24;
   background-color: #f8d7da;
-  border: solid 3px #f1b0b7;
-  margin-bottom: -150px;
+  border: solid 0.1875rem #f1b0b7;
+  margin-bottom: -9.375rem;
 }
 
 .red-toast-body {
@@ -553,12 +553,12 @@ button[type="submit"] {
 .green-toast {
   color: #155724;
   background-color: #d4edda;
-  border: solid 3px #b1dfbb;
+  border: solid 0.1875rem #b1dfbb;
 }
 
 .toast-margin {
-  margin-top: 15px !important;
-  margin-bottom: 15px;
+  margin-top: 0.9375rem !important;
+  margin-bottom: 0.9375rem;
 }
 
 .green-toast-body {
@@ -611,16 +611,16 @@ button[type="submit"] {
 footer {
   text-align: center;
   background-color: white;
-  padding: 5px 0px 5px 0px;
+  padding: 0.3125rem 0 0.3125rem 0;
 }
 
 #footer-details {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .social-links {
-  padding: 15px 0;
-  margin-bottom: 0px !important;
+  padding: 0.9375rem 0;
+  margin-bottom: 0 !important;
 }
 
 .social-links i {
@@ -630,24 +630,24 @@ footer {
   justify-content: center;
   width: 45px;
   height: 45px;
-  padding: 12px 0;
+  padding: 0.75rem 0;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 7px;
   background-color: #fdcab2;
   color: #621a2d;
-  border: solid 1px #460c14;
+  border: solid 0.0625rem #460c14;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  box-shadow: 2px 2px 2px rgba(109, 64, 76, 1);
+  box-shadow: 0.125rem 0.125rem 0.125rem rgba(109, 64, 76, 1);
 }
 
 .social-links i:hover {
   background: #621a2d;
   color: #fdcab2;
-  border: solid 1px #fdcab2;
+  border: solid 0.0625rem #fdcab2;
 }
 
 a:link {
@@ -663,8 +663,8 @@ a:link {
 tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 
 .help-tip {
-  font-size: 20px;
-  margin-left: -20px;
+  font-size: 1.25rem;
+  margin-left: -1.25rem;
   color: #3b060a;
 }
 
@@ -675,11 +675,11 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 
 .help-tip:hover p {
   display: block;
-  left: -11px;
-  margin-top: 5px;
+  left: -0.6875rem;
+  margin-top: 0.3125rem;
   text-align: center;
   transform-origin: 100% 0%;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Poppins", sans-serif !important;
   font-weight: normal;
   -webkit-animation: fadeIn 0.3s ease-in-out;
@@ -691,14 +691,14 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   display: none;
   text-align: left;
   background-color: #3b060a;
-  padding: 20px;
+  padding: 1.25rem;
   width: 180px;
   position: absolute;
-  border-radius: 3px;
-  box-shadow: 3px 3px 3px rgb(58, 34, 40);
-  right: -4px;
+  border-radius: 0.1875rem;
+  box-shadow: 0.1875rem 0.1875rem 0.1875rem rgb(58, 34, 40);
+  right: -0.25rem;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 
@@ -710,8 +710,8 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   height: 0;
   border: 6px solid transparent;
   border-bottom-color: #3b060a;
-  left: 10px;
-  top: -12px;
+  left: 0.625rem;
+  top: -0.75rem;
 }
 
 .help-tip p:after {
@@ -720,7 +720,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   height: 40px;
   content: "";
   position: absolute;
-  top: -40px;
+  top: -2.5rem;
   left: 0;
 }
 
@@ -751,25 +751,25 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .main {
-    padding: 0px 50px;
+    padding: 0 3.125rem;
   }
 
   .p-main {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .h2-big {
-    font-size: 55px;
+    font-size: 3.4375rem;
   }
 
   .h3-big {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
 
   .btn-size {
-    padding: 5px 0px 5px 0px;
+    padding: 0.3125rem 0 0.3125rem 0;
     width: 133px;
-    margin: 6px;
+    margin: 0.375rem;
   }
 
   .center-form {
@@ -782,37 +782,37 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   }
 
   .scroll-down {
-    bottom: 15px;
+    bottom: 0.9375rem;
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 411px) and (min-height: 812px) {
   .callout-container {
-    padding-top: 130px;
+    padding-top: 8.125rem;
   }
   .scroll-down {
-    bottom: 50px;
+    bottom: 3.125rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .h2-big {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
   .h3-big {
-    font-size: 29px;
-    margin-top: 15px;
+    font-size: 1.8125rem;
+    margin-top: 0.9375rem;
   }
 
   .p-main {
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 0.9375rem;
+    margin-bottom: 1.25rem;
   }
 
   .btn-size {
     width: 112px;
   }
   .btn {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
