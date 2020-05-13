@@ -239,7 +239,7 @@ The technologies used were:
 * **Result:** This test passed.
 
 **Callout Button**
-* **Plan:** User clicks on “Let’s Talk” button and page scrolls down to contact me form.
+* **Plan:** User clicks on ***“Get in Touch”*** button and page scrolls down to contact me form.
 * **Result:** This test has passed.
 
 **About Buttons – When User is Logged In:**
@@ -364,8 +364,8 @@ $ git push
 ## Credits
 ### Media
 * Responsiveness across devices image from [Am I Responsive](http://ami.responsivedesign.is/).
-* Icons used on contact me section is made by *iconixar* from [Flat Icon](https://www.flaticon.com/).
+* Icons used on contact me section is made by ***iconixar*** from [Flat Icon](https://www.flaticon.com/).
 
 
 ## Acknowledgments
-All my gratitude to my wonderful husband and family who always have supported me. A big thank you to my mentor Simen Daehlin for your ideas, advise and support! Thank you to Anna Greaves, Haley Schafer, Luca Dettorre, Tim Nelson from Code Institute for your time and assistance. Thank you to Guillermo from Slack. Thank you to everyone from Code Institute!
+All my gratitude to my wonderful husband and family who always have supported me. A big thank you to my mentor **Simen Daehlin** for your ideas, advise and support! Thank you to **Anna Greaves**, **Haley Schafer**, **Luca Dettorre**, **Tim Nelson** from Code Institute for your time and assistance. Thank you to **Guillermo** from Slack. Thank you to everyone from Code Institute!
