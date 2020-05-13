@@ -1,58 +1,53 @@
 {% extends 'layout/base.html' %} {% block content %} 
 {% with messages = get_flashed_messages() %} 
 {% if messages %} {% for message in messages %}
-    <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
-        <div class="toast toast-container red-toast" role="alert" aria-live="assertive" data-delay="4000" aria-atomic="true">
-            <div class="red-toast-i">
-                <i class="far fa-times-circle fa-4x animated rotateIn"></i>
-            </div>    
-            <div class="toast-body red-toast-body">
-                {{ message }}
-            </div>
-        </div>
-    </div>
-    {% endfor %} {% endif %} {% endwith %}
-    
-
-<div class="container login-container">
-    <form  method="POST" action="">
-        {{ form.hidden_tag() }}
-        <div class="form-group">
-            <div class="col s10 validate wine-colour" type="text" required>
-                {{ form.username.label }}
-
-                {% if form.username.errors %}
-                    {{ form.username(class="invalid") }}
-                    <div class="invalid">
-                        {% for error in form.username.errors %}
-                            <span>{{ error }}</span>
-                        {% endfor %}
-                    </div>
-                {% else %}
-                    {{ form.username }}
-                {% endif %}
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col s10 validate wine-colour" type="password" name="password">
-                {{ form.password.label }}
-
-                {% if form.password.errors %}
-                    {{ form.password(class="invalid") }}
-                    <div class="invalid">
-                        {% for error in form.password.errors %}
-                            <span>{{ error }}</span>
-                        {% endfor %}
-                    </div>
-                {% else %}
-                    {{ form.password }}
-                {% endif %}
-            </div>
-        </div>
-        <div>
-            {{ form.submit(class="btn btn-colour")}}
-        </div>
-      </form>
+<div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
+   <div class="toast toast-container red-toast" role="alert" aria-live="assertive" data-delay="4000" aria-atomic="true">
+      <div class="red-toast-i">
+         <i class="far fa-times-circle fa-4x animated rotateIn"></i>
+      </div>
+      <div class="toast-body red-toast-body">
+         {{ message }}
+      </div>
+   </div>
 </div>
-
+{% endfor %} {% endif %} {% endwith %}
+<div class="container login-container">
+   <form  method="POST" action="">
+      {{ form.hidden_tag() }}
+      <div class="form-group">
+         <div class="col s10 validate wine-colour" type="text" required>
+            {{ form.username.label }}
+            {% if form.username.errors %}
+            {{ form.username(class="invalid") }}
+            <div class="invalid">
+               {% for error in form.username.errors %}
+               <span>{{ error }}</span>
+               {% endfor %}
+            </div>
+            {% else %}
+            {{ form.username }}
+            {% endif %}
+         </div>
+      </div>
+      <div class="form-group">
+         <div class="col s10 validate wine-colour" type="password" name="password">
+            {{ form.password.label }}
+            {% if form.password.errors %}
+            {{ form.password(class="invalid") }}
+            <div class="invalid">
+               {% for error in form.password.errors %}
+               <span>{{ error }}</span>
+               {% endfor %}
+            </div>
+            {% else %}
+            {{ form.password }}
+            {% endif %}
+         </div>
+      </div>
+      <div>
+         {{ form.submit(class="btn btn-colour")}}
+      </div>
+   </form>
+</div>
 {% endblock %}
