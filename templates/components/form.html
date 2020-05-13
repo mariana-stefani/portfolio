@@ -1,49 +1,49 @@
 {% if 'username' in session %} 
 {% else %}
 <section id="contact-link" class="container-fluid contact-container">
-  <div class="contact-img">
-    <img  src="static/images/email.svg" alt="White Envelope" />
-  </div>
-  <div class="row">
-    <div class="col">
-      <h2 class="contact-heading text-center claret-colour">Get In Touch</h2>
-      <h5 class="contact-p wine-colour">
-        I'm currently looking for new opportunities.<br/> If you’d like to reach out
-        about a project or a job opportunity, just drop me a message below.
-      </h5>
-      <div class="email-alert">
-        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
-          <div class="toast-container green-toast toast-margin" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="green-toast-i">
-                  <i class="far fa-check-circle fa-4x animated rotateIn"></i>
-              </div>    
-              <div class="toast-body green-toast-body">
-                  Your email has been successfully sent!
-              </div>
-          </div>
-        </div>    
-      </div>
-      <div class="center-form">
-        <form id="contact-form">
-          <div class="form-group">
-            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" aria-label="Enter your name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" aria-label="Enter your email address" required />
-          </div>
-          <div class="form-group">
-            <textarea rows="5" name="contactsummary" id="contactsummary" class="form-control" placeholder="Message" aria-label="Enter your message" required ></textarea>
-          </div>
-          <div class="form-row text-center">
-            <div class="col">
-              <button type="submit" class="btn btn-colour">
-                Send Email
-              </button>
+   <div class="contact-img">
+      <img  src="static/images/email.svg" alt="White Envelope" />
+   </div>
+   <div class="row">
+      <div class="col">
+         <h2 class="contact-heading text-center claret-colour">Get In Touch</h2>
+         <h5 class="contact-p wine-colour">
+            I'm currently looking for new opportunities.<br/> If you’d like to reach out
+            about a project or a job opportunity, just drop me a message below.
+         </h5>
+         <div class="email-alert">
+            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center">
+               <div class="toast-container green-toast toast-margin" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="green-toast-i">
+                     <i class="far fa-check-circle fa-4x animated rotateIn"></i>
+                  </div>
+                  <div class="toast-body green-toast-body">
+                     Your email has been successfully sent!
+                  </div>
+               </div>
             </div>
-          </div>
-        </form>
+         </div>
+         <div class="center-form">
+            <form id="contact-form">
+               <div class="form-group">
+                  <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" aria-label="Enter your name" required />
+               </div>
+               <div class="form-group">
+                  <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" aria-label="Enter your email address" required />
+               </div>
+               <div class="form-group">
+                  <textarea rows="5" name="contactsummary" id="contactsummary" class="form-control" placeholder="Message" aria-label="Enter your message" required ></textarea>
+               </div>
+               <div class="form-row text-center">
+                  <div class="col">
+                     <button type="submit" class="btn btn-colour">
+                     Send Email
+                     </button>
+                  </div>
+               </div>
+            </form>
+         </div>
       </div>
-    </div>
-  </div>
+   </div>
 </section>
 {% endif %}
