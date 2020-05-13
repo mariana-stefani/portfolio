@@ -234,6 +234,16 @@ The technologies used were:
 
 ## Testing
 
+* HTML was checked on [HTML Validator](https://validator.w3.org/). 
+* CSS was checked on [CSS3 Validator](https://jigsaw.w3.org/css-validator/).
+* JavaScript was checked on [JS Hint Validator](https://jshint.com/).
+* JSON was checked on [JSON Validator](https://jsonlint.com/).
+* The responsiveness of this website was tested constantly during the development process. It was tested in real desktops, tablets and mobile devices as well as on Google Chrome developer tools.
+* The website was tested on different browsers such as Google Chrome, Safari, Internet Explorer and Mozilla Firefox.
+* I asked friends and family members to test the functionalities of the website on desktop and mobile devices. Their feedback was used to improve the website usability.
+
+### Tests
+
 **Navbar Links**
 * **Plan:** User clicks on each navbar link and is scrolled to the chosen section.
 * **Result:** This test passed.
@@ -264,6 +274,7 @@ The technologies used were:
 * **Plan 1:** A toast message is shown when the user tries to log in with a username and/or password that are different from the ones stored on the database.
 * **Plan 2:** User is redirected to the index page and a toast message is shown if correct username and password are entered.
 * **Result:** Both tests have passed.
+
 
 ## Note for the assessor
 To to test the CRUDs functionalities:
