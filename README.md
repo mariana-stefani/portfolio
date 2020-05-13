@@ -381,6 +381,7 @@ $ git push
 ### Media
 * Responsiveness across devices image from [Am I Responsive](http://ami.responsivedesign.is/).
 * Icons used on contact me section is made by ***iconixar*** from [Flat Icon](https://www.flaticon.com/).
+* The ***resume*** linked on the navbar was hosted on [Docdroid](https://www.docdroid.net/).
 
 
 ## Acknowledgments
