@@ -30,7 +30,7 @@ def index():
     return render_template('pages/index.html', skills=skills, skill=skill, projects=projects, project=project)
 
 
-# Note for the assessor. To test this please use, username: testuser, password: test.
+# Note for the assessor. To test this please use, username: testuser and password: test.
 @app.route('/admin', methods=['GET', 'POST'])
 def admin():
     """
