@@ -289,7 +289,49 @@ In order to test the CRUDs functionalities:
 
 
 ## Deployment 
-* The deployment instructions below were written for a *macOS* specifically. If you are in a different operating system, please follow the guides for the same according to their specs.
+* The deployment instructions were written for a *macOS* specifically. If you are in a different operating system, please follow the guides for the same according to their specs.
+
+### Run the Code Locally
+
+* The following **must** be installed in your machine:
+    * [Homebrew](https://docs.brew.sh/Installation)
+	* [Git](https://www.atlassian.com/git/tutorials/install-git)
+    * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+	* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
+    * [MongoDB Atlas Account](https://www.mongodb.com/cloud/atlas)
+        * [Documentation](https://docs.atlas.mongodb.com/) to setup a **MongoDB Atlas** account.
+	* [PIP](https://pip.pypa.io/en/stable/installing/)
+	* [Python 3](https://www.python.org/downloads/)
+
+* This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio).
+
+* To clone a **Github** repository:
+
+	* Open the [repository](https://github.com/mariana-stefani/portfolio) on **Github** and click on ***"Clone or download"*** and copy the URL.
+
+	* On VSCode open the ***"Command Palette"***, select ***"Git: Clone"*** and paste the URL.
+
+* Install Pipenv Globally:
+	* If needed, upgrade pip from your computer's terminal by running ```$ python3.8 -m pip install pip --upgrade```.
+	*  To install Pipenv globally, run from your computer's terminal ```$ python3.8 -m pip install pipenv```.	
+* Create a Virtual Environment with Pipenv:
+	* Open VSCode and from its terminal make a *Projects* directory by running ```$ mkdir Projects```.
+	*  Create an empty folder for this project inside the *˜/Projects* directory by running: 
+	    ```
+        mkdir ˜/Projects/Portfolio
+        pipenv install --python 3.8
+        ```	
+	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portolio```.
+	* Activate the Virtual Environment: ```$ pipenv shell```.
+	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
+	* Open the **"Command Palette"** and select ***"Python: Select Interpreter"***.
+	* Select the virtual environment that you just created.
+* Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
+* Create an file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your on database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+    * Do not commit this file to **Git**.
+	* To hide your environment variables, create a file called ***".gitignore"*** and write ***"env.py"*** on this file.
+* Run your application with the command ```$ python3 app.py```.
+* The project can be viewed at ***http://127.0.0.1:5000***.
 
 ### Heroku Deployment 
 #### To deploy this project to Heroku follow the steps below:
@@ -323,44 +365,6 @@ $ git push
 9. Your project is now successfully deployed to **Heroku**.
 10. On your **Heroku** dashboard click on the button ***Open app*** on the top right side to view your deployed project.
 
-### Run the Code Locally
-
-* This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio).
-
-* To clone a **Github** repository:
-
-	* Open the [repository](https://github.com/mariana-stefani/portfolio) on **Github** and click on ***"Clone or download"*** and copy the URL.
-
-	* On VSCode open the ***"Command Palette"***, select ***"Git: Clone"*** and paste the URL.
-
-* The following **must** be installed in your machine:
-	* [Git](https://www.atlassian.com/git/tutorials/install-git)
-	* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
-    * [MongoDB Atlas Account](https://www.mongodb.com/cloud/atlas)
-        * [Documentation](https://docs.atlas.mongodb.com/) to setup a **MongoDB Atlas** account.
-	* [PIP](https://pip.pypa.io/en/stable/installing/)
-	* [Python 3](https://www.python.org/downloads/)
-* Install Pipenv Globally:
-	* If needed, upgrade pip from your computer's terminal by running ```$ python3.8 -m pip install pip --upgrade```.
-	*  To install Pipenv globally, run from your computer's terminal ```$ python3.8 -m pip install pipenv```.	
-* Create a Virtual Environment with Pipenv:
-	* Open VSCode and from its terminal make a *Projects* directory by running ```$ mkdir Projects```.
-	*  Create an empty folder for this project inside the *˜/Projects* directory by running: 
-	    ```
-        mkdir ˜/Projects/Portfolio
-        pipenv install --python 3.8
-        ```	
-	* Initialize the Virtual Environment: ```$ cd ~/Projects/Portolio```.
-	* Activate the Virtual Environment: ```$ pipenv shell```.
-	* On VSCode dialog will be shown asking if you'd like to select this new virtual environment for the workspace folder. Click yes.
-	* Open the **"Command Palette"** and select ***"Python: Select Interpreter"***.
-	* Select the virtual environment that you just created.
-* Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
-* Create an file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your on database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
-    * Do not commit this file to **Git**.
-	* To hide your environment variables, create a file called ***".gitignore"*** and write ***"env.py"*** on this file.
-* Run your application with the command ```$ python3 app.py```.
-* The project can be viewed at ***http://127.0.0.1:5000***.
 
 ## Credits
 ### Media
