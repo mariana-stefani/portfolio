@@ -2,37 +2,33 @@
 {% with messages = get_flashed_messages() %} 
 {% if messages %} 
 {% for message in messages %}
-    <div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
-      <div class="toast toast-container green-toast" role="alert" aria-live="assertive" data-delay="4500" aria-atomic="true">
-          <div class="green-toast-i">
-              <i class="far fa-check-circle fa-4x animated rotateIn"></i>
-          </div>    
-          <div class="toast-body green-toast-body">
-              {{ message }}
-          </div>
+<div aria-live="polite" aria-atomic="true" class=" d-flex justify-content-center align-items-center">
+   <div class="toast toast-container green-toast" role="alert" aria-live="assertive" data-delay="4500" aria-atomic="true">
+      <div class="green-toast-i">
+         <i class="far fa-check-circle fa-4x animated rotateIn"></i>
       </div>
-    </div>    
+      <div class="toast-body green-toast-body">
+         {{ message }}
+      </div>
+   </div>
+</div>
 {% endfor %}
 {% endif %}
 {% endwith %}
-
 {% if 'username' in session %} 
 {% else %}
 <!-- Callout Container -->
 <section class="callout-container" id="callout-link">
-  <div class="main">
-    <h1 class="h1-small">Hello, my name is</h1>
-    <h2 class="h2-big wine-colour">Mariana Stefani.</h2>
-    <h3 class="h3-big claret-colour">I'm a full-stack web developer</h3>
-    <p class="p-main siena-colour">I code pretty things always with the user in mind.</p>
-    <div class="row">
-      <a class="btn btn-colour btn-size" href="#contact-link" aria-label="Get in touch">Get In Touch</a>
-      <a class="btn btn-colour btn-size" href="#about-link" aria-label="Find out more">Find Out More</a>
-    </div>
-    
-    
-    
-    <div class="scroll-down"></div>
-  </div>
+   <div class="main">
+      <h1 class="h1-small">Hello, my name is</h1>
+      <h2 class="h2-big wine-colour">Mariana Stefani.</h2>
+      <h3 class="h3-big claret-colour">I'm a full-stack web developer</h3>
+      <p class="p-main siena-colour">I code pretty things always with the user in mind.</p>
+      <div class="row">
+         <a class="btn btn-colour btn-size" href="#contact-link" aria-label="Get in touch">Get In Touch</a>
+         <a class="btn btn-colour btn-size" href="#about-link" aria-label="Find out more">Find Out More</a>
+      </div>
+      <div class="scroll-down"></div>
+   </div>
 </section>
 {% endif %}
