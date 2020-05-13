@@ -289,8 +289,11 @@ In order to test the CRUDs functionalities:
 
 
 ## Deployment 
+* The deployment instructions below were written for a *macOS* specifically. If you are in a different operating system, please follow the guides for the same according to their specs.
+
 ### Heroku Deployment 
 #### To deploy this project to Heroku follow the steps below:
+
 1. Install **Heroku CLI** in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
 2. On VSCode terminal run the command ```$ pip3 freeze --local > requirements.txt``` to create a ***requirements.txt*** file.
 3. Run the command ```$ echo web: python app.py > Procfile``` to create a ***Procfile***.
