@@ -10,7 +10,7 @@ This project was created by me, Mariana Stefani, to be my personal portfolio wit
 ### Project Goals
 
 The goal of this project is the ability to present my professional profile, my skills and my abilities as a software developer for recruiters, employers and potential partners that are looking for a full-stack developer.
-For myself, there is a possibility to login and then create, update and delete a skillset or a project from MongoDB.
+For myself, there is a possibility to login and then create, update and delete a skillset or a project from **MongoDB**.
 The website is fully responsive, has a consistent flow and intuitive navigation.
 
 #### **User Goals:**
@@ -23,7 +23,7 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 
 * As a user I expect to contact the developer in a built-in contact form.
 * As a user I expect to with a click of a button to be able to see the developer’s CV on a new tab instead of having to download it.
-* As a user I expect to easily find the developer's latest projects with buttons that will redirect me to the live website and the GitHub repository.
+* As a user I expect to easily find the developer's latest projects with buttons that will redirect me to the live website and the **GitHub** repository.
 * As a user I expect to easily find the information about the developer’s skills proficiency.
 
 **Emily S.**
@@ -41,8 +41,8 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 #### **Site Owner Goals:**
 As an admin user I expect/want/need:
 * To be able to log in on a hidden page when using “/admin” at the end of the index URL.
-* To be able to create and update a skillset and/or a project through a form to MongoDB.
-* To be able to delete a skillset and/or a project from MongoDB.
+* To be able to create and update a skillset and/or a project through a form to **MongoDB**.
+* To be able to delete a skillset and/or a project from **MongoDB**.
 * To receive interview offers through the use of contact form.
 * To be able to attract attention to my projects.
 * To sell myself in a profession but still personal way.
@@ -106,7 +106,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 * This progress circle will move accordingly to the percentage learned in each skill.
 
 **Projects Container**
-* In this container, the user will find the projects I have worked on recently. It contains a picture of the project in a desktop screen along with a brief description of the project and two buttons for the project's GitHub repository and the project's live website. If the admin user is logged in, three buttons will be shown to add, edit and/or delete a project.
+* In this container, the user will find the projects I have worked on recently. It contains a picture of the project in a desktop screen along with a brief description of the project and two buttons for the project's **GitHub** repository and the project's live website. If the admin user is logged in, three buttons will be shown to add, edit and/or delete a project.
 
 **Contact Form Container**
 * In this container, there is a contact form where the user can enter his/her name, email address and send me a message.
@@ -126,18 +126,18 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 * When the user fails to enter the correct username and/or password a toast message is shown above the login form.
 
 #### **Add New Skill Page**
-* This page has a form with 4 fields that can be filled with the new skill information to be sent to MongoDB.
+* This page has a form with 4 fields that can be filled with the new skill information to be sent to ***MongoDB***.
 * Next to each field title, there's a tooltip. When the admin user hovers the pointer over the tooltip it will display information about what the admin user is expected to write on that field.
 
 #### **Edit Skill Page**
-* This page has a form with 4 fields filled with information retrieved from MongoDB, based on the skill ID. These fields can be altered to update an existing skill.
+* This page has a form with 4 fields filled with information retrieved from **MongoDB**, based on the skill ID. These fields can be altered to update an existing skill.
 
 #### **Add New Project Page**
-* This page has a form with 7 fields that can be filled with the new project information to be sent to MongoDB.
+* This page has a form with 7 fields that can be filled with the new project information to be sent to **MongoDB**.
 * Next to each field title, there's a tooltip. When the admin user hovers the pointer over the tooltip it will display information about what the admin user is expected to write on that field.
 
 #### **Edit Project Page**
-*	This page has a form with 7 fields filled with information retrieved from MongoDB, based on the project ID. These fields can be altered to update an existing project.
+*	This page has a form with 7 fields filled with information retrieved from **MongoDB**, based on the project ID. These fields can be altered to update an existing project.
 
 ### Features Left to implement
 
@@ -150,10 +150,10 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 ## Information Architecture
 ### Database Choice
 
-This project utilizes the NoSQL database MongoDB.
+This project utilizes the **NoSQL** database **MongoDB**.
 
 ### Data Storage Types
-For this project the following data types were stored in MongoDB:
+For this project the following data types were stored in **MongoDB**:
 * Integer
 * ObjectID
 * String
@@ -275,8 +275,8 @@ In order to test the CRUDs functionalities:
 ## Bugs
 
 * **Bug One** 
-    * **Problem:** The project was failing to open when the “Open App” button was clicked on the Heroku website.
-    * **Solution:** This was fixed by adding MONGO_DBNAME, MONGO_URI and SECRET_KEY to Heroku config vars.
+    * **Problem:** The project was failing to open when the “Open App” button was clicked on the **Heroku** website.
+    * **Solution:** This was fixed by adding ***MONGO_DBNAME***, ***MONGO_URI*** and ***SECRET_KEY*** to **Heroku** config vars.
 
 * **Bug Two** 
     * **Problem:** On small screens, the navbar dropdown button was not working. 
@@ -292,17 +292,17 @@ In order to test the CRUDs functionalities:
 
 ### Heroku Deployment 
 #### To deploy this project to Heroku follow the steps below:
-1. Install Heroku CLI in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
+1. Install **Heroku CLI** in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
 2. On VSCode terminal run the command ```$ pip3 freeze --local > requirements.txt``` to create a ***requirements.txt*** file.
 3. Run the command ```$ echo web: python app.py > Procfile``` to create a ***Procfile***.
-4. Deploy each change to Github:
+4. Deploy each change to **Github**:
 ````
 $ git add .
 $ git commit -m 'Commit message'
 $ git push
 ````
 5. Create a free account on the [Heroku website](https://signup.heroku.com).
-6. On your Heroku dashboard click on the ***New*** button and then on ***Create new app***. Give it a unique name and select Europe as the region.
+6. On your **Heroku** dashboard click on the ***New*** button and then on ***Create new app***. Give it a unique name and select Europe as the region.
 7. From your dashboard click on ***Settings*** > ***Reveal Config Vars***.
 8. Add the following config vars:
 
@@ -315,20 +315,20 @@ $ git push
 | SECRET_KEY   | <your_secret_key>                                                                                                      |
 | DEBUG        | FALSE                                                                                                                  |
 
-* To get your MONGO_URI log in to your MongoDB account > click on the cluster for this project > Click on connect > Select *Connect your application* > Copy the URI.
+* To get your ***MONGO_URI*** log in to your **MongoDB** account > click on the cluster for this project > Click on connect > Select *Connect your application* > Copy the URI.
 6. On VSCode terminal run the command ```$ heroku login``` to login to your account.
-7. Link Heroku to git with the following by running ```$ heroku git:remote -a <yourproject>```.
-8. Deploy your project to Heroku by running ```$ git push heroku master```.
-9. Your project is now successfully deployed to Heroku.
-10. On your Heroku dashboard click on the button ***Open app*** on the top right side to view your deployed project.
+7. Link **Heroku** to **Git** with the following by running ```$ heroku git:remote -a <yourproject>```.
+8. Deploy your project to **Heroku** by running ```$ git push heroku master```.
+9. Your project is now successfully deployed to **Heroku**.
+10. On your **Heroku** dashboard click on the button ***Open app*** on the top right side to view your deployed project.
 
 ### Run the Code Locally
 
 * This project was developed using [Visual Studio Code](https://code.visualstudio.com/) IDE and cloned to a [Git Repository](https://github.com/mariana-stefani/portfolio).
 
-* To clone a Github repository:
+* To clone a **Github** repository:
 
-	* Open the [repository](https://github.com/mariana-stefani/portfolio) on Github and click on ***"Clone or download"*** and copy the URL.
+	* Open the [repository](https://github.com/mariana-stefani/portfolio) on **Github** and click on ***"Clone or download"*** and copy the URL.
 
 	* On VSCode open the ***"Command Palette"***, select ***"Git: Clone"*** and paste the URL.
 
@@ -336,7 +336,7 @@ $ git push
 	* [Git](https://www.atlassian.com/git/tutorials/install-git)
 	* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
     * [MongoDB Atlas Account](https://www.mongodb.com/cloud/atlas)
-        * [Documentation](https://docs.atlas.mongodb.com/) to setup a MongoDB Atlas account.
+        * [Documentation](https://docs.atlas.mongodb.com/) to setup a **MongoDB Atlas** account.
 	* [PIP](https://pip.pypa.io/en/stable/installing/)
 	* [Python 3](https://www.python.org/downloads/)
 * Install Pipenv Globally:
@@ -355,8 +355,8 @@ $ git push
 	* Open the **"Command Palette"** and select ***"Python: Select Interpreter"***.
 	* Select the virtual environment that you just created.
 * Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
-* Create an file called ***"env.py"*** and store your *SECRET_KEY* variable, your *MONGO_URI* to link to your on database, your cluster name in *MONGODB_NAME*. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
-    * Do not commit this file to Git.
+* Create an file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your on database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the json structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+    * Do not commit this file to **Git**.
 	* To hide your environment variables, create a file called ***".gitignore"*** and write ***"env.py"*** on this file.
 * Run your application with the command ```$ python3 app.py```.
 * The project can be viewed at ***http://127.0.0.1:5000***.
