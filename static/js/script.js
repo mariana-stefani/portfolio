@@ -3,7 +3,7 @@
  */
 $(function () {
     emailjs.init("user_ihMVh8GieFlqswQcnywX0");
-}) ();
+});
 
 $(".progress").each(function () {
   let value = $(this).attr("data-value");
