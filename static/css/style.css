@@ -975,3 +975,19 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
     font-size: 0.875rem;
   }
 }
+
+@media only screen and (device-width: 375px) and (device-height: 559px) {
+  .h2-big {
+    font-size: 45px;
+  }
+
+  .h3-big {
+    font-size: 33px;
+    margin-top: 10px;
+  }
+
+  .p-main {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
