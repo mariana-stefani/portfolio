@@ -350,12 +350,14 @@ button.navbar-toggler {
 
 .progress-right .progress-circle {
   -webkit-animation: progress-animation linear forwards 1.5s;
+  -moz-animation: progress-animation linear forwards 1.5s;
           animation: progress-animation linear forwards 1.5s;
   visibility: hidden;
 }
 
 .progress-left .progress-circle {
   -webkit-animation: progress-animation 1.5s linear forwards 1.5s;
+   -moz-animation: progress-animation linear forwards 1.5s;
           animation: progress-animation 1.5s linear forwards 1.5s;
   visibility: hidden;
 }
