@@ -934,3 +934,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
     font-size: 0.875rem;
   }
 }
+
+input#username {
+  width: 180px;
+}
