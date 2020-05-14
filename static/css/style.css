@@ -225,6 +225,7 @@ button.navbar-toggler {
   margin-left: -0.313rem;
   top: 0.625rem;
   border-radius: 0.313rem;
+  -moz-animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
