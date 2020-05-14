@@ -604,6 +604,14 @@ button[type="submit"] {
   border-radius: 1.5625rem;
 }
 
+input#username {
+  width: 180px;
+}
+
+input#password {
+  width: 180px;
+}
+
 .add-container {
   margin-top: 12.5rem;
   padding-top: 1.875rem;
@@ -933,12 +941,4 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   .btn {
     font-size: 0.875rem;
   }
-}
-
-input#username {
-  width: 180px;
-}
-
-input#password {
-  width: 180px;
 }
