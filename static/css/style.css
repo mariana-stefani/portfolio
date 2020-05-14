@@ -53,7 +53,34 @@ nav {
 
 @media screen and (max-width: 575px) {
   nav {
-    background-color: rgba(249, 82, 4);
+    background-color: rgb(249, 82, 4);
+    background: -webkit-linear-gradient(
+      left,
+      rgba(249, 82, 4, 1) 0%,
+      rgba(251, 132, 56, 1) 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(249, 82, 4, 1)),
+      to(rgba(251, 132, 56, 1))
+    );
+    background: -o-linear-gradient(
+      left,
+      rgba(249, 82, 4, 1) 0%,
+      rgba(251, 132, 56, 1) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgba(249, 82, 4, 1) 0%,
+      rgba(251, 132, 56, 1) 100%
+    );
+    background: -moz-linear-gradient(
+      90deg,
+      rgba(249, 82, 4, 1) 0%,
+      rgba(251, 132, 56, 1) 100%
+    );
   }
 }
 
@@ -569,7 +596,7 @@ button[type="submit"] {
 .contact-container {
   margin-top: 6.25rem;
   background-color: rgb(249, 82, 4);
-  background-color: rgba(249, 82, 4, 0.6) !important;  
+  background-color: rgba(249, 82, 4, 0.6) !important;
 }
 
 .contact-container .form-control {
