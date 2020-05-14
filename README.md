@@ -285,6 +285,7 @@ To to test the CRUDs functionalities:
 
 
 ## Bugs
+### Solved bugs
 
 * **Bug 1** 
     * **Problem:** The project was failing to open when the “Open App” button was clicked on the **Heroku** website.
@@ -305,6 +306,10 @@ To to test the CRUDs functionalities:
 * **Bug 5**
     * **Problem:** When opening the project on mobile devices the colours on the skills were not loading.
     * **Solution:** On *script.js* I removed the immediately invoked function expression from *emaijs* function.
+
+### Unsolved bugs
+
+* When loading the project on mobile devices sometimes the *progress-circle* colours doesn't load, only after a refresh of the page.
 
 
 ## Deployment 
