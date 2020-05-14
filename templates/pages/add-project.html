@@ -1,7 +1,7 @@
 {% extends 'layout/base.html' %} {% block content %}
 <section class="container add-container">
    <h3 class="add-title magenta-colour">Add new project</h3>
-   <form class="col" action="{{url_for('projects')}}" method="POST">
+   <form class="row" action="{{url_for('projects')}}" method="POST">
       <div class="form-group">
          <i class="fas fa-question-circle help-tip">
             <p>Please add the name of your project.</p>
