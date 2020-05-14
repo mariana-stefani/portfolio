@@ -76,13 +76,6 @@ $(window).scroll(function () {
 });
 
 /**
- * Initializes emailjs
- */
-(function () {
-  emailjs.init("user_ihMVh8GieFlqswQcnywX0");
-})();
-
-/**
  * Sends email when button is clicked
  */
 $("#contact-form").submit(function (e) {
