@@ -709,19 +709,6 @@ button[type="submit"] {
   animation-name: rotateIn;
 }
 
-@-webkit-keyframes rotateIn {
-  0% {
-    -webkit-transform-origin: center center;
-    -webkit-transform: rotate(-360deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform-origin: center center;
-    -webkit-transform: rotate(0);
-    opacity: 1;
-  }
-}
-
 @keyframes rotateIn {
   0% {
     -webkit-transform-origin: center center;
