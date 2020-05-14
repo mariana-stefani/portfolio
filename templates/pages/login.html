@@ -15,7 +15,7 @@
 <div class="container login-container">
    <form class="col-12" method="POST" action="">
       {{ form.hidden_tag() }}
-      <div class="form-group form-margin">
+      <div class="form-group">
          <div class="validate wine-colour" type="text" required>
             {{ form.username.label }}
             {% if form.username.errors %}
@@ -30,7 +30,7 @@
             {% endif %}
          </div>
       </div>
-      <div class="form-group row form-margin">
+      <div class="form-group">
          <div class="validate wine-colour" type="password" name="password">
             {{ form.password.label }}
             {% if form.password.errors %}
