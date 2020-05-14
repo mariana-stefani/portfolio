@@ -456,6 +456,7 @@ button.navbar-toggler {
   border-right: 0;
   -webkit-transform-origin: center right;
   -moz-transform-origin: center right;
+  -o-transform-origin: center right;
   -ms-transform-origin: center right;
       transform-origin: center right;
 }
