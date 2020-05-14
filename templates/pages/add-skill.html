@@ -2,28 +2,28 @@
 <section class="container add-container">
    <h3 class="add-title magenta-colour">Add new skill</h3>
    <form class="row" action="{{url_for('skills')}}" method="POST">
-      <div class="form-group">
+      <div class="form-group col-10">
          <i class="fas fa-question-circle help-tip">
             <p>Name of your new skill<br>e.g. HTML 5. </p>
          </i>
          <label class="wine-colour" for="skill_name">Skill</label>
          <input type="text" class="form-control" name="skill_name" id="skill_name" aria-label="Enter skill name" required/>
       </div>
-      <div class="form-group">
+      <div class="form-group col-10">
          <i class="fas fa-question-circle help-tip">
             <p>The percentage learned of this skill.<br>Write without the '%' sign. </p>
          </i>
          <label class="wine-colour" for="percent">Percentage learned</label>
          <input type="number" min="1" max="100" class="form-control" name="percent" id="percent" aria-label="Enter skill percentage learned" required/>
       </div>
-      <div class="form-group">
+      <div class="form-group col-10">
          <i class="fas fa-question-circle help-tip">
             <p>The CSS class name of this skill<br>e.g. html-colour</p>
          </i>
          <label class="wine-colour" for="colour">Skill colour class</label>
          <input type="text" class="form-control" name="colour" id="colour" aria-label="Enter skill css class name" required/>
       </div>
-      <div class="form-group">
+      <div class="form-group col-10">
          <i class="fas fa-question-circle help-tip">
             <p>Icon ID from font-awesome<br>e.g. fab fa-html5</p>
          </i>
