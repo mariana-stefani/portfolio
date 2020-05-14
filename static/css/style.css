@@ -938,3 +938,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
 input#username {
   width: 180px;
 }
+
+input#password {
+  width: 180px;
+}
