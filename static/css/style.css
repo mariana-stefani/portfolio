@@ -616,7 +616,8 @@ button[type="submit"] {
   padding-top: 1.875rem;
   padding-left: 2.8125rem;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.5) !important;
   height: 300px;
   border-radius: 1.5625rem;
 }
