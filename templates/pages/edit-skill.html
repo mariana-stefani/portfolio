@@ -1,29 +1,29 @@
 {% extends 'layout/base.html' %} {% block content %}
 <section class="container add-container">
    <h3 class="magenta-colour">Edit skill</h3>
-   <form class="row form-margin" action="{{url_for('update_skill', skill_id=skill._id)}}" method="POST">
-      <div class="form-group col-11">
+   <form class="col-12" action="{{url_for('update_skill', skill_id=skill._id)}}" method="POST">
+      <div class="form-group">
          <i class="fas fa-question-circle help-tip">
             <p>Name of your new skill<br>e.g. HTML 5. </p>
          </i>
          <label class="wine-colour" for="skill_name">Skill</label>
          <input type="text" class="form-control" name="skill_name" id="skill_name" value="{{skill.skill_name}}" aria-label="Edit skill name" required />
       </div>
-      <div class="form-group col-11">
+      <div class="form-group">
          <i class="fas fa-question-circle help-tip">
             <p>The percentage learned of this skill.<br>Write without the '%' sign. </p>
          </i>
-         <label class="wine-colour col-11" for="percent">Percentage learned</label>
+         <label class="wine-colour" for="percent">Percentage learned</label>
          <input type="percent" class="form-control" name="percent" id="percent" value="{{skill.percent}}" aria-label="Edit percentage learned" required/>
       </div>
-      <div class="form-group col-11">
+      <div class="form-group">
          <i class="fas fa-question-circle help-tip">
             <p>The CSS class name of this skill<br>e.g. html-colour</p>
          </i>
          <label class="wine-colour" for="colour">Skill colour class</label>
          <input type="text" class="form-control" name="colour" id="colour" value="{{skill.colour}}" aria-label="Edit skill css class name" required/>
       </div>
-      <div class="form-group col-11">
+      <div class="form-group">
          <i class="fas fa-question-circle help-tip">
             <p>Icon ID from font-awesome<br>e.g. fab fa-html5</p>
          </i>
