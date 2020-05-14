@@ -357,7 +357,7 @@ button.navbar-toggler {
 
 .progress-left .progress-circle {
   -webkit-animation: progress-animation 1.5s linear forwards 1.5s;
-   -moz-animation: progress-animation linear forwards 1.5s;
+  -moz-animation: progress-animation linear forwards 1.5s;
           animation: progress-animation 1.5s linear forwards 1.5s;
   visibility: hidden;
 }
@@ -439,6 +439,7 @@ button.navbar-toggler {
   border-bottom-right-radius: 5rem;
   border-left: 0;
   -webkit-transform-origin: center left;
+  -moz-transform-origin: center left;
   -ms-transform-origin: center left;
       transform-origin: center left;
 }
