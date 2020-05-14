@@ -2,7 +2,6 @@
  * Creates Progress Circle - Tutorial from https://bootstrapious.com/p/circular-progress-bar
  */
 $(function () {
-  emailjs.init("user_ihMVh8GieFlqswQcnywX0");
   $(".progress").each(function () {
     let value = $(this).attr("data-value");
     let left = $(this).find(".progress-left .progress-circle");
@@ -28,7 +27,9 @@ $(function () {
   function percentageToDegrees(percentage) {
     return (percentage / 100) * 360;
   }
-});
+
+  emailjs.init("user_ihMVh8GieFlqswQcnywX0");
+}) ();
 
 /**
  * Sends email through the contact form
