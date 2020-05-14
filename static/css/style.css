@@ -864,7 +864,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   }
 
   100% {
-    opacity: 100%;
+    opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -875,7 +875,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
     opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
