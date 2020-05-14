@@ -231,6 +231,7 @@ button.navbar-toggler {
           -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+          -moz-animation-name: scroll;
   -webkit-animation-name: scroll;
           animation-name: scroll;
 }
