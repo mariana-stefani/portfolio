@@ -622,11 +622,11 @@ button[type="submit"] {
   border-radius: 1.5625rem;
 }
 
-input#username {
+#username {
   width: 180px;
 }
 
-input#password {
+#password {
   width: 180px;
 }
 
