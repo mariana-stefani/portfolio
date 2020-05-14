@@ -18,7 +18,7 @@ $(function () {
         );
       }
     }
-  })();
+  });
 
   /**
    * Transform the percentage to degrees
