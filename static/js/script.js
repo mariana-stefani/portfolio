@@ -2,34 +2,35 @@
  * Creates Progress Circle - Tutorial from https://bootstrapious.com/p/circular-progress-bar
  */
 $(function () {
-  $(".progress").each(function () {
-    let value = $(this).attr("data-value");
-    let left = $(this).find(".progress-left .progress-circle");
-    let right = $(this).find(".progress-right .progress-circle");
-
-    if (value > 0) {
-      if (value <= 50) {
-        right.css("transform", "rotate(" + percentageToDegrees(value) + "deg)");
-      } else {
-        right.css("transform", "rotate(180deg)");
-        left.css(
-          "transform",
-          "rotate(" + percentageToDegrees(value - 50) + "deg)"
-        );
-      }
-    }
-  });
-
-  /**
-   * Transform the percentage to degrees
-   * @param {number} percentage
-   */
-  function percentageToDegrees(percentage) {
-    return (percentage / 100) * 360;
-  }
-
-  emailjs.init("user_ihMVh8GieFlqswQcnywX0");
+    emailjs.init("user_ihMVh8GieFlqswQcnywX0");
 }) ();
+
+$(".progress").each(function () {
+  let value = $(this).attr("data-value");
+  let left = $(this).find(".progress-left .progress-circle");
+  let right = $(this).find(".progress-right .progress-circle");
+
+  if (value > 0) {
+    if (value <= 50) {
+      right.css("transform", "rotate(" + percentageToDegrees(value) + "deg)");
+    } else {
+      right.css("transform", "rotate(180deg)");
+      left.css(
+        "transform",
+        "rotate(" + percentageToDegrees(value - 50) + "deg)"
+      );
+    }
+  }
+});
+
+/**
+ * Transform the percentage to degrees
+ * @param {number} percentage
+ */
+function percentageToDegrees(percentage) {
+  return (percentage / 100) * 360;
+}
+
 
 /**
  * Sends email through the contact form
