@@ -10,34 +10,34 @@ body {
   font-family: "Poppins", sans-serif;
   background: -webkit-linear-gradient(
       left,
-      rgba(249, 82, 4, 0.95) 0%,
-      rgba(251, 132, 56, 0.7) 100%
+      rgba(249, 82, 4, 0.9) 0%,
+      rgba(251, 132, 56, 0.65) 100%
     )
     fixed;
   background: linear-gradient(
       90deg,
-      rgba(249, 82, 4, 0.95) 0%,
-      rgba(251, 132, 56, 0.7) 100%
+      rgba(249, 82, 4, 0.9) 0%,
+      rgba(251, 132, 56, 0.65) 100%
     )
     fixed;
   background: -moz-linear-gradient(
       90deg,
-      rgba(249, 82, 4, 0.95) 0%,
-      rgba(251, 132, 56, 0.7) 100%
+      rgba(249, 82, 4, 0.9) 0%,
+      rgba(251, 132, 56, 0.65) 100%
     )
     fixed;
   background: -o-linear-gradient(
       90deg,
-      rgba(249, 82, 4, 0.95) 0%,
-      rgba(251, 132, 56, 0.7) 100%
+      rgba(249, 82, 4, 0.9) 0%,
+      rgba(251, 132, 56, 0.65) 100%
     )
     fixed;
   background: -webkit-gradient(
       linear,
       left top,
       right top,
-      from(rgba(249, 82, 4, 0.95)),
-      to(rgba(251, 132, 56, 0.7))
+      from(rgba(249, 82, 4, 0.9)),
+      to(rgba(251, 132, 56, 0.65))
     )
     fixed;
 }
