@@ -540,7 +540,8 @@ button[type="submit"] {
 
 .contact-container {
   margin-top: 6.25rem;
-  background-color: rgba(249, 82, 4, 0.6);
+  background-color: rgba(249, 82, 4, 0.6) !important;
+  background-color: rgb(249, 82, 4);
 }
 
 .contact-container .form-control {
