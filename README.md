@@ -304,7 +304,7 @@ To to test the CRUDs functionalities:
     * **Solution:** I changed all the images extensions from *webp* to *png*.
 
 * **Bug 5**
-    * **Problem:** When opening the project on mobile devices the colours on the skills were not loading.
+    * **Problem:** When opening the project on mobile devices the *progress-circle* colours were not loading, even after a refresh of the page.
     * **Solution:** On *script.js* I removed the immediately invoked function expression from *emaijs* function.
 
 ### Unsolved bugs
