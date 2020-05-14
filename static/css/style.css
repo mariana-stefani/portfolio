@@ -228,6 +228,7 @@ button.navbar-toggler {
   -moz-animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
+          -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-name: scroll;
