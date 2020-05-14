@@ -286,17 +286,25 @@ To to test the CRUDs functionalities:
 
 ## Bugs
 
-* **Bug One** 
+* **Bug 1** 
     * **Problem:** The project was failing to open when the “Open App” button was clicked on the **Heroku** website.
     * **Solution:** This was fixed by adding ***MONGO_DBNAME***, ***MONGO_URI*** and ***SECRET_KEY*** to **Heroku** config vars.
 
-* **Bug Two** 
+* **Bug 2** 
     * **Problem:** On small screens, the navbar dropdown button was not working. 
     * **Solution:** I fixed the issue updating the JQuery script from version 3.5.0 to the version 3.5.
 
-* **Bug Three** 
+* **Bug 3** 
     * **Problem:** When importing the layout pages within jinja to *base.html* nothing was rendering. 
     * **Solution:** This was fixed when with some research I found that I had to include *“{% include ‘XYZ’ %}”*.
+
+* **Bug 4**
+    * **Problem:** When opening the project on mobile devices the images were not loading.
+    * **Solution:** I changed all the images extensions from *webp* to *png*.
+
+* **Bug 5**
+    * **Problem:** When opening the project on mobile devices the colours on the skills were not loading.
+    * **Solution:** On *script.js* I removed the immediately invoked function expression from *emaijs* function.
 
 
 ## Deployment 
