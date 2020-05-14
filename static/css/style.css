@@ -805,9 +805,9 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   left: -0.6875rem;
   margin-top: 0.3125rem;
   text-align: center;
-  -webkit-transform-origin: 100% 0%;
-  -ms-transform-origin: 100% 0%;
-  transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
   font-size: 0.875rem;
   font-family: "Poppins", sans-serif !important;
   font-weight: normal;
