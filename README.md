@@ -235,7 +235,7 @@ The technologies used were:
 ## Testing
 
 * HTML was checked on [HTML Validator](https://validator.w3.org/). 
-* CSS was checked on [CSS3 Validator](https://jigsaw.w3.org/css-validator/).
+* CSS was checked on [CSS Validator](http://csslint.net/).
 * JavaScript was checked on [JS Hint Validator](https://jshint.com/).
 * JSON was checked on [JSON Validator](https://jsonlint.com/).
 * The responsiveness of this website was tested constantly during the development process. It was tested in real desktops, tablets and mobile devices as well as on Google Chrome developer tools.
