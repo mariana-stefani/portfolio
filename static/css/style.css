@@ -440,6 +440,7 @@ button.navbar-toggler {
   border-left: 0;
   -webkit-transform-origin: center left;
   -moz-transform-origin: center left;
+  -o-transform-origin: center left;
   -ms-transform-origin: center left;
       transform-origin: center left;
 }
