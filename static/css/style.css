@@ -211,6 +211,7 @@ button.navbar-toggler {
   margin-left: -1.25rem;
   margin-top: -2.188rem;
   -webkit-box-shadow: inset 0 0 0 0.125rem #460c14;
+  -moz-box-shadow: inset 0 0 0 0.125rem #460c14;
           box-shadow: inset 0 0 0 0.125rem #460c14;
   border-radius: 1.563rem;
   bottom: 3.125rem;
