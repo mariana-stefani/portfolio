@@ -292,8 +292,8 @@ a.nav-link {
   -ms-flex-pack: center;
   justify-content: center;
   width: 85%;
-  -webkit-box-shadow: 0px 0.625rem 1.25rem 0.125rem rgba(109, 64, 76, 1);
-  box-shadow: 0px 0.625rem 1.25rem 0.125rem rgba(109, 64, 76, 1);
+  -webkit-box-shadow: 0 0.625rem 1.25rem 0.125rem rgba(109, 64, 76, 1);
+  box-shadow: 0 0.625rem 1.25rem 0.125rem rgba(109, 64, 76, 1);
 }
 
 .portrait {
