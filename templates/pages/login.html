@@ -13,9 +13,9 @@
 </div>
 {% endfor %} {% endif %} {% endwith %}
 <div class="container login-container">
-   <form  method="POST" action="">
+   <form class="row" method="POST" action="">
       {{ form.hidden_tag() }}
-      <div class="form-group row form-margin">
+      <div class="form-group form-margin">
          <div class="col-10 validate wine-colour" type="text" required>
             {{ form.username.label }}
             {% if form.username.errors %}
