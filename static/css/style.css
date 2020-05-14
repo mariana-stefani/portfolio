@@ -671,6 +671,7 @@ button[type="submit"] {
 
 .animated {
   -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
   animation-duration: 2s;
 }
 
