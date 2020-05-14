@@ -976,7 +976,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   }
 }
 
-@media only screen and (device-width: 375px) and (device-height: 559px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
   .h2-big {
     font-size: 45px;
   }
