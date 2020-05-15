@@ -62,7 +62,7 @@ As an admin user:
 
 * Navigation takes the user directly to the desired section of the portfolio.
 * CV opens in a new tab when clicked.
-* Form sends the message correctly.
+* Form sends the message correctly to developer's email inbox.
 * Content is well presented and visually satisfying.
 
 
