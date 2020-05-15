@@ -310,6 +310,7 @@ To to test the CRUDs functionalities:
 ### Unsolved bugs
 
 * When loading the project on mobile devices sometimes the *progress-circle* colours doesn't load, only after a refresh of the page.
+* When loading the project on mobile devices sometimes the *scroll-down* animation doesn't go all the way to the bottom of the mouse, only fades in and out on the top of the mouse.
 
 
 ## Deployment 
