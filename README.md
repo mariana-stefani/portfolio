@@ -315,7 +315,7 @@ To to test the CRUDs functionalities:
 
 
 ## Deployment 
-* The deployment instructions were written for a *macOS* specifically. The commands and installation may differ if you are in a different Operating System, please follow the guides for the same according to their specs.
+* The deployment instructions were written for a ***macOS*** specifically. The commands and installation may differ if you are in a different Operating System, please follow the guides for the same according to their specs.
 
 ### Run the Code Locally
 
