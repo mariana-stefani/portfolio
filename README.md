@@ -45,7 +45,7 @@ As an admin user:
 * I expect to be able to delete a skillset and/or a project from **MongoDB**.
 * I want to receive interview offers through the use of contact form.
 * I need to be able to attract attention to my projects.
-* I want sell myself in a profession but still personal way.
+* I want to sell myself in a profession but still personal way.
 
 
 
@@ -278,7 +278,7 @@ The technologies used were:
 
 
 ## Note for the assessor
-To to test the CRUDs functionalities:
+To test the CRUDs functionalities:
 
 | **URL**                                              | **Username** | **Password** |
 |------------------------------------------------------|--------------|--------------|
