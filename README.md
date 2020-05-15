@@ -353,7 +353,7 @@ To to test the CRUDs functionalities:
 	* Open the **"Command Palette"** and select ***"Python: Select Interpreter"***.
 	* Select the virtual environment that you just created.
 * Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
-* Create an file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your own database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the JSON structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+* Create a file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your own database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the JSON structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
     * Do not commit this file to **Git**.
 	* To hide your environment variables, create a file called ***".gitignore"*** and write ***"env.py"*** on this file.
 * Run your application with the command ```$ python3 app.py```.
@@ -362,7 +362,7 @@ To to test the CRUDs functionalities:
 ### Heroku Deployment 
 #### To deploy this project to Heroku follow the steps below:
 
-1. Install **Heroku CLI** in your computer by running ```$ brew tap heroku/brew && brew install heroku``` (Make sure to have homebrew installed in your machine).
+1. Install **Heroku CLI** in your computer by running ```$ brew tap heroku/brew && brew install heroku```.
 2. On VSCode terminal run the command ```$ pip3 freeze --local > requirements.txt``` to create a ***requirements.txt*** file.
 3. Run the command ```$ echo web: python app.py > Procfile``` to create a ***Procfile***.
 4. Deploy each change to **Github**:
