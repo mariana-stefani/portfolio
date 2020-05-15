@@ -191,11 +191,11 @@ This uses three database collections:
 
 #### Users Collection
 
-| *Title*      | *Key in db* | *Form Validation type* | *Data type* |
-|--------------|-------------|------------------------|-------------|
-| Account ID   | _id         | None                   | ObjectId    |
-| Username     | username    | text, maxlength="15"   | string      |
-| Password     | password    | text, maxlength="15"   | string      |
+| *Title*      | *Key in db* | *Form Validation type*                | *Data type* |
+|--------------|-------------|---------------------------------------|-------------|
+| Account ID   | _id         | None                                  | ObjectId    |
+| Username     | username    | text, minlength="3", maxlength="15"   | string      |
+| Password     | password    | text, minlength="3", maxlength="15"   | string      |
 
 [Example JSON from the users collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/users.json)
 
