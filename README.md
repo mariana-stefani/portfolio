@@ -24,7 +24,7 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 * As a user, I expect to contact the developer in a built-in contact form.
 * As a user, I expect to with a click of a button to be able to see the developer’s CV on a new tab instead of having to download it.
 * As a user, I expect to easily find the developer's latest projects with buttons that will redirect me to the live website and the **GitHub** repository.
-* As a user, I expect to easily find the information about the developer’s skills proficiency.
+* As a user, I expect to easily find information about the developer’s skills proficiency.
 
 **Emily S.**
 
@@ -34,7 +34,7 @@ The website is fully responsive, has a consistent flow and intuitive navigation.
 
 *“Having a small startup, I’m always looking for partners for new projects. It’s very important when I’m on a portfolio website that I can easily find a way to contact the developer, ideally with a built-in form. Also, I feel more connected to the developer if there’s a picture of him/ her on the about me section.”*
 
-**Mr. Bridgeman**
+**Mr Bridgeman**
 
 *“When I’m looking for a new employee it’s important to be able to see the developers code and what skills he or she have already learned. When looking through a portfolio I expect the skills section to be easily readable and to clearly show how much of each skill the developer knows approximately. I also expect a link to the developer’s GitHub repository, so I can go read the developer’s code.”*
 
@@ -45,7 +45,7 @@ As an admin user:
 * I expect to be able to delete a skillset and/or a project from **MongoDB**.
 * I want to receive interview offers through the use of contact form.
 * I need to be able to attract attention to my projects.
-* I want to sell myself in a profession but still personal way.
+* I want to sell myself in a profession but still a personal way.
 
 
 
@@ -54,7 +54,7 @@ As an admin user:
 **Requirements:**
 
 * Navigate through the sections of the portfolio in one single page.
-* Content displayed in a visually appealing manner.
+* The content displayed in a visually appealing manner.
 * Be provided with a contact form, to easily contact the developer.
 * Be able to see a live version of the developer projects.
 
@@ -62,7 +62,7 @@ As an admin user:
 
 * Navigation takes the user directly to the desired section of the portfolio.
 * CV opens in a new tab when clicked.
-* Form sends the message correctly to developer's email inbox.
+* The contact form sends the message correctly to the developer's email inbox.
 * Content is well presented and visually satisfying.
 
 
@@ -89,7 +89,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 
 * Python will evaluate if the admin user is logged in by checking ```if 'username' in session``` and passes this data to Jinja to display the correct navbar.
 
-* In smaller screens the navbar is collapsed and a burger icon is displayed.
+* In smaller screens, the navbar is collapsed and a burger icon is displayed.
 
 #### **Index Page**
 
@@ -175,11 +175,11 @@ This uses three database collections:
 | Project Order            | project_order     | text                    | string      |
 | Project Divider Line     | project_divider   | text                    | string      |
 
-[Example JSON from the projects collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/projects.json)
+[Example JSON from the **projects** collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/projects.json)
 
 #### Skills Collection
 
-| *Title*              | *Key in db*  | *Form Validation type*       | *Data type* |
+| *Title*              | *Key in DB*  | *Form Validation type*       | *Data type* |
 |----------------------|--------------|------------------------------|-------------|
 | Account ID           | _id          | None                         | ObjectId    |
 | Skill                | skill_name   | text                         | string      |
@@ -187,17 +187,17 @@ This uses three database collections:
 | Skill colour class   | colour       | text                         | string      |
 | Icon ID              | icon         | text                         | string      |
 
-[Example JSON from the skills collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/skills.json)
+[Example JSON from the **skills** collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/skills.json)
 
 #### Users Collection
 
-| *Title*      | *Key in db* | *Form Validation type*                | *Data type* |
+| *Title*      | *Key in DB* | *Form Validation type*                | *Data type* |
 |--------------|-------------|---------------------------------------|-------------|
 | Account ID   | _id         | None                                  | ObjectId    |
 | Username     | username    | text, minlength="3", maxlength="15"   | string      |
 | Password     | password    | text, minlength="3", maxlength="15"   | string      |
 
-[Example JSON from the users collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/users.json)
+[Example JSON from the **users** collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/users.json)
 
 
 ## Technologies Used
@@ -229,7 +229,7 @@ The technologies used were:
 * [Free Image Host](https://freeimage.host/)
 * [Git](https://github.com/)
 * [Heroku](http://www.heroku.com)
-* [MongoBD Atlas](https://www.mongodb.com/cloud/atlas)
+* [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 * [Moqups](https://moqups.com/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -242,7 +242,7 @@ The technologies used were:
 * JSON was checked on [JSON Validator](https://jsonlint.com/).
 * The responsiveness of this website was tested constantly during the development process. It was tested in real desktops, tablets and mobile devices as well as on Google Chrome developer tools.
 * The website was tested on different browsers such as Google Chrome, Safari, Internet Explorer and Mozilla Firefox.
-* I asked friends and family members to test the functionalities of the website on desktop and mobile devices. Their feedback was used to improve the website usability.
+* I asked friends and family members to test the functionalities of the website on desktop and mobile devices. Their feedback was used to improve website usability.
 
 ### Tests
 
@@ -251,7 +251,7 @@ The technologies used were:
 * **Result:** This test passed.
 
 **Callout Button**
-* **Plan:** User clicks on ***“Get in Touch”*** button and page scrolls down to contact me form.
+* **Plan:** User clicks the ***“Get in Touch”*** button and page scrolls down to contact me form.
 * **Result:** This test has passed.
 
 **About Buttons – When User is Logged In:**
@@ -295,7 +295,7 @@ To test the CRUDs functionalities:
 
 * **Bug 2** 
     * **Problem:** On small screens, the navbar dropdown button was not working. 
-    * **Solution:** I fixed the issue updating the JQuery script from version 3.5.0 to the version 3.5.
+    * **Solution:** I fixed the issue updating the JQuery script from version 3.5.0 to version 3.5.
 
 * **Bug 3** 
     * **Problem:** When importing the layout pages within jinja to *base.html* nothing was rendering. 
@@ -326,7 +326,7 @@ To test the CRUDs functionalities:
     * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 	* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
     * [MongoDB Atlas Account](https://www.mongodb.com/cloud/atlas)
-        * [Documentation](https://docs.atlas.mongodb.com/) to setup a **MongoDB Atlas** account.
+        * [Documentation](https://docs.atlas.mongodb.com/) to set up a **MongoDB Atlas** account.
 	* [PIP](https://pip.pypa.io/en/stable/installing/)
 	* [Python 3](https://www.python.org/downloads/)
 
@@ -354,7 +354,7 @@ To test the CRUDs functionalities:
 	* Open the **"Command Palette"** and select ***"Python: Select Interpreter"***.
 	* Select the virtual environment that you just created.
 * Install the necessary libraries by running ```$ pip3 install -r requirements.txt``` from VSCode terminal.
-* Create a file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your own database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the JSON structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
+* Create a file called ***"env.py"*** and store your ***SECRET_KEY*** variable, your ***MONGO_URI*** to link to your database, your cluster name in ***MONGODB_NAME***. The cluster name for this project is ***Portfolio***. You will find the JSON structure for this cluster collections in the [schemas](https://github.com/mariana-stefani/portfolio/tree/master/data/schemas) folder.
     * Do not commit this file to **Git**.
 	* To hide your environment variables, create a file called ***".gitignore"*** and write ***"env.py"*** on this file.
 * Run your application with the command ```$ python3 app.py```.
@@ -386,7 +386,7 @@ $ git push
 | SECRET_KEY     | <your_secret_key>                                                                                                        |
 
 * To get your ***MONGO_URI*** log in to your **MongoDB** account > click on the cluster for this project > Click on connect > Select *Connect your application* > Copy the URI.
-6. On VSCode terminal run the command ```$ heroku login``` to login to your account.
+6. On VSCode terminal run the command ```$ heroku login``` to log in to your account.
 7. Link **Heroku** to **Git** with the following by running ```$ heroku git:remote -a <yourproject>```.
 8. Deploy your project to **Heroku** by running ```$ git push heroku master```.
 9. Your project is now successfully deployed to **Heroku**.
@@ -396,9 +396,9 @@ $ git push
 ## Credits
 ### Media
 * Responsiveness across devices image from [Am I Responsive](http://ami.responsivedesign.is/).
-* Icons used on contact me section is made by ***iconixar*** from [Flat Icon](https://www.flaticon.com/).
+* Icons used on the *Get in Touch* section is made by ***iconixar*** from [Flat Icon](https://www.flaticon.com/).
 * The ***resume*** linked on the navbar was hosted on [Docdroid](https://www.docdroid.net/).
 
 
-## Acknowledgments
+## Acknowledgements
 All my gratitude to my **wonderful husband** and **family** who have always supported me. A big thank you to my mentor [**Simen Daehlin**](https://github.com/Eventyret) for your ideas, advise and support! Thank you to [**Anna Greaves**](https://github.com/AJGreaves), [**Haley Schafer**](https://github.com/hschafer2017), [**Luca Dettorre**](https://github.com/ldettorre), [**Michael Park**](https://github.com/mparkcode), [**Stephen Moody**](https://github.com/DarilliGames) and [**Tim Nelson**](https://github.com/TravelTimN) from Code Institute for your time and assistance. Thank you to [**Guillermo Brachetta**](https://github.com/GBrachetta) and **Igor Basuga** from Slack. Thank you to everyone from **Code Institute**!
