@@ -126,7 +126,7 @@ View my wireframes [here](https://github.com/mariana-stefani/portfolio/tree/mast
 * When the user fails to enter the correct username and/or password a toast message is shown above the login form.
 
 #### **Add New Skill Page**
-* This page has a form with 4 fields that can be filled with the new skill information to be sent to ***MongoDB***.
+* This page has a form with 4 fields that can be filled with the new skill information to be sent to **MongoDB**.
 * Next to each field title, there's a tooltip. When the admin user hovers the pointer over the tooltip it will display information about what the admin user is expected to write on that field.
 
 #### **Edit Skill Page**
@@ -175,7 +175,7 @@ This uses three database collections:
 | Project Order            | project_order     | text                    | string      |
 | Project Divider Line     | project_divider   | text                    | string      |
 
-[Example JSON from the **projects** collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/projects.json)
+[Example JSON from the *projects* collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/projects.json)
 
 #### Skills Collection
 
@@ -187,7 +187,7 @@ This uses three database collections:
 | Skill colour class   | colour       | text                         | string      |
 | Icon ID              | icon         | text                         | string      |
 
-[Example JSON from the **skills** collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/skills.json)
+[Example JSON from the *skills* collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/skills.json)
 
 #### Users Collection
 
@@ -197,7 +197,7 @@ This uses three database collections:
 | Username     | username    | text, minlength="3", maxlength="15"   | string      |
 | Password     | password    | text, minlength="3", maxlength="15"   | string      |
 
-[Example JSON from the **users** collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/users.json)
+[Example JSON from the *users* collection](https://github.com/mariana-stefani/portfolio/blob/master/data/schemas/users.json)
 
 
 ## Technologies Used
