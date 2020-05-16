@@ -1,4 +1,5 @@
-[{
+[
+  {
     "_id": {
       "$oid": "<ObjectId>"
     },
@@ -6,4 +7,5 @@
     "percent": "<string>",
     "colour": "<string>",
     "icon": "<string>"
-  }]
+  }
+]
