@@ -217,6 +217,7 @@ The technologies used were:
 * [Font Awesome](https://fontawesome.com/icons)
 * [Google Fonts](https://fonts.google.com/)
 * [JQuery](https://jquery.com)
+* [PopperJS](https://popper.js.org/)
 * [Pymongo](https://pymongo.readthedocs.io/en/stable/)
 
 ### Tools
