@@ -220,6 +220,7 @@ a.nav-link {
 }
 
 /*-- Callout Container --*/
+
 .callout-container {
   padding-top: 5.3125rem;
   height: 92vh;
@@ -374,7 +375,7 @@ a.nav-link {
 }
 
 .js-colour {
-  color: #F3D909;
+  color: #f3d909;
 }
 
 .python-colour {
@@ -449,7 +450,7 @@ a.nav-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 0.375rem solid #DADFE4;
+  border: 0.375rem solid #dadfe4;
   position: absolute;
   top: 0;
   left: 0;
@@ -976,7 +977,7 @@ tutorial from https://tutorialzine.com/2014/07/css-inline-help-tips */
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) {
+@media only screen and (min-width: 375px) and (max-height: 667px) {
   .h2-big {
     font-size: 2.8125rem;
   }
