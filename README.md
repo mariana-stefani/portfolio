@@ -263,7 +263,7 @@ The technologies used were:
 * **Plan:** User clicks on the project repository page and/or project live website and is redirected to the pages in a separate tab on the browser.
 * **Result:** This test has passed.
 
-**Project Buttons – When User is Logged In**
+**Project Buttons – When *Admin User* is Logged In**
 * **Plan 1:** User clicks on Add New Project and/or Edit button is redirected to Add New Project and/or Edit Project page.
 * **Plan 2:** User clicks on the Delete button and the project is deleted from the database.
 * **Result:** Both tests have passed.
