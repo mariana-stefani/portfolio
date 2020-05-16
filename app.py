@@ -55,7 +55,7 @@ def admin():
     return render_template('pages/login.html', form=form)
 
 
-# Route to add new skill
+# Route to add new skill to MongoDB database
 @app.route('/admin/skills', methods=['GET', 'POST'])
 def skills():
     """
@@ -72,7 +72,7 @@ def skills():
         return redirect(url_for('index'))
 
 
-# Route to insert new skill to MongoDB database
+# Route to edit and update skill to MongoDB database
 @app.route('/admin/update/skill/<skill_id>', methods=['GET', 'POST'])
 def update_skill(skill_id):
     """
@@ -106,7 +106,7 @@ def delete_skill(skill_id):
     return redirect(url_for('index'))
 
 
-# Route to add new project
+# Route to add new project to MongoDB database
 @app.route('/admin/projects', methods=['GET', 'POST'])
 def projects():
     """
@@ -123,7 +123,7 @@ def projects():
         return redirect(url_for('index'))
 
 
-# Route to insert new project to MongoDB database
+# Route to edit and update project to MongoDB database
 @app.route('/admin/update/project/<project_id>', methods=['GET', 'POST'])
 def update_project(project_id):
     """
