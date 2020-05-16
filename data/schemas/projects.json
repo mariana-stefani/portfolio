@@ -1,4 +1,5 @@
-[{
+[
+  {
     "_id": {
       "$oid": "<ObjectId>"
     },
@@ -9,4 +10,5 @@
     "project_img": "<string>",
     "project_order": "<string>",
     "project_divider": "<string>"
-  }]
+  }
+]

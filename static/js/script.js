@@ -1,10 +1,13 @@
 /**
- * Creates Progress Circle - Tutorial from https://bootstrapious.com/p/circular-progress-bar
+ * Initializes Emailjs
  */
 $(function () {
-    emailjs.init("user_ihMVh8GieFlqswQcnywX0");
+  emailjs.init("user_ihMVh8GieFlqswQcnywX0");
 });
 
+/**
+ * Creates Progress Circle - Tutorial from https://bootstrapious.com/p/circular-progress-bar
+ */
 $(".progress").each(function () {
   let value = $(this).attr("data-value");
   let left = $(this).find(".progress-left .progress-circle");
@@ -30,7 +33,6 @@ $(".progress").each(function () {
 function percentageToDegrees(percentage) {
   return (percentage / 100) * 360;
 }
-
 
 /**
  * Sends email through the contact form
@@ -68,7 +70,6 @@ function sendMail(contactForm) {
 /**
  * When user scroll an ID is added to the nav to add background-color
  */
-
 $(window).scroll(function () {
   let navbar = $(".navbar");
   if ($(window).scrollTop() > 0) {
@@ -92,7 +93,7 @@ $("#contact-form").submit(function (e) {
 $(".toast").toast("show");
 
 /**
- * Highlight nav link
+ * Highlight active nav link
  */
 $(".menu a").each(function () {
   $(".menu a").on("click", function () {
